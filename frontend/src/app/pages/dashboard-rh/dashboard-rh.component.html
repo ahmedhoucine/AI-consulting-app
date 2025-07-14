@@ -1,0 +1,69 @@
+<div class="row mb-4">
+  <div class="col-md-3">
+    <label for="startDate">Date de début</label>
+    <input id="startDate" [(ngModel)]="startDate" type="date" class="form-control">
+  </div>
+  <div class="col-md-3">
+    <label for="endDate">Date de fin</label>
+    <input id="endDate" [(ngModel)]="endDate" type="date" class="form-control">
+  </div>
+  <div class="col-md-3">
+    <label for="localisation">Localisation</label>
+    <select id="localisation" class="form-control" [(ngModel)]="selectedLocalisation" (change)="onLocalisationChange()">
+      <option *ngFor="let loc of localisations" [value]="loc">{{ loc }}</option>
+    </select>
+  </div>
+  <div class="col-md-3 d-flex align-items-end">
+    <button class="btn btn-primary w-100" (click)="applyDateFilter()">Appliquer le filtre</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xl-6" *ngIf="chartSalaireCourbes">
+    <div class="card">
+      <div class="card-body">
+        <apx-chart [series]="chartSalaireCourbes.series" [chart]="chartSalaireCourbes.chart"
+                   [xaxis]="chartSalaireCourbes.xaxis" [title]="chartSalaireCourbes.title"
+                   [dataLabels]="chartSalaireCourbes.dataLabels" [stroke]="chartSalaireCourbes.stroke"
+                   [legend]="chartSalaireCourbes.legend" [markers]="chartSalaireCourbes.markers"
+                   [tooltip]="chartSalaireCourbes.tooltip">
+        </apx-chart>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-6" *ngIf="chartContrats">
+    <div class="card">
+      <div class="card-body">
+        <apx-chart [series]="chartContrats.series" [chart]="chartContrats.chart"
+                   [xaxis]="chartContrats.xaxis" [title]="chartContrats.title"
+                   [legend]="chartContrats.legend">
+        </apx-chart>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-12" *ngIf="chartCandidats">
+    <div class="card">
+      <div class="card-body">
+        <apx-chart [series]="chartCandidats.series" [chart]="chartCandidats.chart"
+                   [labels]="chartCandidats.labels" [title]="chartCandidats.title">
+        </apx-chart>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="col-xl-12" *ngIf="chartEvolutionPublication">
+    <div class="card">
+      <div class="card-body">
+        <apx-chart [series]="chartEvolutionPublication.series" [chart]="chartEvolutionPublication.chart"
+                   [xaxis]="chartEvolutionPublication.xaxis" [title]="chartEvolutionPublication.title"
+                   [stroke]="chartEvolutionPublication.stroke" [legend]="chartEvolutionPublication.legend"
+                   [markers]="chartEvolutionPublication.markers">
+        </apx-chart>
+      </div>
+    </div>
+  </div>
+</div>

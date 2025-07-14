@@ -1,0 +1,93 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+
+        <h4 class="card-title mb-4">Matching IA : Consultant ↔ Mission</h4>
+
+        <form (submit)="genererConseilStream(); $event.preventDefault()">
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label class="form-label">Consultant</label>
+              <select class="form-select" [(ngModel)]="selectedConsultant" name="consultant" required>
+                <option [ngValue]="null" disabled>Choisir un consultant</option>
+                <option *ngFor="let c of consultants" [ngValue]="c">
+                  {{ c.nom }} ({{ c.email }})
+                </option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Mission</label>
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="selectedMission"
+                name="mission"
+                required
+                placeholder="Entrer l'ID de la mission"
+              />
+            </div>
+
+          </div>
+
+          <button class="btn btn-primary" [disabled]="loading || !selectedConsultant || !selectedMission">
+            <span *ngIf="loading" class="spinner-border spinner-border-sm me-2"></span>
+            {{ loading ? 'Génération en cours...' : 'Générer un conseil IA' }}
+          </button>
+        </form>
+
+        <div *ngIf="recommandation" class="mt-5">
+          <h5>🧠 Recommandation IA</h5>
+          <div class="alert alert-info" style="white-space: pre-wrap;">
+            {{ recommandation }}
+          </div>
+        </div>
+
+        <div *ngIf="error" class="alert alert-danger mt-4">
+          {{ error }}
+        </div>
+
+        <!-- Bouton d'envoi d'email -->
+        <div *ngIf="recommandation" class="mt-3">
+          <button class="btn btn-outline-primary" (click)="openEmailModal()">
+            ✉️ Envoyer ce conseil par email
+          </button>
+        </div>
+
+        <!-- Modal Email Bootstrap -->
+        <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="emailModalLabel">Envoyer par email</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Destinataire</label>
+                    <input type="email" class="form-control" [(ngModel)]="emailData.to" name="to" readonly>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Objet</label>
+                    <input type="text" class="form-control" [(ngModel)]="emailData.subject" name="subject">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" rows="5" [(ngModel)]="emailData.body" name="body"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-primary" (click)="envoyerMail()">Envoyer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

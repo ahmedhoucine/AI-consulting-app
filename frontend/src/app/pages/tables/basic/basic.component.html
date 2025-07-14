@@ -1,0 +1,24 @@
+<h4>Liste des Feedbacks</h4>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Note Consultant</th>
+      <th>Note Entreprise</th>
+      <th>Commentaire Consultant</th>
+      <th>Commentaire Entreprise</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let feedback of feedbacks">
+      <td>{{ feedback.id }}</td>
+      <td>{{ feedback.note_consultant }}</td>
+      <td>{{ feedback.note_entreprise }}</td>
+      <td>{{ feedback.commentaire_consultant }}</td>
+      <td>{{ feedback.commentaire_entreprise }}</td>
+      <td>{{ feedback.date_feedback | date: 'yyyy-MM-dd' }}</td>
+    </tr>
+  </tbody>
+</table>

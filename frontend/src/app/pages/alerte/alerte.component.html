@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title mb-4">Alertes des Consultants Inactifs</h4>
+
+        <div *ngIf="alertes.length === 0" class="text-muted">Aucune alerte à afficher.</div>
+
+        <div *ngFor="let alerte of alertes" class="border rounded p-3 mb-3 shadow-sm">
+          <h5>{{ alerte.nom_prenom }}</h5>
+          <p><strong>Inactif depuis :</strong> {{ alerte.nbr_jrs_inactifs }} jours</p>
+          <p><strong>Date dernière mission :</strong> {{ alerte.date_derniere_mission | date:'mediumDate' }}</p>
+          <p><strong>Remarque IA :</strong> </p>
+          <div class="alert alert-info" style="white-space: pre-wrap;">{{ alerte.action_recommandee }}</div>
+
+          <div class="d-flex gap-2">
+            <button (click)="supprimerAlerte(alerte)" class="btn btn-danger w-sm">
+              <i class="mdi mdi-trash-can d-block font-size-16"></i> Delete
+            </button>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

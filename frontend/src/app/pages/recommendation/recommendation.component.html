@@ -1,0 +1,39 @@
+<div class="container mt-4">
+  <h4 class="mb-4">Recommandations de missions par consultant</h4>
+
+  <div class="mb-3">
+    <label for="consultantSelect" class="form-label">Sélectionner un consultant</label>
+    <select class="form-select" [(ngModel)]="selectedConsultantId" (change)="onConsultantChange()">
+      <option [ngValue]="null">-- Choisir --</option>
+      <option *ngFor="let consultant of consultants" [value]="consultant.id">
+        {{ consultant.nom }} - {{ consultant.email }}
+      </option>
+    </select>
+  </div>
+
+  <div *ngIf="loading" class="text-center my-4">
+    <div class="spinner-border text-primary" role="status"></div>
+  </div>
+  <div *ngIf="recommendations.length > 0">
+    <div class="row">
+      <div *ngFor="let reco of recommendations; let i = index" class="col-md-6 mb-4">
+        <div class="card shadow rounded-3">
+          <div class="card-body">
+            <h5 class="card-title">Offer {{ i + 1 }}</h5>
+            <p><strong>Entreprise Name:</strong> {{ reco.company_name }}</p>
+            <p><strong>Compétences:</strong> {{ reco.skills }}</p>
+            <p><strong>Secteur:</strong> {{ reco.sector }}</p>
+            <p><strong>Expérience:</strong> {{ reco.experience }}</p>
+            <p><strong>Description:</strong> {{ reco.description }}</p>
+            <p><strong>Salaire:</strong> {{ reco.salary }}</p>
+            <small class="text-muted">Publié le {{ reco.estm_publishdate | date }}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!loading && selectedConsultantId && recommendations.length === 0" class="alert alert-warning">
+    Aucune recommandation trouvée pour ce consultant.
+  </div>
+</div>

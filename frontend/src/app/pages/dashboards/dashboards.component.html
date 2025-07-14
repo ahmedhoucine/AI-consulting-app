@@ -1,0 +1,173 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- Statistiques Globales -->
+    <div class="col-xl-4 col-md-6">
+      <div class="card mini-stat bg-primary text-white">
+        <div class="card-body">
+          <div class="d-flex">
+            <div class="flex-grow-1">
+              <h6 class="text-uppercase mb-3">Offres Totales</h6>
+              <h4 class="mb-0">{{ offreCount }}</h4>
+            </div>
+            <div class="align-self-center">
+              <div class="mini-stat-icon">
+                <i class="mdi mdi-briefcase-check display-4"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-4 col-md-6">
+      <div class="card mini-stat bg-success text-white">
+        <div class="card-body">
+          <div class="d-flex">
+            <div class="flex-grow-1">
+              <h6 class="text-uppercase mb-3">Taux de succès</h6>
+              <h4 class="mb-0">{{ successRate }}%</h4>
+            </div>
+            <div class="align-self-center">
+              <div class="mini-stat-icon">
+                <i class="mdi mdi-percent display-4"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-4 col-md-6">
+      <div class="card mini-stat bg-info text-white">
+        <div class="card-body">
+          <div class="d-flex">
+            <div class="flex-grow-1">
+              <h6 class="text-uppercase mb-3">Consultants</h6>
+              <h4 class="mb-0">{{ totalConsultants }}</h4>
+            </div>
+            <div class="align-self-center">
+              <div class="mini-stat-icon">
+                <i class="mdi mdi-account-multiple display-4"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filtres Date -->
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="card">
+        <div class="card-body">
+          <form (submit)="applyDateFilter(); $event.preventDefault()">
+            <div class="row">
+              <div class="col-md-4">
+                <input type="date" class="form-control" [(ngModel)]="startDate" name="startDate" placeholder="Date de début">
+              </div>
+              <div class="col-md-4">
+                <input type="date" class="form-control" [(ngModel)]="endDate" name="endDate" placeholder="Date de fin">
+              </div>
+              <div class="col-md-4">
+                <button class="btn btn-primary" type="submit">Appliquer</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chart: Répartition des consultants + Top entreprises -->
+  <div class="row">
+    <div class="col-xl-6">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title mb-4">Répartition des consultants</h4>
+          <apx-chart
+            *ngIf="consultantChartData"
+            [series]="consultantChartData.series"
+            [chart]="consultantChartData.chart"
+            [labels]="consultantChartData.labels"
+            [colors]="consultantChartData.colors"
+            [legend]="consultantChartData.legend">
+          </apx-chart>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title mb-4">Top Entreprises</h4>
+          <div echarts *ngIf="topEntreprisesChart" [options]="topEntreprisesChart" style="height: 300px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chart: Top Jobs -->
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title mb-4">Top Jobs</h4>
+          <apx-chart
+            *ngIf="topJobs"
+            [series]="[{ data: topJobs.data }]"
+            [chart]="{ type: 'bar', height: 350 }"
+            [plotOptions]="{ bar: { horizontal: true } }"
+            [xaxis]="{ categories: topJobs.categories }">
+          </apx-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chart: Top Compétences -->
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title mb-4">Top Compétences</h4>
+          <apx-chart
+            *ngIf="topSkills"
+            [series]="[{ data: topSkills.data }]"
+            [chart]="{ type: 'bar', height: 350 }"
+            [xaxis]="{ categories: topSkills.categories }">
+          </apx-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chart: Top Secteurs -->
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title mb-4">Top Secteurs</h4>
+          <apx-chart
+            *ngIf="topSectors"
+            [series]="[{ data: topSectors.data }]"
+            [chart]="{ type: 'bar', height: 350 }"
+            [plotOptions]="{ bar: { horizontal: true } }"
+            [xaxis]="{ categories: topSectors.categories }">
+          </apx-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title mb-4">Répartition géographique des offres</h4>
+          <div id="chartdiv" style="height: 500px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
