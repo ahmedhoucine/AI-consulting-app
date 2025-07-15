@@ -1,6 +1,7 @@
 from flask import Flask
 import torch
 from flask_cors import CORS
+from app.job_clustering.services.cluster_service import ClusterService
 from app.jobs.interfaces.job_routes import job_bp
 from app.shared.db import db
 from app.config import Config
@@ -34,6 +35,8 @@ if __name__ == '__main__':
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     with app.app_context():
         db.create_all()
+        cluster_service = ClusterService()
+        cluster_service.run_and_save_clusters()
         #engine.initialize()
 
     app.run(debug=True)

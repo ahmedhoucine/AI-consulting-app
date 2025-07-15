@@ -4,11 +4,11 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.impute import SimpleImputer
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.decomposition import TruncatedSVD
-from sklearn.cluster import KMeans
-from sklearn.metrics import silhouette_score
 from sentence_transformers import SentenceTransformer
 import numpy as np
 import torch
+import hdbscan
+from sklearn.metrics import silhouette_score
 
 
 class SemanticEmbedder(BaseEstimator, TransformerMixin):
@@ -21,7 +21,7 @@ class SemanticEmbedder(BaseEstimator, TransformerMixin):
         return self
     
     def transform(self, X):
-        return self.model.encode(X, convert_to_numpy=True, batch_size=32, show_progress_bar=False)
+        return self.model.encode(X, convert_to_numpy=True, batch_size=32, show_progress_bar=True)
 
 class DataFrameSelector(BaseEstimator, TransformerMixin):
     def __init__(self, attribute_names, as_text=False):
@@ -82,6 +82,7 @@ def prepare_and_cluster_data(filepath="data.csv"):
         ('final_imputer', SimpleImputer(strategy='constant', fill_value=0))
     ])
 
+    # Apply transformation
     X = full_pipeline.fit_transform(data)
 
     # Dimensionality reduction before clustering
@@ -89,49 +90,17 @@ def prepare_and_cluster_data(filepath="data.csv"):
     reduced = svd.fit_transform(X)
     scaled = StandardScaler().fit_transform(reduced)
 
-    # Progressive step-wise search for best k
-    def find_best_k_progressively(X, initial_step=5, min_step=1, max_no_improve_rounds=2):
-        best_k = 2
-        best_score = -1
-        step = initial_step
-        last_best_k = -1
-        no_improve_rounds = 0
+    # HDBSCAN clustering
+    clusterer = hdbscan.HDBSCAN(min_cluster_size=30, metric='euclidean')
+    labels = clusterer.fit_predict(scaled)
 
-        current_range = list(range(2, 50, step))
+    # Number of clusters (excluding noise)
+    n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
+    print(f"✅ Number of clusters found by HDBSCAN: {n_clusters}")
 
-        while step >= min_step and no_improve_rounds < max_no_improve_rounds:
-            print(f"\n🔎 Testing k in range: {current_range}")
-            improvement = False
+    # Optional silhouette score
+    if n_clusters > 1 and len(set(labels)) < len(scaled):
+        score = silhouette_score(scaled, labels)
+        print(f"📊 Silhouette Score: {score:.4f}")
 
-            for k in current_range:
-                km = KMeans(n_clusters=k, random_state=42, n_init="auto")
-                labels = km.fit_predict(X)
-                score = silhouette_score(X, labels)
-                print(f"k: {k}, silhouette score: {score:.4f}")
-                if score > best_score:
-                    best_score = score
-                    best_k = k
-                    improvement = True
-
-            if not improvement:
-                no_improve_rounds += 1
-            else:
-                no_improve_rounds = 0
-                last_best_k = best_k
-
-            # Narrow search range
-            step = step // 2 if step > 1 else 1
-            lower = max(best_k - step, 2)
-            upper = best_k + step
-            current_range = list(range(lower, upper + 1, step))
-        
-        return best_k  # Added return statement
-
-    # --- Use the progressive search ---
-    best_k = find_best_k_progressively(scaled)
-
-    # --- Final clustering ---
-    final_model = KMeans(n_clusters=best_k, random_state=42, n_init="auto")
-    final_labels = final_model.fit_predict(scaled)
-
-    return final_labels, data
+    return labels, data
