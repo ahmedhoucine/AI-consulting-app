@@ -110,5 +110,5 @@ def get_offres_par_localisation(db):
         reverse=True
     )
 
-    return sorted_locations[:10]
+    return sorted_locations[:20]
 
