@@ -11,6 +11,9 @@ def get_dashboard_data(db, start_date=None, end_date=None):
     dashboard = Dashboard("Dashboard Statistiques")
 
     dashboard.offre_count = repository.get_offre_count(db)
+    dashboard.top_jobs = rows_to_dict_list(repository.get_top_jobs(db, start_date, end_date))
+    dashboard.top_secteurs = rows_to_dict_list(repository.get_top_secteurs(db, start_date, end_date))
+    dashboard.top_skills = rows_to_dict_list(repository.get_top_skills(db, start_date, end_date))
 
     status = repository.get_consultant_status(db)
     dashboard.consultant_status = {

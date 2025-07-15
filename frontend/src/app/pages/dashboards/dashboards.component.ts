@@ -5,6 +5,8 @@ import * as am5map from '@amcharts/amcharts5/map';
 import am5geodata_franceLow from '@amcharts/amcharts5-geodata/franceLow';
 import am5themes_Animated from '@amcharts/amcharts5/themes/Animated';
 
+
+
 @Component({
   selector: 'app-dashboards',
   templateUrl: './dashboards.component.html',
@@ -27,24 +29,36 @@ export class DashboardsComponent implements OnInit, OnDestroy {
   private root: am5.Root | null = null;
 
   cityCoordinates: { [key: string]: { lat: number; lon: number } } = {
-    "paris": { lat: 48.8566, lon: 2.3522 },
-    "lyon": { lat: 45.7640, lon: 4.8357 },
-    "marseille": { lat: 43.2965, lon: 5.3698 },
-    "toulouse": { lat: 43.6047, lon: 1.4442 },
-    "nice": { lat: 43.7102, lon: 7.2620 },
-    "nantes": { lat: 47.2184, lon: -1.5536 },
-    "strasbourg": { lat: 48.5734, lon: 7.7521 },
-    "montpellier": { lat: 43.6117, lon: 3.8777 },
-    "bordeaux": { lat: 44.8378, lon: -0.5792 },
-    "lille": { lat: 50.6292, lon: 3.0573 }
-  };
+  "ile-de-france": { lat: 48.8499, lon: 2.6370 },
+  "auvergne-rhone-alpes": { lat: 45.7640, lon: 4.8357 },
+  "provence-alpes-cote d'azur": { lat: 43.9352, lon: 6.0679 },
+  "paris": { lat: 48.8566, lon: 2.3522 },
+  "lyon": { lat: 45.7640, lon: 4.8357 },
+  "marseille": { lat: 43.2965, lon: 5.3698 },
+  "toulouse": { lat: 43.6047, lon: 1.4442 },
+  "nice": { lat: 43.7102, lon: 7.2620 },
+  "nantes": { lat: 47.2184, lon: -1.5536 },
+  "strasbourg": { lat: 48.5734, lon: 7.7521 },
+  "montpellier": { lat: 43.6117, lon: 3.8777 },
+  "bordeaux": { lat: 44.8378, lon: -0.5792 },
+  "lille": { lat: 50.6292, lon: 3.0573 },
+  "france": { lat: 46.603354, lon: 1.888334 }, // Central point
+  "île-de-france": { lat: 48.8499, lon: 2.6370 },
+  "azle-de-france": { lat: 48.8499, lon: 2.6370 }, // Corrected typo variant
+  "auvergne-rhône-alpes": { lat: 45.7640, lon: 4.8357 }, // Lyon is capital
+  "occitanie": { lat: 43.6047, lon: 1.4442 }, // Toulouse is capital
+  "nouvelle-aquitaine": { lat: 44.8378, lon: -0.5792 }, // Bordeaux is capital
+  "hauts-de-france": { lat: 50.6292, lon: 3.0573 }, // Lille
+  "provence-alpes-côte d'azur": { lat: 43.2965, lon: 5.3698 }, // Marseille
+};
+
 
   constructor(private dashboardService: DashboardService) {}
 
   ngOnInit(): void {
     this.loadDashboardData();
+    
   }
-
   loadDashboardData(): void {
     this.dashboardService.getDashboardData(this.startDate, this.endDate).subscribe((data) => {
       this.dashboardData = data;
@@ -79,7 +93,7 @@ export class DashboardsComponent implements OnInit, OnDestroy {
 
       this.topSkills = {
         title: "Top Compétences",
-        categories: data.top_skills.map((x: any) => x.nom),
+        categories: data.top_skills.map((x: any) => x.top_skills),
         data: data.top_skills.map((x: any) => x.total_occurences),
         chartType: 'bar'
       };
@@ -92,7 +106,7 @@ export class DashboardsComponent implements OnInit, OnDestroy {
       };
 
       this.topEntreprisesChart = this.getDonutChartOptions((data.top_entreprises));
-
+      
     
 
      
@@ -100,57 +114,74 @@ export class DashboardsComponent implements OnInit, OnDestroy {
       this.renderMap(data.offres_par_localisation);
     });
   }
+  
 
   renderMap(locations: any[]): void {
-    if (this.root) this.root.dispose();
-    this.root = am5.Root.new("chartdiv");
-    this.root.setThemes([am5themes_Animated.new(this.root)]);
+  if (this.root) this.root.dispose();
+  this.root = am5.Root.new("chartdiv");
+  this.root.setThemes([am5themes_Animated.new(this.root)]);
 
-    const chart = this.root.container.children.push(
-      am5map.MapChart.new(this.root, {
-        panX: "none",
-        panY: "none",
-        projection: am5map.geoMercator(),
-      })
-    );
+  const chart = this.root.container.children.push(
+    am5map.MapChart.new(this.root, {
+      panX: "none",
+      panY: "none",
+      projection: am5map.geoMercator(),
+    })
+  );
 
-    chart.series.push(
-      am5map.MapPolygonSeries.new(this.root, {
-        geoJSON: am5geodata_franceLow,
-        exclude: ["AQ"]
-      })
-    );
+  // Removed auto zoom and center calls here
 
-    const pointSeries = chart.series.push(
-      am5map.MapPointSeries.new(this.root, {
-        valueField: "value",
-        calculateAggregates: true
-      })
-    );
+  chart.series.push(
+    am5map.MapPolygonSeries.new(this.root, {
+      geoJSON: am5geodata_franceLow,
+      exclude: ["AQ"],
+    })
+  );
 
-    pointSeries.bullets.push(() => {
-      return am5.Bullet.new(this.root!, {
-        sprite: am5.Circle.new(this.root!, {
-          radius: 8,
-          fill: am5.color(0xff6b00),
-          tooltipText: "{city}: {value} offres"
-        })
+  const pointSeries = chart.series.push(
+    am5map.MapPointSeries.new(this.root, {
+      valueField: "value",
+      calculateAggregates: true,
+    })
+  );
+
+  pointSeries.bullets.push((root, series, dataItem) => {
+    const radius = 6 + (dataItem.get("value") || 0);
+    const circle = am5.Circle.new(root, {
+      radius: radius,
+      fill: am5.color(0xff6b00),
+      tooltipText: "{city}: {value} offres",
+    });
+
+    return am5.Bullet.new(root, {
+      sprite: circle,
+    });
+  });
+
+  const data = [];
+
+  locations.forEach((loc) => {
+    const cityKey = this.normalize(loc.location.trim());
+    const coords = this.cityCoordinates[cityKey];
+    console.log(`Adding point for ${loc.location}: value = ${loc.total}`, coords);
+    if (coords) {
+      data.push({
+        longitude: coords.lon,
+        latitude: coords.lat,
+        value: loc.total,
+        city: loc.location,
       });
-    });
+    } else {
+      console.warn("No coordinates for:", loc.location);
+    }
+  });
 
-    locations.forEach(loc => {
-      const cityKey = loc.localisation.toLowerCase();
-      const coords = this.cityCoordinates[cityKey];
-      if (coords) {
-        pointSeries.data.push({
-          longitude: coords.lon,
-          latitude: coords.lat,
-          value: loc.total,
-          city: loc.localisation
-        });
-      }
-    });
-  }
+  pointSeries.data.setAll(data);
+}
+
+  normalize(str: string): string {
+  return str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
 
   getDonutChartOptions(data: any[]): any {
       return {

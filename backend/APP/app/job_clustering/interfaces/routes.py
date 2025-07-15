@@ -12,7 +12,9 @@ def get_clusters():
             "cluster_id": c.cluster_id,
             "cardinality": c.cardinality,
             "most_frequent_title": c.most_frequent_title,
-            "created_at": c.created_at.isoformat()
+            "created_at": c.created_at.isoformat(),
+            "skills": c.top_skills,
+            "sector": c.top_sector
         }
         for c in clusters
     ])

@@ -17,8 +17,67 @@ def get_consultant_status(db):
         FROM consultants
     """)).fetchone()
 
+def get_top_jobs(db, start_date=None, end_date=None):
+    clause = ""
+    params = {}
+
+    if start_date:
+        clause += " AND created_at >= :start_date"
+        params["start_date"] = start_date
+    if end_date:
+        clause += " AND created_at <= :end_date"
+        params["end_date"] = end_date
+
+    return db.session.execute(text(f"""
+        SELECT most_frequent_title AS nom, cardinality AS total_occurences
+        FROM cluster_info
+        WHERE 1=1 {clause}
+        ORDER BY cardinality DESC
+        LIMIT 10
+    """), params).fetchall()
 
 
+def get_top_secteurs(db, start_date=None, end_date=None):
+    clause = ""
+    params = {}
+
+    if start_date:
+        clause += " AND created_at >= :start_date"
+        params["start_date"] = start_date
+    if end_date:
+        clause += " AND created_at <= :end_date"
+        params["end_date"] = end_date
+
+    return db.session.execute(text(f"""
+        SELECT top_sector AS nom, SUM(cardinality) AS total_occurences
+        FROM cluster_info
+        WHERE top_sector IS NOT NULL AND top_sector != 'non spécifié' {clause}
+        GROUP BY top_sector
+        ORDER BY total_occurences DESC
+        LIMIT 10
+    """), params).fetchall()
+
+
+
+def get_top_skills(db, start_date=None, end_date=None):
+    clause = ""
+    params = {}
+
+    if start_date:
+        clause += " AND date_observation >= :start_date"
+        params["start_date"] = start_date
+    if end_date:
+        clause += " AND date_observation <= :end_date"
+        params["end_date"] = end_date
+
+    return db.session.execute(text(f"""
+        SELECT top_skills, SUM(cardinality) as total_occurences
+        FROM cluster_info
+        WHERE top_skills != 'non spécifié' {clause}
+        GROUP BY top_skills
+        ORDER BY total_occurences DESC
+        LIMIT 10
+    """), params).fetchall()
 
 
 def get_top_entreprises(db):
@@ -37,17 +96,19 @@ def get_offres_par_localisation(db):
     rows = db.session.execute(text("""
         SELECT location 
         FROM job_records
-        WHERE location  IS NOT NULL AND location  != 'non spécifié'
+        WHERE location IS NOT NULL AND location != 'non spécifié'
     """)).fetchall()
 
     counter = Counter()
     for row in rows:
-        location  = [loc.strip() for loc in row.location.split(',') if loc.strip()]
+        location = [loc.strip() for loc in row.location.split(',') if loc.strip()]
         counter.update(location)
 
-    return sorted(
+    sorted_locations = sorted(
         [{"location": loc, "total": count} for loc, count in counter.items()],
         key=lambda x: x["total"],
         reverse=True
     )
+
+    return sorted_locations[:10]
 
