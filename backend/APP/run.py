@@ -20,12 +20,12 @@ db.init_app(app)
 CORS(app)
 app.register_blueprint(user_bp)
 app.register_blueprint(post_bp)
-app.register_blueprint(advisor_bp)
-app.register_blueprint(recommend_bp)
+#app.register_blueprint(advisor_bp)
+#app.register_blueprint(recommend_bp)
 #app.register_blueprint(cluster_bp)
 app.register_blueprint(consultant_bp, url_prefix='/api')
 app.register_blueprint(job_bp)
-#app.register_blueprint(dashboard_bp)
+app.register_blueprint(dashboard_bp)
 
 
 
@@ -34,6 +34,6 @@ if __name__ == '__main__':
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     with app.app_context():
         db.create_all()
-        engine.initialize()
+        #engine.initialize()
 
     app.run(debug=True)

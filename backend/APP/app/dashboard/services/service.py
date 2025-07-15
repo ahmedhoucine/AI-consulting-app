@@ -12,8 +12,12 @@ def get_dashboard_data(db, start_date=None, end_date=None):
 
     dashboard.offre_count = repository.get_offre_count(db)
 
-   
-
+    status = repository.get_consultant_status(db)
+    dashboard.consultant_status = {
+        'disponible': status[0],
+        'en_mission': status[1],
+        'inactif': status[2]
+    }
     dashboard.top_entreprises = rows_to_dict_list(repository.get_top_entreprises(db))
     dashboard.offres_par_localisation = repository.get_offres_par_localisation(db)
 

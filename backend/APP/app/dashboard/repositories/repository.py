@@ -8,6 +8,16 @@ def get_offre_count(db):
         SELECT COUNT(*) FROM job_records
     """)).scalar()
 
+def get_consultant_status(db):
+    return db.session.execute(text("""
+        SELECT
+            SUM(CASE WHEN status = 'disponible' THEN 1 ELSE 0 END) AS disponible,
+            SUM(CASE WHEN status = 'mission' THEN 1 ELSE 0 END) AS mission,
+            SUM(CASE WHEN status NOT IN ('disponible', 'mission') THEN 1 ELSE 0 END) AS inactif
+        FROM consultants
+    """)).fetchone()
+
+
 
 
 
@@ -25,18 +35,18 @@ def get_top_entreprises(db):
 
 def get_offres_par_localisation(db):
     rows = db.session.execute(text("""
-        SELECT localisation
+        SELECT location 
         FROM job_records
-        WHERE localisation IS NOT NULL AND localisation != 'non spécifié'
+        WHERE location  IS NOT NULL AND location  != 'non spécifié'
     """)).fetchall()
 
     counter = Counter()
     for row in rows:
-        localisations = [loc.strip() for loc in row.localisation.split(',') if loc.strip()]
-        counter.update(localisations)
+        location  = [loc.strip() for loc in row.location.split(',') if loc.strip()]
+        counter.update(location)
 
     return sorted(
-        [{"localisation": loc, "total": count} for loc, count in counter.items()],
+        [{"location": loc, "total": count} for loc, count in counter.items()],
         key=lambda x: x["total"],
         reverse=True
     )

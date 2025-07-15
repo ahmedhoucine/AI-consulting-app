@@ -48,10 +48,10 @@ export class DashboardsComponent implements OnInit, OnDestroy {
   loadDashboardData(): void {
     this.dashboardService.getDashboardData(this.startDate, this.endDate).subscribe((data) => {
       this.dashboardData = data;
-
+      console.log(this.dashboardData)
       this.offreCount = data.offre_count;
       this.successRate = data.success_rate;
-      this.totalConsultants = Number(data.consultant_status.disponible) + Number(data.consultant_status.en_mission);
+      this.totalConsultants = Number(data.consultant_status.disponible) + Number(data.consultant_status.en_mission)+Number(data.consultant_status.inactif);
 
       this.consultantChartData = {
         series: [
@@ -188,7 +188,7 @@ export class DashboardsComponent implements OnInit, OnDestroy {
               show: false
             },
             data: data.map((item, index) => ({
-              name: item.nom_entreprise,
+              name: item.company_name,
               value: item.total
             }))
           }
