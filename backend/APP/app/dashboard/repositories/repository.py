@@ -60,7 +60,7 @@ def get_top_secteurs(db, start_date=None, end_date=None):
 
 
 def get_top_skills(db, start_date=None, end_date=None):
-    clause = ""
+    clause = "WHERE skills IS NOT NULL AND skills != ''"
     params = {}
 
     if start_date:
@@ -70,15 +70,22 @@ def get_top_skills(db, start_date=None, end_date=None):
         clause += " AND date_observation <= :end_date"
         params["end_date"] = end_date
 
-    return db.session.execute(text(f"""
-        SELECT top_skills, SUM(cardinality) as total_occurences
-        FROM cluster_info
-        WHERE top_skills != 'non spécifié' {clause}
-        GROUP BY top_skills
-        ORDER BY total_occurences DESC
-        LIMIT 10
+    rows = db.session.execute(text(f"""
+        SELECT skills FROM job_records
+        {clause}
     """), params).fetchall()
 
+    counter = Counter()
+
+    for row in rows:
+        skills_str = row[0]
+        if skills_str:
+            skills = [skill.strip().lower() for skill in skills_str.split(',') if skill.strip()]
+            # Filter out 'non spécifié'
+            filtered_skills = [s for s in skills if s != "non spécifié"]
+            counter.update(filtered_skills)
+
+    return [{"skill": skill, "occurrences": count} for skill, count in counter.most_common(10)]
 
 def get_top_entreprises(db):
     return db.session.execute(text("""
