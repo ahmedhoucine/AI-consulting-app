@@ -38,7 +38,7 @@ def get_top_jobs(db, start_date=None, end_date=None):
 
 
 def get_top_secteurs(db, start_date=None, end_date=None):
-    clause = ""
+    clause = "WHERE sector IS NOT NULL AND sector != 'non spécifié'"
     params = {}
 
     if start_date:
@@ -48,14 +48,21 @@ def get_top_secteurs(db, start_date=None, end_date=None):
         clause += " AND created_at <= :end_date"
         params["end_date"] = end_date
 
-    return db.session.execute(text(f"""
-        SELECT top_sector AS nom, SUM(cardinality) AS total_occurences
-        FROM cluster_info
-        WHERE top_sector IS NOT NULL AND top_sector != 'non spécifié' {clause}
-        GROUP BY top_sector
-        ORDER BY total_occurences DESC
-        LIMIT 10
+    rows = db.session.execute(text(f"""
+        SELECT sector
+        FROM job_records
+        {clause}
     """), params).fetchall()
+
+    counter = Counter()
+
+    for row in rows:
+        sector = row[0].strip().lower()
+        if sector:
+            counter[sector] += 1
+
+    # Return as list of dicts for consistency
+    return [{"nom": sector, "total_occurences": count} for sector, count in counter.most_common(10)]
 
 
 

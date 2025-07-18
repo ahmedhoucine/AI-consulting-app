@@ -103,8 +103,8 @@ export class DashboardsComponent implements OnInit, OnDestroy  {
 
       this.topSkills = {
         title: "Top Compétences",
-        categories: data.top_skills.map((x: any) => x.top_skills),
-        data: data.top_skills.map((x: any) => x.total_occurences),
+        categories: data.top_skills.map((x: any) => x.skill),
+        data: data.top_skills.map((x: any) => x.occurrences),
         chartType: 'bar'
       };
 
@@ -141,7 +141,6 @@ export class DashboardsComponent implements OnInit, OnDestroy  {
         city: loc.location,
       });
     } else {
-      console.warn("No coordinates for:", loc.location);
     }
   });
   if (this.root) this.root.dispose();
