@@ -1,0 +1,1205 @@
+ID,Job Title,Publishing Date,Start Date,Salary,Duration,Location,Work Mode,Skills,Description,Plateforme,Scrap Date,Company Name,Number of Candidates,Number of Employees,Sector,Description E,Experience,Contract Type,Education
+1,Software Engineer/Developer,,N/A,N/A,N/A,"Washington, District of Columbia, US",N/A,N/A,"Job Description:
+• LST is seeking an experienced mid-level Engineer of Software to support the Federal Aviation Administration (FAA) Air Traffic Management (ATM), SETIS 1 Tasking for the App Store. The ideal candidate will provide support for the Federal Aviation Administration's (FAA).
+
+Responsibilities:
+• Collaborate with clients, system engineers, and stakeholders to gather and refine project requirements.
+• Architect, develop, test, and maintain high-quality web applications and services using a variety of programming languages and frameworks.
+• Support the design and implementation of complex software features and components.
+• Optimize web applications for maximum speed and scalability.
+• Troubleshoot and resolve software defects and performance issues.
+• Provide expert recommendations and solutions for FAA cloud infrastructure and system architectural designs and implementations.
+• Ability to present to diverse audiences, explaining the technical benefits of a solution in a manner that is easy to understand.
+
+Required Experience:
+• Intermediate to advanced programming skills in web application/web service development.
+• Experience with AWS cloud (EKS, EC2, ECR, CodeCommit, RDS)
+• Experience or ability to easily pick up develop/deploy to AWS (ex: code, unit test locally, build artifact, build image, deploy image to EKS on AWS, test code on deployed environment)
+• Experience with Docker and Kubernetes
+• Experience with git (source code management) (ex: Bitbucket - pull/push code changes)
+• Experience with Continuous Integration/Continuous Deploy (CI/CD) tools (ex: SonarQube, SonarLint, Junit, Jenkins, Maven, Terraform, Ansible, Artifactory, ArgoCD)
+• Must have at least 5-10 years of experience.
+
+Preferred Experience:
+• Experience with configuring, deploying, and using Backstage
+• Experience with SonarQube or Prisma, having the ability to interpret scans and resolve security vulnerabilities
+• Experience leveraging Artifactory/JFrog (getting artifacts in/out)
+• Experience with Jenkins pipelines, ability to create and manage
+• Experience with ArgoCD, having the ability to understand project creation process, request deployment, and debugging of deployed apps/services)
+• Experience with infrastructure provisioning and deployment technologies (Terraform, helm, Lens)
+• Experience with PostgreSQL
+• Experience supporting the FAA and National Airspace System (NAS)
+
+Education:
+
+Bachelor's Degree (Computer Science, Engineering, Math, or related field).
+
+Travel
+• 0 - 20%
+
+Work Requirements:
+• Work location: DC Contactor site, Remote work acceptable
+• Work Hours: Normal working hours
+• Travel: 0-10%
+• Physical requirements:
+• Extended Computer Use: Regular and prolonged periods of working at a computer terminal.
+• Lifting and Carrying: Occasional lifting of equipment and materials weighing up to 50 pounds may be required during installations or maintenance.
+• Mobility: Ability to move around the office environment to access computer hardware, networking equipment, and server rooms.
+• Dexterity: Manual dexterity and visual acuity to operate computer equipment, troubleshoot issues, and perform tasks requiring precision.
+• Sitting/Standing: Both prolonged sitting and occasional standing may be required for troubleshooting and attending to system issues.
+• Background check: Must have ability to obtain and maintain a Public Trust.
+
+About LS Technologies
+
+At LS Technologies, a Tetra Tech Company, we're enhancing our nation's critical infrastructure by providing engineering, technical, and professional services to Federal Government agencies. The quality of our work, deep technical expertise, and genuine passion for public service sets us apart. As a growing organization we are expanding our benefits and communication with our employees, offering add-ons that speak to our growing employees' needs. Join us in delivering high-quality solutions and shaping the future of safety and innovation for our government partners.
+
+EEO Commitment
+
+LS Technologies, LLC provides equal employment opportunities to all employees and applicants for employment and prohibits discrimination and harassment of any type without regard to race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. This policy applies to all terms and conditions of employment, including recruiting, hiring, placement, promotion, termination, layoff, recall, transfer, leaves of absence, compensation, and training.
+
+Requesting An Accommodation
+
+LS Technologies is committed to providing equal employment opportunities for persons with disabilities or religious observances, including reasonable accommodation when needed. If you are hired by LS Technologies and require accommodation to perform the essential functions of your role, you will be asked to participate in our reasonable accommodation process. Accommodations made to facilitate the recruiting process are not a guarantee of future or continued accommodations once hired.
+
+If you would like to be considered for employment opportunities with LS Technologies and have accommodation needs for a disability or religious observance, please send us an email careers@lstechllc.com or speak with your recruiter.
+
+Compensation (Pay Bands)
+
+Salary at LST is determined by a wide array of factors, such as (but not limited to) education, certifications, knowledge, skills, competencies, and experience, location, and clearance level, as well as contract-specific affordability and organizational requirements and applicable employment laws. Please note that the salary information is a general guideline only.
+
+The projected compensation range for this position is provided within the posting and is based on full-time, 40 hour/week status. Part-time staff receive compensation at an hourly rate. The estimated minimum and maximum displayed represents the broadest range for this position (inclusive of high geographic and high clearance requirements) and is just one component of LSTs total compensation package for employees. ** In compliance with local laws, LS Technologies presents this reasonable compensation range as a guideline for roles in California, Colorado, New York, or Washington D.C.""
+
+Benefits offered to all employees who work 30+ hours per week: Medical, Dental, Vision, Life Insurance, Short-Term Disability, Long-Term Disability, 401(k) match, Flexible Spending Accounts, EAP, Education Assistance, Parental Leave, Annual Leave, and Holidays.",JSearch,2025-07-21,"LS Technologies, LLC",N/A,N/A,N/A,"Job Description:
+• LST is seeking an experienced mid-level Engineer of Software to support the Federal Aviation Administration (FAA) Air Traffic Management (ATM), SETIS 1 Tasking for the App Store. The ideal candidate will provide support for the Federal Aviation Administration's (FAA).
+
+Responsibilities:
+• Collaborate with clients, system engineers, and stakeholders to gather and refine project requirements.
+• Architect, develop, test, and maintain high-quality web applications and services using a variety of programming languages and frameworks.
+• Support the design and implementation of complex software features and components.
+• Optimize web applications for maximum speed and scalability.
+• Troubleshoot and resolve software defects and performance issues.
+• Provide expert recommendations and solutions for FAA cloud infrastructure and system architectural designs and implementations.
+• Ability to present to diverse audiences, explaining the technical benefits of a solution in a manner that is easy to understand.
+
+Required Experience:
+• Intermediate to advanced programming skills in web application/web service development.
+• Experience with AWS cloud (EKS, EC2, ECR, CodeCommit, RDS)
+• Experience or ability to easily pick up develop/deploy to AWS (ex: code, unit test locally, build artifact, build image, deploy image to EKS on AWS, test code on deployed environment)
+• Experience with Docker and Kubernetes
+• Experience with git (source code management) (ex: Bitbucket - pull/push code changes)
+• Experience with Continuous Integration/Continuous Deploy (CI/CD) tools (ex: SonarQube, SonarLint, Junit, Jenkins, Maven, Terraform, Ansible, Artifactory, ArgoCD)
+• Must have at least 5-10 years of experience.
+
+Preferred Experience:
+• Experience with configuring, deploying, and using Backstage
+• Experience with SonarQube or Prisma, having the ability to interpret scans and resolve security vulnerabilities
+• Experience leveraging Artifactory/JFrog (getting artifacts in/out)
+• Experience with Jenkins pipelines, ability to create and manage
+• Experience with ArgoCD, having the ability to understand project creation process, request deployment, and debugging of deployed apps/services)
+• Experience with infrastructure provisioning and deployment technologies (Terraform, helm, Lens)
+• Experience with PostgreSQL
+• Experience supporting the FAA and National Airspace System (NAS)
+
+Education:
+
+Bachelor's Degree (Computer Science, Engineering, Math, or related field).
+
+Travel
+• 0 - 20%
+
+Work Requirements:
+• Work location: DC Contactor site, Remote work acceptable
+• Work Hours: Normal working hours
+• Travel: 0-10%
+• Physical requirements:
+• Extended Computer Use: Regular and prolonged periods of working at a computer terminal.
+• Lifting and Carrying: Occasional lifting of equipment and materials weighing up to 50 pounds may be required during installations or maintenance.
+• Mobility: Ability to move around the office environment to access computer hardware, networking equipment, and server rooms.
+• Dexterity: Manual dexterity and visual acuity to operate computer equipment, troubleshoot issues, and perform tasks requiring precision.
+• Sitting/Standing: Both prolonged sitting and occasional standing may be required for troubleshooting and attending to system issues.
+• Background check: Must have ability to obtain and maintain a Public Trust.
+
+About LS Technologies
+
+At LS Technologies, a Tetra Tech Company, we're enhancing our nation's critical infrastructure by providing engineering, technical, and professional services to Federal Government agencies. The quality of our work, deep technical expertise, and genuine passion for public service sets us apart. As a growing organization we are expanding our benefits and communication with our employees, offering add-ons that speak to our growing employees' needs. Join us in delivering high-quality solutions and shaping the future of safety and innovation for our government partners.
+
+EEO Commitment
+
+LS Technologies, LLC provides equal employment opportunities to all employees and applicants for employment and prohibits discrimination and harassment of any type without regard to race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. This policy applies to all terms and conditions of employment, including recruiting, hiring, placement, promotion, termination, layoff, recall, transfer, leaves of absence, compensation, and training.
+
+Requesting An Accommodation
+
+LS Technologies is committed to providing equal employment opportunities for persons with disabilities or religious observances, including reasonable accommodation when needed. If you are hired by LS Technologies and require accommodation to perform the essential functions of your role, you will be asked to participate in our reasonable accommodation process. Accommodations made to facilitate the recruiting process are not a guarantee of future or continued accommodations once hired.
+
+If you would like to be considered for employment opportunities with LS Technologies and have accommodation needs for a disability or religious observance, please send us an email careers@lstechllc.com or speak with your recruiter.
+
+Compensation (Pay Bands)
+
+Salary at LST is determined by a wide array of factors, such as (but not limited to) education, certifications, knowledge, skills, competencies, and experience, location, and clearance level, as well as contract-specific affordability and organizational requirements and applicable employment laws. Please note that the salary information is a general guideline only.
+
+The projected compensation range for this position is provided within the posting and is based on full-time, 40 hour/week status. Part-time staff receive compensation at an hourly rate. The estimated minimum and maximum displayed represents the broadest range for this position (inclusive of high geographic and high clearance requirements) and is just one component of LSTs total compensation package for employees. ** In compliance with local laws, LS Technologies presents this reasonable compensation range as a guideline for roles in California, Colorado, New York, or Washington D.C.""
+
+Benefits offered to all employees who work 30+ hours per week: Medical, Dental, Vision, Life Insurance, Short-Term Disability, Long-Term Disability, 401(k) match, Flexible Spending Accounts, EAP, Education Assistance, Parental Leave, Annual Leave, and Holidays.",N/A,N/A,N/A
+2,Software Dev Engineer II,2025-07-19T00:00:00.000Z,N/A,N/A,N/A,"Arlington, Virginia, US",N/A,N/A,"Description
+
+Come build the future as a Software Development Engineer at Amazon, where you will be inspired working along best-in-class inventors and innovators! You will have the opportunity to create meaningful experiences that deliver on the ever-evolving needs of our customers, and your work will impact millions of people around the world.
+
+As an Amazon Software Development Engineer, you will solve unique and complex problems at a rapid pace, utilizing the latest technologies to create solutions that are highly scalable. You will find that there is an unlimited number of opportunities within Amazon, where developing your career across a wide range of teams is highly supported. We are committed to making your work experience as enjoyable as the experiences you’ll be creating for our customers.
+
+Apply now and you will be eligible for Amazon Software Development Engineering positions that are based on your preferred location, team, tech stack, domain, language and more. We’re hiring across Amazon Stores in the United States and Canada. Teams with available positions including, but are not limited to:
+• Consumer Technology: Build new generation features and products for amazon.com, constantly improving the Customer and Seller experience for billions around the globe. Whether building site wide features such as re-views and recommendations, category specific software for the likes of Pharmacy, Electronics, Digital Software and Video Games or seller infrastructure, there are a variety of complex problems to tackle using a range of technologies in the design of your technical solutions.
+• Operations Technology: Shape the future of transportation planning and execution on a global scale, that im-pacts hundreds of fulfillment centers, thousands of Amazonians, and millions of customers across the world. Your technology will support thousands of operators worldwide to design, build and run the best-in-class Ama-zon transportation network. We are building intelligent software to make transportation more reliable, faster, and less costly, providing a better and less expensive experience for our customers.
+• Financial Technology: Create next generation of distributed, scalable financial systems that support Amazon's current and future business needs. Use big data technologies to design and develop services that facilitate global financial transactions worth billions annually. You’ll lead architecture, design, implementation and de-ployment of large-scale critical and complex financial applications, owning all aspects of solutions end-to-end, through full stack software development.
+• Human Resources Technology: Create a seamless experience for millions of Amazonians and/or candidates. Whether supporting technologies for onboarding, time and attendance, compensation, amazon.jobs, or recruit-ing, you’ll deliver robust feature sets, elegant designs, intuitive user interfaces and systems that make it easy for Amazonians to excel at performing critical business functions.
+
+Key job responsibilities
+
+Depending on your experience, interests and business needs, you will own the front-end, back-end, or full stack design and development of product features, building scale, efficiency, and differentiated customer experiences. We’re looking for software engineers passionate about building software solutions end-to-end, have strong software development experience delivering at scale solutions, and systems design skills. You should have a demonstrated ability delivering within a DevOps delivery model from scoping requirements, requirement analysis, design, development, test, CI/CD, security implementation, and operational excellence with the ability to work cross-functionally with Product Managers, business stakeholders and other tech teams through the actual launch of the project. You should also have experience in communicating with users, other technical teams, and management to collect requirements, describe software product features, and technical designs.
+
+A day in the life
+
+Our team puts a high value on work-life balance. It isn’t about how many hours you spend at home or at work; it’s about the flow you establish that brings energy to both parts of your life. We believe striking the right balance be-tween your personal and professional life is critical to life-long happiness and fulfillment. We offer flexibility in working hours and encourage you to find your own balance between your work and personal lives.
+
+About The Team
+
+Mentorship & Career Growth
+
+Our team is dedicated to supporting new members. We have a broad mix of experience levels and tenures, and we’re building an environment that celebrates knowledge sharing and mentorship. We care about your career growth and strive to assign opportunities based on what will help each team member develop into a better-rounded contributor.
+
+Inclusive Team Culture
+
+Here at Amazon, we embrace our differences. We are committed to furthering our culture of inclusion. We have ten employee-led affinity groups, reaching 40,000 employees in over 190 chapters globally. We have innovative benefit offerings, and host annual and ongoing learning experiences, including our Conversations on Race and Ethnicity (CORE) and AmazeCon (gender diversity) conferences. Amazon’s culture of inclusion is reinforced within our 14 Leadership Principles, which remind team members to seek diverse perspectives, learn and be curious, and earn trust.
+
+Basic Qualifications
+• 3+ years of non-internship professional software development experience
+• 2+ years of non-internship design or architecture (design patterns, reliability and scaling) of new and existing systems experience
+• Experience programming with at least one software programming language
+• 3+ years experience with full stack development.
+• 3+ years experience with databases (querying and analyzing) such as SQL, MYSQL, NoSQL and the use of analytics to report and provide visibility to trends.
+• 3+ years’ experience with root cause and correction of code related bugs, error and other issues
+• Knowledge of professional software engineering best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations.
+• Background in distributed computing, service-oriented architectures and enterprise-wide systems.
+• Experience in communicating with users, other technical teams, and senior management to collect requirements, describe software product features, technical designs, and product strategy.
+• Exposure to Machine Learning/deep learning projects
+• Able to work in a diverse team
+• Ability to work independently with limited direction, communicate effectively with team members in other geographic locations
+• Ability to take calculated risks and challenge current practices to develop and deliver innovative solutions to meet or exceed the customer expectations
+
+Preferred Qualifications
+• 3+ years of full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations experience
+• Bachelor's degree in computer science or equivalent
+
+Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.
+
+Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit https://amazon.jobs/content/en/how-we-hire/accommodations for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.
+
+Our compensation reflects the cost of labor across several US geographic markets. The base pay for this position ranges from $129,300/year in our lowest geographic market up to $223,600/year in our highest geographic market. Pay is based on a number of factors including market location and may vary depending on job-related knowledge, skills, and experience. Amazon is a total compensation company. Dependent on the position offered, equity, sign-on payments, and other forms of compensation may be provided as part of a total compensation package, in addition to a full range of medical, financial, and/or other benefits. For more information, please visit https://www.aboutamazon.com/workplace/employee-benefits. This position will remain posted until filled. Applicants should apply via our internal or external career site.
+
+Company - Amazon.com Services LLC
+
+Job ID: A2878746",JSearch,2025-07-21,Amazon,N/A,N/A,N/A,"Description
+
+Come build the future as a Software Development Engineer at Amazon, where you will be inspired working along best-in-class inventors and innovators! You will have the opportunity to create meaningful experiences that deliver on the ever-evolving needs of our customers, and your work will impact millions of people around the world.
+
+As an Amazon Software Development Engineer, you will solve unique and complex problems at a rapid pace, utilizing the latest technologies to create solutions that are highly scalable. You will find that there is an unlimited number of opportunities within Amazon, where developing your career across a wide range of teams is highly supported. We are committed to making your work experience as enjoyable as the experiences you’ll be creating for our customers.
+
+Apply now and you will be eligible for Amazon Software Development Engineering positions that are based on your preferred location, team, tech stack, domain, language and more. We’re hiring across Amazon Stores in the United States and Canada. Teams with available positions including, but are not limited to:
+• Consumer Technology: Build new generation features and products for amazon.com, constantly improving the Customer and Seller experience for billions around the globe. Whether building site wide features such as re-views and recommendations, category specific software for the likes of Pharmacy, Electronics, Digital Software and Video Games or seller infrastructure, there are a variety of complex problems to tackle using a range of technologies in the design of your technical solutions.
+• Operations Technology: Shape the future of transportation planning and execution on a global scale, that im-pacts hundreds of fulfillment centers, thousands of Amazonians, and millions of customers across the world. Your technology will support thousands of operators worldwide to design, build and run the best-in-class Ama-zon transportation network. We are building intelligent software to make transportation more reliable, faster, and less costly, providing a better and less expensive experience for our customers.
+• Financial Technology: Create next generation of distributed, scalable financial systems that support Amazon's current and future business needs. Use big data technologies to design and develop services that facilitate global financial transactions worth billions annually. You’ll lead architecture, design, implementation and de-ployment of large-scale critical and complex financial applications, owning all aspects of solutions end-to-end, through full stack software development.
+• Human Resources Technology: Create a seamless experience for millions of Amazonians and/or candidates. Whether supporting technologies for onboarding, time and attendance, compensation, amazon.jobs, or recruit-ing, you’ll deliver robust feature sets, elegant designs, intuitive user interfaces and systems that make it easy for Amazonians to excel at performing critical business functions.
+
+Key job responsibilities
+
+Depending on your experience, interests and business needs, you will own the front-end, back-end, or full stack design and development of product features, building scale, efficiency, and differentiated customer experiences. We’re looking for software engineers passionate about building software solutions end-to-end, have strong software development experience delivering at scale solutions, and systems design skills. You should have a demonstrated ability delivering within a DevOps delivery model from scoping requirements, requirement analysis, design, development, test, CI/CD, security implementation, and operational excellence with the ability to work cross-functionally with Product Managers, business stakeholders and other tech teams through the actual launch of the project. You should also have experience in communicating with users, other technical teams, and management to collect requirements, describe software product features, and technical designs.
+
+A day in the life
+
+Our team puts a high value on work-life balance. It isn’t about how many hours you spend at home or at work; it’s about the flow you establish that brings energy to both parts of your life. We believe striking the right balance be-tween your personal and professional life is critical to life-long happiness and fulfillment. We offer flexibility in working hours and encourage you to find your own balance between your work and personal lives.
+
+About The Team
+
+Mentorship & Career Growth
+
+Our team is dedicated to supporting new members. We have a broad mix of experience levels and tenures, and we’re building an environment that celebrates knowledge sharing and mentorship. We care about your career growth and strive to assign opportunities based on what will help each team member develop into a better-rounded contributor.
+
+Inclusive Team Culture
+
+Here at Amazon, we embrace our differences. We are committed to furthering our culture of inclusion. We have ten employee-led affinity groups, reaching 40,000 employees in over 190 chapters globally. We have innovative benefit offerings, and host annual and ongoing learning experiences, including our Conversations on Race and Ethnicity (CORE) and AmazeCon (gender diversity) conferences. Amazon’s culture of inclusion is reinforced within our 14 Leadership Principles, which remind team members to seek diverse perspectives, learn and be curious, and earn trust.
+
+Basic Qualifications
+• 3+ years of non-internship professional software development experience
+• 2+ years of non-internship design or architecture (design patterns, reliability and scaling) of new and existing systems experience
+• Experience programming with at least one software programming language
+• 3+ years experience with full stack development.
+• 3+ years experience with databases (querying and analyzing) such as SQL, MYSQL, NoSQL and the use of analytics to report and provide visibility to trends.
+• 3+ years’ experience with root cause and correction of code related bugs, error and other issues
+• Knowledge of professional software engineering best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations.
+• Background in distributed computing, service-oriented architectures and enterprise-wide systems.
+• Experience in communicating with users, other technical teams, and senior management to collect requirements, describe software product features, technical designs, and product strategy.
+• Exposure to Machine Learning/deep learning projects
+• Able to work in a diverse team
+• Ability to work independently with limited direction, communicate effectively with team members in other geographic locations
+• Ability to take calculated risks and challenge current practices to develop and deliver innovative solutions to meet or exceed the customer expectations
+
+Preferred Qualifications
+• 3+ years of full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations experience
+• Bachelor's degree in computer science or equivalent
+
+Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.
+
+Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit https://amazon.jobs/content/en/how-we-hire/accommodations for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.
+
+Our compensation reflects the cost of labor across several US geographic markets. The base pay for this position ranges from $129,300/year in our lowest geographic market up to $223,600/year in our highest geographic market. Pay is based on a number of factors including market location and may vary depending on job-related knowledge, skills, and experience. Amazon is a total compensation company. Dependent on the position offered, equity, sign-on payments, and other forms of compensation may be provided as part of a total compensation package, in addition to a full range of medical, financial, and/or other benefits. For more information, please visit https://www.aboutamazon.com/workplace/employee-benefits. This position will remain posted until filled. Applicants should apply via our internal or external career site.
+
+Company - Amazon.com Services LLC
+
+Job ID: A2878746",N/A,N/A,N/A
+3,Software Developer I - CMS/WordPress Developer Jobs,2025-07-21T01:00:00.000Z,N/A,,N/A,"Washington, District of Columbia, US",N/A,N/A,"Position: Software Developer I - CMS/WordPress Developer
+Location: Washington DC (potential for hybrid)
+Clearance Required: Public Trust
+""Must hold an active Public Trust clearance to apply""
+
+This position will build application and web front-ends based on requirements from Stakeholder Engagement, programs, UX and designers.
+
+SCOPE OF WORK
+The position's SCOPE OF WORK include the following:
+• * Experience with WordPress CMS framework, configuration and maintenance
+• Create organizational website with WordPress framework
+• Write/develop templates with Wordpress CMS and PHP.
+• Experience with configuring WordPress in-house environment and maintenance.
+• Build reusable code and component/pattern libraries
+• Skilled in HTML5, CSS, CSS3, SCSS.
+• Skilled in Front-End development framework and process from UX design to web component delivery.
+• Proficient understanding of client-side scripting and JavaScript frameworks, including jQuery.
+• Some combination of JavaScript frameworks, such as DurandaJS, Angular, Gulp, Webpack, ReactJS.
+• Experience creating accessible forms (using ARIA), with client-side form validation (JavaScript).
+• Experience with Bootstrap or other similar technologies.
+• Experience with a collaboration platform and code repository control.
+• Build reusable code and libraries for future use.
+• Ensure the technical feasibility of UI/UX designs.
+• Optimize application for maximum speed and scalability.
+• A commitment to Lean principles, including rapid prototyping for user testing.
+• Good understanding of asynchronous request handling, partial page updates, and AJAX
+• Baseline understanding of server-side CSS pre-processing platforms, such as LESS and SASS
+• Baseline understanding of WCAG compliance as it applies to front-end code
+• Basic knowledge of image authoring tools, to be able to crop, resize, or perform small adjustments on an image. Familiarity with tools such as Gimp or Photoshop is a plus.
+• Proficient understanding of cross-browser compatibility issues and ways to work around them.
+• Good understanding of SEO principles and ensuring that application will adhere to them.
+• Responsible for support of critical business functions through the development, implementation, and maintenance of web front ends, including adaptation of COTS products to meet the business requirements.
+• Lead and Contribute web front end expertise to multiple projects and ensure that specifications are met.
+• Design, code, test, debug, maintain, and document web front end customizations. Participate in peer-reviews.
+• Follow established accessibility and W3C standards and procedures. Contribute towards the improvement.
+• Work as part of web development teams across enterprise
+• Coordinate with departments and users in the support of business applications.
+• Exercise judgment to plan and accomplish goals.
+• Represent the IT department in terms of front-end development expertise in coordination with other departments.
+• Perform other duties, as assigned.
+
+QUALIFICATION AND EXPERIENCE:
+• * WordPress framework, CMS, PHP 4-6 Years
+• XML, JavaScript, CSS, HTML, HTML5 4-6 Years
+• Accessibility standards and tools (ARIA) 2-3 Years
+• Web Services, ReactJS, Angular, Angular2, Webpack, Gulp 1-2 Years
+• Bootstrap (or similar platform) 1-2 Years
+• Technical Documentation 4-6 Years
+
+SPECIAL SKILLS :
+• * Analytical and problem-solving skills. Ability to develop solutions to problems
+• Ability to lead and conduct design reviews, code reviews and technical assessment
+• Developing and/or creating new or more effective ideas, approaches, etc.
+• Developing and formulating short-range plans/decisions
+• Excellent interpersonal and communication skills",JSearch,2025-07-21,"Bailey Information Technology, LLC",N/A,N/A,N/A,"Position: Software Developer I - CMS/WordPress Developer
+Location: Washington DC (potential for hybrid)
+Clearance Required: Public Trust
+""Must hold an active Public Trust clearance to apply""
+
+This position will build application and web front-ends based on requirements from Stakeholder Engagement, programs, UX and designers.
+
+SCOPE OF WORK
+The position's SCOPE OF WORK include the following:
+• * Experience with WordPress CMS framework, configuration and maintenance
+• Create organizational website with WordPress framework
+• Write/develop templates with Wordpress CMS and PHP.
+• Experience with configuring WordPress in-house environment and maintenance.
+• Build reusable code and component/pattern libraries
+• Skilled in HTML5, CSS, CSS3, SCSS.
+• Skilled in Front-End development framework and process from UX design to web component delivery.
+• Proficient understanding of client-side scripting and JavaScript frameworks, including jQuery.
+• Some combination of JavaScript frameworks, such as DurandaJS, Angular, Gulp, Webpack, ReactJS.
+• Experience creating accessible forms (using ARIA), with client-side form validation (JavaScript).
+• Experience with Bootstrap or other similar technologies.
+• Experience with a collaboration platform and code repository control.
+• Build reusable code and libraries for future use.
+• Ensure the technical feasibility of UI/UX designs.
+• Optimize application for maximum speed and scalability.
+• A commitment to Lean principles, including rapid prototyping for user testing.
+• Good understanding of asynchronous request handling, partial page updates, and AJAX
+• Baseline understanding of server-side CSS pre-processing platforms, such as LESS and SASS
+• Baseline understanding of WCAG compliance as it applies to front-end code
+• Basic knowledge of image authoring tools, to be able to crop, resize, or perform small adjustments on an image. Familiarity with tools such as Gimp or Photoshop is a plus.
+• Proficient understanding of cross-browser compatibility issues and ways to work around them.
+• Good understanding of SEO principles and ensuring that application will adhere to them.
+• Responsible for support of critical business functions through the development, implementation, and maintenance of web front ends, including adaptation of COTS products to meet the business requirements.
+• Lead and Contribute web front end expertise to multiple projects and ensure that specifications are met.
+• Design, code, test, debug, maintain, and document web front end customizations. Participate in peer-reviews.
+• Follow established accessibility and W3C standards and procedures. Contribute towards the improvement.
+• Work as part of web development teams across enterprise
+• Coordinate with departments and users in the support of business applications.
+• Exercise judgment to plan and accomplish goals.
+• Represent the IT department in terms of front-end development expertise in coordination with other departments.
+• Perform other duties, as assigned.
+
+QUALIFICATION AND EXPERIENCE:
+• * WordPress framework, CMS, PHP 4-6 Years
+• XML, JavaScript, CSS, HTML, HTML5 4-6 Years
+• Accessibility standards and tools (ARIA) 2-3 Years
+• Web Services, ReactJS, Angular, Angular2, Webpack, Gulp 1-2 Years
+• Bootstrap (or similar platform) 1-2 Years
+• Technical Documentation 4-6 Years
+
+SPECIAL SKILLS :
+• * Analytical and problem-solving skills. Ability to develop solutions to problems
+• Ability to lead and conduct design reviews, code reviews and technical assessment
+• Developing and/or creating new or more effective ideas, approaches, etc.
+• Developing and formulating short-range plans/decisions
+• Excellent interpersonal and communication skills",N/A,N/A,N/A
+4,Javascript Senior Software Developer,2025-07-19T00:00:00.000Z,N/A,N/A,N/A,"Washington, District of Columbia, US",N/A,N/A,"Position Summary...
+
+What you'll do...
+
+As a part of Walmart Global Tech, you’ll build industry defining reusable customer and partner facing services and products to lead differentiated experiences and revenue. You will be in the unique position to be of service to both our customers (1P as well as 3P) and our associates as a member of this organization supporting all segments of Walmart. If you are the type of person who feels a personal stake in everything that you work on, has a love for data, enjoys solving complex problems, has a passion for privacy, knows how to foster strong relationships and build trust, and works for the success of the entire team.
+
+About Team:
+Our team works closely with our US stores and eCommerce business to better serve customers by empowering team members, stores, and merchants with technological innovation. From groceries and entertainment to sporting goods and crafts, Walmart U.S. offers an extensive selection that our customers value, whether they shop online at Walmart.com, through one of our mobile apps, or in-store. Focus areas include customers, stores and employees, in-store service, merchant tools, merchant data science, and search and personalization.
+
+What you'll do:
+• Design, build, and maintain high-performance front-end applications for our 1P and 3P customers.
+• Develop robust, maintainable, reusable code for managing functionality, configuration, deployment, monitoring, performance, scalability, availability, security, and alerting for software test, integration, and production environments.
+• Plan and implement a series of steps which potentially includes reconfiguration, integration, removal, or addition of application components to enhance the application's functionality, resiliency, usability, and security.
+• Understand the Business/Stakeholder/Technical requirements and assist in analyzing the existing solutions to address the needs. Assist in creation of simple, modular, extensible functional design for the product/solution in adherence to the requirements.
+• Assess gaps/ updates/ modifications between the customer/business expectations and the existing product/solutions.
+• Analyze defects from past projects/solutions to avoid recurrence of similar defects.
+• Analyze system performance impacting the complete product for non-functional requirements like reliability, operability, performance efficiency and security. Troubleshoot performance and availability bottlenecks for the application.
+• Develop, maintain, and enhance automated test cases (adopting Shift Left practice) and deployment procedures.
+• Follow coding and design best practices developed by the teams and contribute towards their continuous improvement.
+• Plan Hardware Capacity for high traffic business Events.
+• Design Build and maintain Observability aspects of application.
+• Review Peer Code and help create a culture of continuous improvements on the architecture.
+• Work with relevant stakeholders on launching AB tests for different functionalities getting rolled out.
+
+What you'll bring:
+• Experience in creating user interfaces using appropriate and relevant technologies (e.g., HTML 5 coding, CSS (Cascading Style Sheets) libraries like Bootstrap, etc.) using best practices and appropriate design patterns.
+• Relevant front end programming experience in relevant languages and frameworks (e.g., Java, Python, JavaScript, Spring, Node, React, Angular etc.)
+• Experience integrating with scalable back-end services (e.g., REST / graph-QL).
+• Experience in functional, integration and E2E (End 2 End) testing tools and practices.
+• Experience with code repositories and version control practices.
+• Experience with CI/CD pipelines and best practices. Automated deployment experience is a plus.
+• Experience in software quality and operational excellence practices.
+• Experience in agile development methodology.
+• Good analytical and problem-solving skills.
+
+About Walmart Global Tech
+Imagine working in an environment where one line of code can make life easier for hundreds of millions of people. That’s what we do at Walmart Global Tech. We’re a team of software engineers, data scientists, cybersecurity expert's and service professionals within the world’s leading retailer who make an epic impact and are at the forefront of the next retail disruption. People are why we innovate, and people power our innovations. We are people-led and tech-empowered. We train our team in the skillsets of the future and bring in experts like you to help us grow. We have roles for those chasing their first opportunity as well as those looking for the opportunity that will define their career. Here, you can kickstart an illustrious career in tech, gain new skills and experience for virtually every industry, or leverage your expertise to innovate at scale, impact millions and reimagine the future of retail.
+
+Flexible, hybrid work:
+We use a hybrid way of working that is primarily in the office coupled with virtual when not onsite. Our campuses serve as a hub to enhance collaboration, bring us together for purpose and deliver on business needs. This approach helps us make quicker decisions, remove location barriers across our global team and be more flexible in our personal lives.
+
+#MPAcceleration
+
+At Walmart, we offer competitive pay as well as performance-based bonus awards and other great benefits for a happier mind, body, and wallet. Health benefits include medical, vision and dental coverage. Financial benefits include 401(k), stock purchase and company-paid life insurance. Paid time off benefits include PTO (including sick leave), parental leave, family care leave, bereavement, jury duty, and voting. Other benefits include short-term and long-term disability, company discounts, Military Leave Pay, adoption and surrogacy expense reimbursement, and more.
+
+‎
+
+‎
+
+‎
+You will also receive PTO and/or PPTO that can be used for vacation, sick leave, holidays, or other purposes. The amount you receive depends on your job classification and length of employment. It will meet or exceed the requirements of paid sick leave laws, where applicable.
+
+‎
+
+For information about PTO, see https://one.walmart.com/notices.
+
+‎
+
+‎
+Live Better U is a Walmart-paid education benefit program for full-time and part-time associates in Walmart and Sam's Club facilities. Programs range from high school completion to bachelor's degrees, including English Language Learning and short-form certificates. Tuition, books, and fees are completely paid for by Walmart.
+
+‎
+Eligibility requirements apply to some benefits and may depend on your job classification and length of employment. Benefits are subject to change and may be subject to a specific plan or program terms.
+
+‎
+
+For information about benefits and eligibility, see One.Walmart.
+
+‎
+The annual salary range for this position is $108,000.00-$216,000.00
+
+‎
+Additional compensation includes annual or quarterly performance bonuses.
+
+‎
+Additional compensation for certain positions may also include:
+
+‎
+
+‎
+- Stock
+
+‎
+
+‎
+
+Minimum Qualifications...
+
+Outlined below are the required minimum qualifications for this position. If none are listed, there are no minimum qualifications.
+
+Option 1: Bachelor's degree in computer science, computer engineering, computer information systems, software engineering, or related area and 3 years’ experience in software engineering or related area.Option 2: 5 years’ experience in software engineering or related area.
+
+Preferred Qualifications...
+
+Outlined below are the optional preferred qualifications for this position. If none are listed, there are no preferred qualifications.
+
+Master’s degree in Computer Science, Computer Engineering, Computer Information Systems, Software Engineering, or related area and 1 year's experience in software engineering or related area., We value candidates with a background in creating inclusive digital experiences, demonstrating knowledge in implementing Web Content Accessibility Guidelines (WCAG) 2.2 AA standards, assistive technologies, and integrating digital accessibility seamlessly. The ideal candidate would have knowledge of accessibility best practices and join us as we continue to create accessible products and services following Walmart’s accessibility standards and guidelines for supporting an inclusive culture.
+
+Primary Location...
+
+10790 PARKRIDGE DR. SUITE 200, RESTON, VA 20191, United States of America",JSearch,2025-07-21,Walmart,N/A,N/A,N/A,"Position Summary...
+
+What you'll do...
+
+As a part of Walmart Global Tech, you’ll build industry defining reusable customer and partner facing services and products to lead differentiated experiences and revenue. You will be in the unique position to be of service to both our customers (1P as well as 3P) and our associates as a member of this organization supporting all segments of Walmart. If you are the type of person who feels a personal stake in everything that you work on, has a love for data, enjoys solving complex problems, has a passion for privacy, knows how to foster strong relationships and build trust, and works for the success of the entire team.
+
+About Team:
+Our team works closely with our US stores and eCommerce business to better serve customers by empowering team members, stores, and merchants with technological innovation. From groceries and entertainment to sporting goods and crafts, Walmart U.S. offers an extensive selection that our customers value, whether they shop online at Walmart.com, through one of our mobile apps, or in-store. Focus areas include customers, stores and employees, in-store service, merchant tools, merchant data science, and search and personalization.
+
+What you'll do:
+• Design, build, and maintain high-performance front-end applications for our 1P and 3P customers.
+• Develop robust, maintainable, reusable code for managing functionality, configuration, deployment, monitoring, performance, scalability, availability, security, and alerting for software test, integration, and production environments.
+• Plan and implement a series of steps which potentially includes reconfiguration, integration, removal, or addition of application components to enhance the application's functionality, resiliency, usability, and security.
+• Understand the Business/Stakeholder/Technical requirements and assist in analyzing the existing solutions to address the needs. Assist in creation of simple, modular, extensible functional design for the product/solution in adherence to the requirements.
+• Assess gaps/ updates/ modifications between the customer/business expectations and the existing product/solutions.
+• Analyze defects from past projects/solutions to avoid recurrence of similar defects.
+• Analyze system performance impacting the complete product for non-functional requirements like reliability, operability, performance efficiency and security. Troubleshoot performance and availability bottlenecks for the application.
+• Develop, maintain, and enhance automated test cases (adopting Shift Left practice) and deployment procedures.
+• Follow coding and design best practices developed by the teams and contribute towards their continuous improvement.
+• Plan Hardware Capacity for high traffic business Events.
+• Design Build and maintain Observability aspects of application.
+• Review Peer Code and help create a culture of continuous improvements on the architecture.
+• Work with relevant stakeholders on launching AB tests for different functionalities getting rolled out.
+
+What you'll bring:
+• Experience in creating user interfaces using appropriate and relevant technologies (e.g., HTML 5 coding, CSS (Cascading Style Sheets) libraries like Bootstrap, etc.) using best practices and appropriate design patterns.
+• Relevant front end programming experience in relevant languages and frameworks (e.g., Java, Python, JavaScript, Spring, Node, React, Angular etc.)
+• Experience integrating with scalable back-end services (e.g., REST / graph-QL).
+• Experience in functional, integration and E2E (End 2 End) testing tools and practices.
+• Experience with code repositories and version control practices.
+• Experience with CI/CD pipelines and best practices. Automated deployment experience is a plus.
+• Experience in software quality and operational excellence practices.
+• Experience in agile development methodology.
+• Good analytical and problem-solving skills.
+
+About Walmart Global Tech
+Imagine working in an environment where one line of code can make life easier for hundreds of millions of people. That’s what we do at Walmart Global Tech. We’re a team of software engineers, data scientists, cybersecurity expert's and service professionals within the world’s leading retailer who make an epic impact and are at the forefront of the next retail disruption. People are why we innovate, and people power our innovations. We are people-led and tech-empowered. We train our team in the skillsets of the future and bring in experts like you to help us grow. We have roles for those chasing their first opportunity as well as those looking for the opportunity that will define their career. Here, you can kickstart an illustrious career in tech, gain new skills and experience for virtually every industry, or leverage your expertise to innovate at scale, impact millions and reimagine the future of retail.
+
+Flexible, hybrid work:
+We use a hybrid way of working that is primarily in the office coupled with virtual when not onsite. Our campuses serve as a hub to enhance collaboration, bring us together for purpose and deliver on business needs. This approach helps us make quicker decisions, remove location barriers across our global team and be more flexible in our personal lives.
+
+#MPAcceleration
+
+At Walmart, we offer competitive pay as well as performance-based bonus awards and other great benefits for a happier mind, body, and wallet. Health benefits include medical, vision and dental coverage. Financial benefits include 401(k), stock purchase and company-paid life insurance. Paid time off benefits include PTO (including sick leave), parental leave, family care leave, bereavement, jury duty, and voting. Other benefits include short-term and long-term disability, company discounts, Military Leave Pay, adoption and surrogacy expense reimbursement, and more.
+
+‎
+
+‎
+
+‎
+You will also receive PTO and/or PPTO that can be used for vacation, sick leave, holidays, or other purposes. The amount you receive depends on your job classification and length of employment. It will meet or exceed the requirements of paid sick leave laws, where applicable.
+
+‎
+
+For information about PTO, see https://one.walmart.com/notices.
+
+‎
+
+‎
+Live Better U is a Walmart-paid education benefit program for full-time and part-time associates in Walmart and Sam's Club facilities. Programs range from high school completion to bachelor's degrees, including English Language Learning and short-form certificates. Tuition, books, and fees are completely paid for by Walmart.
+
+‎
+Eligibility requirements apply to some benefits and may depend on your job classification and length of employment. Benefits are subject to change and may be subject to a specific plan or program terms.
+
+‎
+
+For information about benefits and eligibility, see One.Walmart.
+
+‎
+The annual salary range for this position is $108,000.00-$216,000.00
+
+‎
+Additional compensation includes annual or quarterly performance bonuses.
+
+‎
+Additional compensation for certain positions may also include:
+
+‎
+
+‎
+- Stock
+
+‎
+
+‎
+
+Minimum Qualifications...
+
+Outlined below are the required minimum qualifications for this position. If none are listed, there are no minimum qualifications.
+
+Option 1: Bachelor's degree in computer science, computer engineering, computer information systems, software engineering, or related area and 3 years’ experience in software engineering or related area.Option 2: 5 years’ experience in software engineering or related area.
+
+Preferred Qualifications...
+
+Outlined below are the optional preferred qualifications for this position. If none are listed, there are no preferred qualifications.
+
+Master’s degree in Computer Science, Computer Engineering, Computer Information Systems, Software Engineering, or related area and 1 year's experience in software engineering or related area., We value candidates with a background in creating inclusive digital experiences, demonstrating knowledge in implementing Web Content Accessibility Guidelines (WCAG) 2.2 AA standards, assistive technologies, and integrating digital accessibility seamlessly. The ideal candidate would have knowledge of accessibility best practices and join us as we continue to create accessible products and services following Walmart’s accessibility standards and guidelines for supporting an inclusive culture.
+
+Primary Location...
+
+10790 PARKRIDGE DR. SUITE 200, RESTON, VA 20191, United States of America",N/A,N/A,N/A
+5,Software Developer II – Java,,N/A,N/A,N/A,"Washington, District of Columbia, US",N/A,N/A,"Software Developer II – Java
+
+Position Summary:
+We are seeking for a software developer II - Java. This role focuses on developing enterprise Java-based applications to support mission-critical business operations. The Software Developer II works with cross-functional teams to build, implement, and maintain scalable systems using modern technologies and practices.
+
+Key Responsibilities:
+• Design, code, test, and debug enterprise Java applications.
+• Follow industry best practices and internal standards for software development and documentation.
+• Contribute to software design discussions and code reviews.
+• Develop web-based applications using Java EE technologies, integrating with RDBMS systems.
+• Collaborate with business users and IT departments to ensure functionality meets expectations.
+• Support legacy system migration, feature enhancement, and new development.
+
+Qualifications and Experience:
+• 6+ years of experience with Java EE, EJB, Hibernate, JMS, JSF, and JBoss.
+• 4+ years working with Oracle 10g+ and other RDBMS platforms.
+• 4+ years in application development, object-oriented design, and web services.
+• Familiarity with technical documentation and Agile/Scrum environments.
+
+Desired Skills:
+• Experience in PL/SQL, scripting, and Oracle Access Manager.
+• Understanding of high-availability systems and configuration management.
+• Knowledge of SOA patterns and enterprise integration.
+
+Soft Skills:
+• Strong communication and collaboration abilities.
+• Demonstrated problem-solving and analytical thinking.
+• Ability to work independently or as part of a team in dynamic environments.
+
+Job Type: Full-time
+
+Pay: $105,228.04 - $151,909.03 per year
+
+Benefits:
+• 401(k)
+• Dental insurance
+• Health insurance
+• Paid time off
+• Professional development assistance
+• Vision insurance
+
+Ability to Commute:
+• Washington, DC 20006 (Preferred)
+
+Ability to Relocate:
+• Washington, DC 20006: Relocate before starting work (Preferred)
+
+Work Location: In person",JSearch,2025-07-21,"TriMerge Consulting Group, P.A.",N/A,N/A,N/A,"Software Developer II – Java
+
+Position Summary:
+We are seeking for a software developer II - Java. This role focuses on developing enterprise Java-based applications to support mission-critical business operations. The Software Developer II works with cross-functional teams to build, implement, and maintain scalable systems using modern technologies and practices.
+
+Key Responsibilities:
+• Design, code, test, and debug enterprise Java applications.
+• Follow industry best practices and internal standards for software development and documentation.
+• Contribute to software design discussions and code reviews.
+• Develop web-based applications using Java EE technologies, integrating with RDBMS systems.
+• Collaborate with business users and IT departments to ensure functionality meets expectations.
+• Support legacy system migration, feature enhancement, and new development.
+
+Qualifications and Experience:
+• 6+ years of experience with Java EE, EJB, Hibernate, JMS, JSF, and JBoss.
+• 4+ years working with Oracle 10g+ and other RDBMS platforms.
+• 4+ years in application development, object-oriented design, and web services.
+• Familiarity with technical documentation and Agile/Scrum environments.
+
+Desired Skills:
+• Experience in PL/SQL, scripting, and Oracle Access Manager.
+• Understanding of high-availability systems and configuration management.
+• Knowledge of SOA patterns and enterprise integration.
+
+Soft Skills:
+• Strong communication and collaboration abilities.
+• Demonstrated problem-solving and analytical thinking.
+• Ability to work independently or as part of a team in dynamic environments.
+
+Job Type: Full-time
+
+Pay: $105,228.04 - $151,909.03 per year
+
+Benefits:
+• 401(k)
+• Dental insurance
+• Health insurance
+• Paid time off
+• Professional development assistance
+• Vision insurance
+
+Ability to Commute:
+• Washington, DC 20006 (Preferred)
+
+Ability to Relocate:
+• Washington, DC 20006: Relocate before starting work (Preferred)
+
+Work Location: In person",N/A,N/A,N/A
+6,Software Engineer Jobs,2025-07-21T02:00:00.000Z,N/A,,N/A,"Arlington, Virginia, US",N/A,N/A,"Job Description
+ECS is seeking a Software Engineer to work in our Arlington, VA office.
+
+We are seeking a Software Engineer with expertise in Python and C++ for embedded software systems. This role involves overseeing the management, auditing, and validation of embedded software rather than hands-on coding. Experience with Department of Defense (DoD) or military projects.
+
+You will be responsible for managing the software lifecycle through change control boards, engineering reviews, and software updates, ensuring design changes are fully qualified and compliant with engineering principles. You will work closely with hardware engineers to evaluate the impact of software changes on hardware systems.
+
+What You'll Do:
+• Participate in change control boards to manage and oversee software updates.
+• Develop and evaluate design changes for software, ensuring their impact on hardware systems is fully considered.
+• Conduct audits of software systems and processes, working with prime contractors to ensure compliance.
+• Qualify and implement updated software designs, ensuring they adhere to engineering and quality standards.
+• Oversee the auditing process from a management standpoint, ensuring all software changes meet necessary requirements.
+• Attend and contribute to weekly/monthly meetings to provide input on process and procedures.
+• Maintain an unbiased view when assessing and auditing software systems.
+• Ensure quality testing is conducted, and that software adheres to engineering principles and project requirements.
+Required Skills
+• Active Top-Secret Clearance
+• BS in Engineering or equivalent experience
+• 5+ years of hands-on experience in software design, development, testing, and process management
+• Strong understanding of agile development methodologies and project management principles
+• Proficiency in C++ and Python
+• Experience with embedded software systems
+• Advanced skills in Microsoft Excel, Word, and PowerPoint
+• Willingness to travel up to 25% for mission-critical projects
+• Customer-focused with a people/service-oriented mindset
+• Collaborative team player with a positive attitude
+• Prior experience in DoD/military projects.
+• Strong background in software management and auditing, with a focus on checks and balances rather than active software development.
+• Familiarity with change control processes and software engineering design.
+Desired Skills
+• Masters in Engineering
+• 10+ years of experience
+• Familiarity with Standard Missile systems and Navy weapon systems is highly desirable
+• Ability to navigate the interfaces between Government and contractor activities is a bonus
+• Experience in embedded or real-time software, particularly in missile or defense systems, is a significant plus.
+• #ECS1
+
+ECS is an equal opportunity employer and does not discriminate or allow discrimination on the basis any characteristic protected by law. All qualified applicants will receive consideration for employment without regard to disability, status as a protected veteran or any other status protected by applicable federal, state, or local jurisdiction law.
+
+ECS is a leading mid-sized provider of technology services to the United States Federal Government. We are focused on people, values and purpose. Every day, our 3800+ employees focus on providing their technical talent to support the Federal Agencies and Departments of the US Government to serve, protect and defend the American People.",JSearch,2025-07-21,ECS,N/A,N/A,N/A,"Job Description
+ECS is seeking a Software Engineer to work in our Arlington, VA office.
+
+We are seeking a Software Engineer with expertise in Python and C++ for embedded software systems. This role involves overseeing the management, auditing, and validation of embedded software rather than hands-on coding. Experience with Department of Defense (DoD) or military projects.
+
+You will be responsible for managing the software lifecycle through change control boards, engineering reviews, and software updates, ensuring design changes are fully qualified and compliant with engineering principles. You will work closely with hardware engineers to evaluate the impact of software changes on hardware systems.
+
+What You'll Do:
+• Participate in change control boards to manage and oversee software updates.
+• Develop and evaluate design changes for software, ensuring their impact on hardware systems is fully considered.
+• Conduct audits of software systems and processes, working with prime contractors to ensure compliance.
+• Qualify and implement updated software designs, ensuring they adhere to engineering and quality standards.
+• Oversee the auditing process from a management standpoint, ensuring all software changes meet necessary requirements.
+• Attend and contribute to weekly/monthly meetings to provide input on process and procedures.
+• Maintain an unbiased view when assessing and auditing software systems.
+• Ensure quality testing is conducted, and that software adheres to engineering principles and project requirements.
+Required Skills
+• Active Top-Secret Clearance
+• BS in Engineering or equivalent experience
+• 5+ years of hands-on experience in software design, development, testing, and process management
+• Strong understanding of agile development methodologies and project management principles
+• Proficiency in C++ and Python
+• Experience with embedded software systems
+• Advanced skills in Microsoft Excel, Word, and PowerPoint
+• Willingness to travel up to 25% for mission-critical projects
+• Customer-focused with a people/service-oriented mindset
+• Collaborative team player with a positive attitude
+• Prior experience in DoD/military projects.
+• Strong background in software management and auditing, with a focus on checks and balances rather than active software development.
+• Familiarity with change control processes and software engineering design.
+Desired Skills
+• Masters in Engineering
+• 10+ years of experience
+• Familiarity with Standard Missile systems and Navy weapon systems is highly desirable
+• Ability to navigate the interfaces between Government and contractor activities is a bonus
+• Experience in embedded or real-time software, particularly in missile or defense systems, is a significant plus.
+• #ECS1
+
+ECS is an equal opportunity employer and does not discriminate or allow discrimination on the basis any characteristic protected by law. All qualified applicants will receive consideration for employment without regard to disability, status as a protected veteran or any other status protected by applicable federal, state, or local jurisdiction law.
+
+ECS is a leading mid-sized provider of technology services to the United States Federal Government. We are focused on people, values and purpose. Every day, our 3800+ employees focus on providing their technical talent to support the Federal Agencies and Departments of the US Government to serve, protect and defend the American People.",N/A,N/A,N/A
+7,Software Engineer,,N/A,,N/A,"Alexandria, Virginia, US",N/A,N/A,"Description
+
+Leidos has a new and exciting opportunity for a Software Engineer in our National Security Sector's (NSS) Cyber & Analytics Business Area (CABA). Our talented team is at the forefront in Security Engineering, Computer Network Operations (CNO), Mission Software, Analytical Methods and Modeling, Signals Intelligence (SIGINT), and Cryptographic Key Management. At Leidos, we offer competitive benefits, including Paid Time Off, 11 paid Holidays, 401K with a 6% company match and immediate vesting, Flexible Schedules, Discounted Stock Purchase Plans, Technical Upskilling, Education and Training Support, Parental Paid Leave, and much more. Join us and make a difference in National Security!
+
+The Software Engineer will perform software development lifecycle (SDLC) activities as a member of an Agile development team building a large complex enterprise system. Development includes the full range of turning Agile user stories into implementable concepts, through development, unit testing, integration and test, and deployment of the new capabilities for the large complex enterprise system. Following the Behavior-driven Development (BDD) pattern, developers are responsible for implementing robust testing leveraging DevOps automation and, where appropriate, use of test automation commercial tools. There are a range of opportunities for server-side business logic implementation as well as client web application and user interface (UI) development. Java, Python, embedded C/C++, Java cryptographic framework, XML, web UI (i.e., Angular, JavaScript, CSS, HTML, etc.) and special purpose device programming opportunities are available.
+
+Primary Responsibilities
+The Software Engineer will be responsible for software development activities both individually and as a member of an Agile team. The Software Engineer will actively participate in daily stand-ups, Sprint Planning, Program Increment (PI) Planning, and other related team activities. The individual will analyze and study complex system requirements, use design software tools, provide support using formal specifications, data flow diagrams, and other accepted design techniques and will use sound software engineering principles to ensure that developed code is modifiable, efficient, reliable, understandable, fault tolerant, and reusable. She/he will provide software process management and control throughout the coding portion of the software development process and will promote code reuse and cross-program collaboration while reducing maintenance costs by creating common functions and shared actions for developers and testers. She/he will engineer, author, tune and document automation scripts in a development environment and deploy to the test/production bench.
+
+Basic Qualifications
+• Bachelor’s degree in Computer Science or a related field and at least 8 years of relevant experience. Additional experience may be substituted for a degree.
+• Must have demonstrated experience with Java.
+• Must have experience or familiarity with multiple Java frameworks: Spring to include Boot and Data, Java Enterprise Edition (JEE) (i.e., JPA, EJB, JTA, Servlet), Jackson, Jersey, Swing, JavaFX.
+• Must have experience or familiarity with multiple of the following languages such as Javascript, Python, C/C++, Groovy, Structured Query Language (SQL).
+• Must have experience with development IDEs (Integrated Development Environments) such as Eclipse, Visual Studio Code, Visual Studio, Rhapsody, WebStorm.
+• Must have experience with databases such as Oracle, PostgreSQL, MongoDB, SQL Server.
+• Must have experience with Web Application User Interface Development, knowledge of databases and structures, Spring Framework, and/or experience working with AngularJS, JSON, HTML, XML, XSLT.
+• Must have experience with software source control and configuration management tools.
+• Must have experience with technologies underlying cryptographic systems (symmetric and asymmetric cryptography, ASN.1 encoding, XML canonicalization, digital signatures).
+• Must have experience developing on Windows, and/or Linux operating systems.
+• Must have documented professional experience with web services.
+• Must have a strong understanding of sound software development principles and practices.
+• Must be able to plan and prioritize personal tasking and be able to communicate effectively verbally and in writing.
+• Must be an independent thinker, capable of performing high quality work, both independently and with a team in a fast-moving environment.
+
+Preferred Qualifications
+• Experience with the following: Java Enterprise Edition (JEE) (i.e., EJB, JPA, JTA, JAX-B, JAX-RS, JAX-WS), SQL, application servers (Tomcat, WebLogic, JBoss), Spring framework, scripting.
+• Experience or familiarity with multiple of the following technologies: XML/XSD/SOAP/WSDL/XSLT, REST, JSON, YAML, Containers (Docker, Podman, Kubernetes, OpenShift).
+• Experience with Javascript frameworks: AngularJS, Bootstrap, JQuery.
+• Experience with Testing and Mocking frameworks: JUnit, Jupiter, Mockito, Jasmine, Karma, Cucumber, Unified Functional Tester (UFT), Selenium, FITNesse.
+• Experience with build tools: Maven, CMake, RPM, Jenkins, Nexus.
+• Experience with high level requirements management including requirements decomposition, secure systems engineering and development, trade-off analysis, interface control, and testing and continuous integration.
+• Experience in software development on Agile teams using Agile Developer practices such as Pair Programming, Test Driven Development (TDD), Refactoring, and Acceptance Test Driven Development (ATDD).
+• Experience with Behavior Driven Development (BDD).
+• Secure Software development (i.e., Layer 7 Policy).
+• Experience with the Scrum, Scaled Agile Framework (SAFe) methodology, SAFe Agilest Certification, or experience as a member of an Agile team.
+
+At Leidos, the opportunities are boundless. We challenge our staff with interesting assignments that allow them to thrive professionally and personally. For us, helping you grow your career is good business. We look forward to learning more about you – apply today.
+
+careers.leidos.com/CONMD
+
+CSSKEY
+
+CONMD
+
+Original Posting:
+March 20, 2025
+
+For U.S. Positions: While subject to change based on business needs, Leidos reasonably anticipates that this job requisition will remain open for at least 3 days with an anticipated close date of no earlier than 3 days after the original posting date as listed above.
+
+Pay Range:
+Pay Range $104,650.00 - $189,175.00
+
+The Leidos pay range for this job level is a general guideline only and not a guarantee of compensation or salary. Additional factors considered in extending an offer include (but are not limited to) responsibilities of the job, education, experience, knowledge, skills, and abilities, as well as internal equity, alignment with market data, applicable bargaining agreement (if any), or other law.",JSearch,2025-07-21,Leidos,N/A,N/A,N/A,"Description
+
+Leidos has a new and exciting opportunity for a Software Engineer in our National Security Sector's (NSS) Cyber & Analytics Business Area (CABA). Our talented team is at the forefront in Security Engineering, Computer Network Operations (CNO), Mission Software, Analytical Methods and Modeling, Signals Intelligence (SIGINT), and Cryptographic Key Management. At Leidos, we offer competitive benefits, including Paid Time Off, 11 paid Holidays, 401K with a 6% company match and immediate vesting, Flexible Schedules, Discounted Stock Purchase Plans, Technical Upskilling, Education and Training Support, Parental Paid Leave, and much more. Join us and make a difference in National Security!
+
+The Software Engineer will perform software development lifecycle (SDLC) activities as a member of an Agile development team building a large complex enterprise system. Development includes the full range of turning Agile user stories into implementable concepts, through development, unit testing, integration and test, and deployment of the new capabilities for the large complex enterprise system. Following the Behavior-driven Development (BDD) pattern, developers are responsible for implementing robust testing leveraging DevOps automation and, where appropriate, use of test automation commercial tools. There are a range of opportunities for server-side business logic implementation as well as client web application and user interface (UI) development. Java, Python, embedded C/C++, Java cryptographic framework, XML, web UI (i.e., Angular, JavaScript, CSS, HTML, etc.) and special purpose device programming opportunities are available.
+
+Primary Responsibilities
+The Software Engineer will be responsible for software development activities both individually and as a member of an Agile team. The Software Engineer will actively participate in daily stand-ups, Sprint Planning, Program Increment (PI) Planning, and other related team activities. The individual will analyze and study complex system requirements, use design software tools, provide support using formal specifications, data flow diagrams, and other accepted design techniques and will use sound software engineering principles to ensure that developed code is modifiable, efficient, reliable, understandable, fault tolerant, and reusable. She/he will provide software process management and control throughout the coding portion of the software development process and will promote code reuse and cross-program collaboration while reducing maintenance costs by creating common functions and shared actions for developers and testers. She/he will engineer, author, tune and document automation scripts in a development environment and deploy to the test/production bench.
+
+Basic Qualifications
+• Bachelor’s degree in Computer Science or a related field and at least 8 years of relevant experience. Additional experience may be substituted for a degree.
+• Must have demonstrated experience with Java.
+• Must have experience or familiarity with multiple Java frameworks: Spring to include Boot and Data, Java Enterprise Edition (JEE) (i.e., JPA, EJB, JTA, Servlet), Jackson, Jersey, Swing, JavaFX.
+• Must have experience or familiarity with multiple of the following languages such as Javascript, Python, C/C++, Groovy, Structured Query Language (SQL).
+• Must have experience with development IDEs (Integrated Development Environments) such as Eclipse, Visual Studio Code, Visual Studio, Rhapsody, WebStorm.
+• Must have experience with databases such as Oracle, PostgreSQL, MongoDB, SQL Server.
+• Must have experience with Web Application User Interface Development, knowledge of databases and structures, Spring Framework, and/or experience working with AngularJS, JSON, HTML, XML, XSLT.
+• Must have experience with software source control and configuration management tools.
+• Must have experience with technologies underlying cryptographic systems (symmetric and asymmetric cryptography, ASN.1 encoding, XML canonicalization, digital signatures).
+• Must have experience developing on Windows, and/or Linux operating systems.
+• Must have documented professional experience with web services.
+• Must have a strong understanding of sound software development principles and practices.
+• Must be able to plan and prioritize personal tasking and be able to communicate effectively verbally and in writing.
+• Must be an independent thinker, capable of performing high quality work, both independently and with a team in a fast-moving environment.
+
+Preferred Qualifications
+• Experience with the following: Java Enterprise Edition (JEE) (i.e., EJB, JPA, JTA, JAX-B, JAX-RS, JAX-WS), SQL, application servers (Tomcat, WebLogic, JBoss), Spring framework, scripting.
+• Experience or familiarity with multiple of the following technologies: XML/XSD/SOAP/WSDL/XSLT, REST, JSON, YAML, Containers (Docker, Podman, Kubernetes, OpenShift).
+• Experience with Javascript frameworks: AngularJS, Bootstrap, JQuery.
+• Experience with Testing and Mocking frameworks: JUnit, Jupiter, Mockito, Jasmine, Karma, Cucumber, Unified Functional Tester (UFT), Selenium, FITNesse.
+• Experience with build tools: Maven, CMake, RPM, Jenkins, Nexus.
+• Experience with high level requirements management including requirements decomposition, secure systems engineering and development, trade-off analysis, interface control, and testing and continuous integration.
+• Experience in software development on Agile teams using Agile Developer practices such as Pair Programming, Test Driven Development (TDD), Refactoring, and Acceptance Test Driven Development (ATDD).
+• Experience with Behavior Driven Development (BDD).
+• Secure Software development (i.e., Layer 7 Policy).
+• Experience with the Scrum, Scaled Agile Framework (SAFe) methodology, SAFe Agilest Certification, or experience as a member of an Agile team.
+
+At Leidos, the opportunities are boundless. We challenge our staff with interesting assignments that allow them to thrive professionally and personally. For us, helping you grow your career is good business. We look forward to learning more about you – apply today.
+
+careers.leidos.com/CONMD
+
+CSSKEY
+
+CONMD
+
+Original Posting:
+March 20, 2025
+
+For U.S. Positions: While subject to change based on business needs, Leidos reasonably anticipates that this job requisition will remain open for at least 3 days with an anticipated close date of no earlier than 3 days after the original posting date as listed above.
+
+Pay Range:
+Pay Range $104,650.00 - $189,175.00
+
+The Leidos pay range for this job level is a general guideline only and not a guarantee of compensation or salary. Additional factors considered in extending an offer include (but are not limited to) responsibilities of the job, education, experience, knowledge, skills, and abilities, as well as internal equity, alignment with market data, applicable bargaining agreement (if any), or other law.",N/A,N/A,N/A
+8,Sr. Software Developer I (5869),,N/A,N/A,N/A,"Washington, District of Columbia, US",N/A,N/A,"As a Sr. Software Developer I, you'll customize and configure ServiceNow IT System Management and Public Sector Digital Services functionality, ensuring it meets organizational requirements and aligns with best practices. This role focuses on developing, deploying, and maintaining advanced solutions within the ServiceNow platform to optimize service desk and customer relations management functionality. The ideal candidate will bring deep technical expertise in ServiceNow development and a strong understanding of IT System Management (ITSM)
+
+We know that you can't have great technology services without amazing people. At MetroStar, we are obsessed with our people and have led a two-decade legacy of building the best and brightest teams. Because we know our future relies on our deep understanding and relentless focus on our people, we live by our mission: A passion for our people. Value for our customers.
+
+If you think you can see yourself delivering our mission and pursuing our goals with us, then check out the job description below!
+
+What you'll do:
+• Design, configure, and customize the ServiceNow Asset Management module to meet business needs and technical requirements.
+• Implement workflows, business rules, UI actions, and client scripts to automate asset management processes.
+• Integrate the ServiceNow Asset Management functionality with other enterprise tools and systems to ensure seamless data flow and functionality.
+• Develop and maintain data models, ensuring asset data accuracy and integrity across the system.
+• Collaborate with product managers, UX designers, business support staff, and other stakeholders to gather and understand requirements for customizations and enhancements.
+• Perform system upgrades, patches, and maintenance to ensure the Asset Management module is up to date and performing optimally.
+• Troubleshoot and resolve technical issues within the Asset Management module.
+• Stay up-to-date on ServiceNow best practices and new features to continually enhance the platform's capabilities.
+• Create and maintain technical documentation for configurations, customizations, and integrations.
+
+What you'll need to succeed:
+• An active Secret level security clearance (or higher) OR the ability to obtain
+• 5+ years of experience in ServiceNow development, with a focus on IT System Management (ITSM), Public Sector Digital Services (PSDS), or related modules.
+• Strong expertise in configuring and customizing the ServiceNow platform, including scripting and integrations.
+• Demonstrated experience in implementing asset management solutions and workflows.
+• Proficiency in JavaScript, HTML, CSS, and ServiceNow scripting.
+• In-depth understanding of ServiceNow tables, fields, and relationships, particularly within the ITSM/PSDS module.
+• Familiarity with ServiceNow integrations using REST/SOAP APIs, MID servers, and integration hubs.
+• Excellent communication skills, with the ability to explain technical concepts to non-technical stakeholders.
+• Detail-oriented with a commitment to delivering high-quality solutions.
+
+SALARY RANGE: $103,000 - $164,000
+
+The salary range for this position is determined based on qualifications, skills, and relevant experience. The final salary offered will be determined based on several factors including:
+• The candidate's professional background and relevant work experience
+• The specific responsibilities of the role and organizational needs
+• Internal equity and alignment with current team compensation
+• This role is also eligible for additional compensation, subject to the terms and policies of MetroStar, which may include:
+• * Performance-based bonuses
+• Company-paid training and/or certifications
+• Referral bonuses
+
+To apply for this position, please submit your resume via the form below or through our careers page: https://www.metrostar.com/jobs/
+
+Application Deadline: Applications will be accepted on a rolling basis until the position is filled; candidates are encouraged to apply as early as possible for full consideration.
+
+Additional Compensation: This role may also be eligible for bonuses and/or additional incentives based on individual and company performance.
+
+Benefits: All full-time employees are eligible to participate in our benefits programs:
+• Health, dental, and vision insurance
+• 401(k) retirement plan with company match
+• Paid time off (PTO) and holidays
+• Parental Leave and dependent care
+• Flexible work arrangements
+• Professional development opportunities
+• Employee assistance and wellness programs
+
+Like we said, we are big fans of our people. That's why we offer a generous benefits package, professional growth, and valuable time to recharge. Learn more about our company culture code and benefits. Plus, check out our accolades.
+
+Commitment to Non-Discrimination
+All qualified applicants will receive consideration for employment based on merit and without regard to sex, race, ethnicity, age, national origin, citizenship, religion, physical or mental disability, medical condition, genetic information, pregnancy, family structure, marital status, ancestry, domestic partner status, sexual orientation, gender identity or expression, veteran or military status, status as a protected veteran, or any other status protected by applicable federal, state, local, or international law.
+
+What we want you to know:
+
+In compliance with federal law, all persons hired will be required to verify identity and eligibility to work in the United States and to complete the required employment eligibility verification form upon hire.
+
+Not ready to apply now?
+
+Sign up to join our newsletter here.",JSearch,2025-07-21,MetroStar,N/A,N/A,N/A,"As a Sr. Software Developer I, you'll customize and configure ServiceNow IT System Management and Public Sector Digital Services functionality, ensuring it meets organizational requirements and aligns with best practices. This role focuses on developing, deploying, and maintaining advanced solutions within the ServiceNow platform to optimize service desk and customer relations management functionality. The ideal candidate will bring deep technical expertise in ServiceNow development and a strong understanding of IT System Management (ITSM)
+
+We know that you can't have great technology services without amazing people. At MetroStar, we are obsessed with our people and have led a two-decade legacy of building the best and brightest teams. Because we know our future relies on our deep understanding and relentless focus on our people, we live by our mission: A passion for our people. Value for our customers.
+
+If you think you can see yourself delivering our mission and pursuing our goals with us, then check out the job description below!
+
+What you'll do:
+• Design, configure, and customize the ServiceNow Asset Management module to meet business needs and technical requirements.
+• Implement workflows, business rules, UI actions, and client scripts to automate asset management processes.
+• Integrate the ServiceNow Asset Management functionality with other enterprise tools and systems to ensure seamless data flow and functionality.
+• Develop and maintain data models, ensuring asset data accuracy and integrity across the system.
+• Collaborate with product managers, UX designers, business support staff, and other stakeholders to gather and understand requirements for customizations and enhancements.
+• Perform system upgrades, patches, and maintenance to ensure the Asset Management module is up to date and performing optimally.
+• Troubleshoot and resolve technical issues within the Asset Management module.
+• Stay up-to-date on ServiceNow best practices and new features to continually enhance the platform's capabilities.
+• Create and maintain technical documentation for configurations, customizations, and integrations.
+
+What you'll need to succeed:
+• An active Secret level security clearance (or higher) OR the ability to obtain
+• 5+ years of experience in ServiceNow development, with a focus on IT System Management (ITSM), Public Sector Digital Services (PSDS), or related modules.
+• Strong expertise in configuring and customizing the ServiceNow platform, including scripting and integrations.
+• Demonstrated experience in implementing asset management solutions and workflows.
+• Proficiency in JavaScript, HTML, CSS, and ServiceNow scripting.
+• In-depth understanding of ServiceNow tables, fields, and relationships, particularly within the ITSM/PSDS module.
+• Familiarity with ServiceNow integrations using REST/SOAP APIs, MID servers, and integration hubs.
+• Excellent communication skills, with the ability to explain technical concepts to non-technical stakeholders.
+• Detail-oriented with a commitment to delivering high-quality solutions.
+
+SALARY RANGE: $103,000 - $164,000
+
+The salary range for this position is determined based on qualifications, skills, and relevant experience. The final salary offered will be determined based on several factors including:
+• The candidate's professional background and relevant work experience
+• The specific responsibilities of the role and organizational needs
+• Internal equity and alignment with current team compensation
+• This role is also eligible for additional compensation, subject to the terms and policies of MetroStar, which may include:
+• * Performance-based bonuses
+• Company-paid training and/or certifications
+• Referral bonuses
+
+To apply for this position, please submit your resume via the form below or through our careers page: https://www.metrostar.com/jobs/
+
+Application Deadline: Applications will be accepted on a rolling basis until the position is filled; candidates are encouraged to apply as early as possible for full consideration.
+
+Additional Compensation: This role may also be eligible for bonuses and/or additional incentives based on individual and company performance.
+
+Benefits: All full-time employees are eligible to participate in our benefits programs:
+• Health, dental, and vision insurance
+• 401(k) retirement plan with company match
+• Paid time off (PTO) and holidays
+• Parental Leave and dependent care
+• Flexible work arrangements
+• Professional development opportunities
+• Employee assistance and wellness programs
+
+Like we said, we are big fans of our people. That's why we offer a generous benefits package, professional growth, and valuable time to recharge. Learn more about our company culture code and benefits. Plus, check out our accolades.
+
+Commitment to Non-Discrimination
+All qualified applicants will receive consideration for employment based on merit and without regard to sex, race, ethnicity, age, national origin, citizenship, religion, physical or mental disability, medical condition, genetic information, pregnancy, family structure, marital status, ancestry, domestic partner status, sexual orientation, gender identity or expression, veteran or military status, status as a protected veteran, or any other status protected by applicable federal, state, local, or international law.
+
+What we want you to know:
+
+In compliance with federal law, all persons hired will be required to verify identity and eligibility to work in the United States and to complete the required employment eligibility verification form upon hire.
+
+Not ready to apply now?
+
+Sign up to join our newsletter here.",N/A,N/A,N/A
+9,Senior Full Stack Software Developer,2025-07-10T00:00:00.000Z,N/A,N/A,N/A,"Washington, District of Columbia, US",N/A,N/A,"The Role
+
+GovExec is seeking a Senior Full Stack Software Developer to help build our GovTribe product. The ideal candidate will have professional software development experience, as well as exceptional coding skills in JavaScript and PHP, and a track record of applying these technologies to solve a wide range of problems.
+
+In this role, you will have experience working with Vue in concert with a back-end RESTful API server using Laravel. You will also have extensive experience with supporting technologies of MongoDB and Elasticsearch. A typical development sprint at GovExec involves reviewing feature requests and bug reports, consolidating each into detailed requirement definitions, writing code, and writing tests. You will work with other developers and project managers to help advance this process.
+
+Responsibilities
+• Working with the GovTribe Product Manager, Customer Success Managers (CSMs), and GovTribe leadership to define and prioritize work for the upcoming sprint.
+• Working directly with the Product Manager to convert feature requests into detailed requirement definitions.
+• During the sprint, writing code in feature branches, iteratively pushing commits as you make progress, and reviewing work with other team members.
+• Creating test coverage that will run via our continuous integration system.
+• Monitoring page load times, initial bundle sizes, and optimizing your features for SEO, mobile performance, and accessibility.
+• Deploying new releases of GovTribe.
+• At the end of the sprint, reviewing your progress with other members of the team.
+• Once code is in production, monitor our bug tracking system to check for errors.
+• As a valued member of the software development team, we encourage you to bring new ideas and technologies into the process. Would you like to use a new charting library or a push messaging platform? Bring it!
+
+Qualifications
+• Exceptional coding skills in JavaScript and PHP.
+• 3+ years of full-time software development experience, including:
+• 3+ years of experience working on full-stack web applications.
+• 3+ years of experience with Vue.js .
+• 3+ years of experience with Laravel.
+• Expertise with MongoDB.
+• Expertise with Elasticsearch.
+• Ability to communicate and form effective working relationships with non-technical product experts, such as business leaders or product managers.
+
+About GovExec
+
+GovExec’s data and insights set the standard for depth, accuracy, and impact for government leaders and contractors. As the market-leading information and intent-based marketing platform, for over fifty years GovExec has empowered the government ecosystem to engage and support government leaders as they work to achieve their missions across federal, defense, and state and local agencies. Our strategic sales enablement and intent-based marketing solutions accelerate revenue growth to fuel market success. The platform is powered by the largest and most sophisticated database in the public sector, GovExec’s platform reaches 3.3 million government influencers each month and provides its marketing clients with a significant competitive advantage in driving higher conversion and growth.
+
+Working at GovExec
+
+Benefits
+
+At GovExec, we believe that a new era of work -- particularly when, where, and how it gets done -- has arrived. We are building a hybrid workplace that allows for greater freedom and flexibility while also fostering a collaborative culture, no matter where you are working. GovExec offers permanent remote work in 20+ states across the US, as well as the option to work out of one of our offices based in Washington DC, New York or Connecticut. GovExec also offers a range of great benefits including:
+• Medical, dental, and vision insurance plans
+• 401(k) retirement plan with company match
+• Open time off policy
+• Twelve weeks paid parental leave
+• Supportive, collaborative teams
+• Unique opportunity to help government officials from a private sector company
+• Expansive learning and development opportunities
+
+Commitment to Shared Values
+
+GovExec Recruits Talent For Four Salient Attributes Or Qualities
+• Soul of Entrepreneurship
+• Culture of Inclusion
+• Force of Ideas
+• Spirit of Generosity
+
+The compensation range for this role is $135,000 to $145,000 per year.
+
+Government Executive Media Group, Inc. and its affiliates (""GovExec"") are Equal Opportunity Employers. We do not discriminate against our applicants because of race, color, religion, sex, national origin, age, disability, veteran status, sexual orientation, gender identity, or any other status protected by applicable law.",JSearch,2025-07-21,GovExec,N/A,N/A,N/A,"The Role
+
+GovExec is seeking a Senior Full Stack Software Developer to help build our GovTribe product. The ideal candidate will have professional software development experience, as well as exceptional coding skills in JavaScript and PHP, and a track record of applying these technologies to solve a wide range of problems.
+
+In this role, you will have experience working with Vue in concert with a back-end RESTful API server using Laravel. You will also have extensive experience with supporting technologies of MongoDB and Elasticsearch. A typical development sprint at GovExec involves reviewing feature requests and bug reports, consolidating each into detailed requirement definitions, writing code, and writing tests. You will work with other developers and project managers to help advance this process.
+
+Responsibilities
+• Working with the GovTribe Product Manager, Customer Success Managers (CSMs), and GovTribe leadership to define and prioritize work for the upcoming sprint.
+• Working directly with the Product Manager to convert feature requests into detailed requirement definitions.
+• During the sprint, writing code in feature branches, iteratively pushing commits as you make progress, and reviewing work with other team members.
+• Creating test coverage that will run via our continuous integration system.
+• Monitoring page load times, initial bundle sizes, and optimizing your features for SEO, mobile performance, and accessibility.
+• Deploying new releases of GovTribe.
+• At the end of the sprint, reviewing your progress with other members of the team.
+• Once code is in production, monitor our bug tracking system to check for errors.
+• As a valued member of the software development team, we encourage you to bring new ideas and technologies into the process. Would you like to use a new charting library or a push messaging platform? Bring it!
+
+Qualifications
+• Exceptional coding skills in JavaScript and PHP.
+• 3+ years of full-time software development experience, including:
+• 3+ years of experience working on full-stack web applications.
+• 3+ years of experience with Vue.js .
+• 3+ years of experience with Laravel.
+• Expertise with MongoDB.
+• Expertise with Elasticsearch.
+• Ability to communicate and form effective working relationships with non-technical product experts, such as business leaders or product managers.
+
+About GovExec
+
+GovExec’s data and insights set the standard for depth, accuracy, and impact for government leaders and contractors. As the market-leading information and intent-based marketing platform, for over fifty years GovExec has empowered the government ecosystem to engage and support government leaders as they work to achieve their missions across federal, defense, and state and local agencies. Our strategic sales enablement and intent-based marketing solutions accelerate revenue growth to fuel market success. The platform is powered by the largest and most sophisticated database in the public sector, GovExec’s platform reaches 3.3 million government influencers each month and provides its marketing clients with a significant competitive advantage in driving higher conversion and growth.
+
+Working at GovExec
+
+Benefits
+
+At GovExec, we believe that a new era of work -- particularly when, where, and how it gets done -- has arrived. We are building a hybrid workplace that allows for greater freedom and flexibility while also fostering a collaborative culture, no matter where you are working. GovExec offers permanent remote work in 20+ states across the US, as well as the option to work out of one of our offices based in Washington DC, New York or Connecticut. GovExec also offers a range of great benefits including:
+• Medical, dental, and vision insurance plans
+• 401(k) retirement plan with company match
+• Open time off policy
+• Twelve weeks paid parental leave
+• Supportive, collaborative teams
+• Unique opportunity to help government officials from a private sector company
+• Expansive learning and development opportunities
+
+Commitment to Shared Values
+
+GovExec Recruits Talent For Four Salient Attributes Or Qualities
+• Soul of Entrepreneurship
+• Culture of Inclusion
+• Force of Ideas
+• Spirit of Generosity
+
+The compensation range for this role is $135,000 to $145,000 per year.
+
+Government Executive Media Group, Inc. and its affiliates (""GovExec"") are Equal Opportunity Employers. We do not discriminate against our applicants because of race, color, religion, sex, national origin, age, disability, veteran status, sexual orientation, gender identity, or any other status protected by applicable law.",N/A,N/A,N/A
+10,Software Engineer - Full Stack Developer - All Levels,,N/A,,N/A,"Washington, District of Columbia, US",N/A,N/A,"Benefits:
+• Retirement Plan
+• 401(k)
+• 401(k) matching
+• Bonus based on performance
+• Company parties
+• Competitive salary
+• Dental insurance
+• Health insurance
+• Opportunity for advancement
+• Paid time off
+• Training & development
+• Vision insurance
+
+Job Description
+Silverthorne Advisory Group is seeking a skilled and highly motivated Software Engineer to join an exciting and growing opportunity within the Defense sector. Using Agile Scrum and Increment development, JavaScript, Web Stacks, Libraries, and Frameworks that use front end technologies you’ll build high performing applications that are customer facing UI and backend API services. You’ll analyze the needs and the environment to make sure the solution you’re developing considers the current architecture and operating environment, as well as future functionality and enhancements. Your expertise in coding, data access layer technologies, and cloud services will be essential in creating a seamless and integrated data experience for our users.
+
+Responsibilities
+• Develop and maintain software applications that handle data access, processing, and analytics.
+• Utilize strong Python coding abilities to build efficient and scalable solutions.
+• Implement and integrate data access layer technologies such as Databricks, iQuery, Global Search, API, and File Browser.
+• Collaborate with Data Scientists and Data Analysts to understand requirements and design efficient front-end solutions.
+• Develop user-friendly, visually appealing tools and interfaces that enable both technical and non-technical users to interact with data effectively.
+• Ensure the security and integrity of data through the implementation of appropriate access controls and encryption mechanisms.
+• Work closely with stakeholders to gather requirements, provide technical guidance, and deliver high-quality solutions.
+• Maintain documentation for software applications, workflows, and processes.
+
+Requirements
+• Secret clearance (can be sponsored).
+• Minimum of 2 years of experience as a Software Engineer or Full Stack Developer, with demonstrated experience supporting, maintaining, and documenting software functionality.
+• Minimum 1 year of experience with programming data entry and complex display applications using React.
+• Minimum 1 year of experience with programming applications to run in a Web environment comprised of Docker Node containers.
+• Proficient with essential front-end technologies like HTML5, CSS3, TypeScript, and JavaScript.
+• Knowledgeable of third-party libraries like React.js, Node.js, Sequelize, jQuery, Angular, and PyTorch.
+• Experience with Node.JS programming at scale or Cloud and GUI design and development.
+• Strong proficiency in Python and SQL coding. Experience with SQL and writing SQL queries, specifically creating complex data retrieval queries and transactional data updates.
+• Experience with SQL databases like MySQL and PostgreSQL.
+• Experience with CI/CD pipelines, especially GitLab.
+• Experience with APIs, especially REST or RPC architectural styles.
+• Experience with secure coding practices, including Static Code Analysis, Container library analysis, or STIGs.
+• Experience with cloud services, particularly AWS including Amazon S3.
+• Experience with automated testing tools to perform testing and maintenance.
+• Strong problem-solving skills and ability to work in a fast-paced, dynamic environment.
+• Excellent communication and collaboration skills, with the ability to work effectively with cross-functional teams.
+• Detail-oriented mindset with a commitment to delivering high-quality results.
+• Must be in the DC Metro area and available to work onsite (Crystal City, VA and Alexandria, VA) as needed.
+• Bachelor's degree in Computer Science or STEM related field.
+
+Benefits
+• Compensation - We carefully consider a wide range of compensation factors, including but not limited to prior experience, skills, expertise, location, and other considerations permitted by law.
+• Healthcare - We offer Health, Vision, and Dental Plans for our employees and their families.
+• Retirement Plan – We invest in your future with a competitive 401(k) plan, where we match 100% of your contributions up to your first 6% and give you access to Vanguard Admiral funds.
+• Paid Time Off - Based on length of service, we offer a generous amount of paid leave.
+• Bonus System – As you invest in us, we invest in you. We offer bonuses to all employees who meet and exceed goals throughout the year.
+• Professional Development – Support for career growth through training programs and certifications.
+• Company Retreats & Team Events – Sponsored trips, team-building activities, and annual conferences related to your skillset.
+
+Flexible work from home options available.",JSearch,2025-07-21,Silverthorne Advisory Group LLC,N/A,N/A,N/A,"Benefits:
+• Retirement Plan
+• 401(k)
+• 401(k) matching
+• Bonus based on performance
+• Company parties
+• Competitive salary
+• Dental insurance
+• Health insurance
+• Opportunity for advancement
+• Paid time off
+• Training & development
+• Vision insurance
+
+Job Description
+Silverthorne Advisory Group is seeking a skilled and highly motivated Software Engineer to join an exciting and growing opportunity within the Defense sector. Using Agile Scrum and Increment development, JavaScript, Web Stacks, Libraries, and Frameworks that use front end technologies you’ll build high performing applications that are customer facing UI and backend API services. You’ll analyze the needs and the environment to make sure the solution you’re developing considers the current architecture and operating environment, as well as future functionality and enhancements. Your expertise in coding, data access layer technologies, and cloud services will be essential in creating a seamless and integrated data experience for our users.
+
+Responsibilities
+• Develop and maintain software applications that handle data access, processing, and analytics.
+• Utilize strong Python coding abilities to build efficient and scalable solutions.
+• Implement and integrate data access layer technologies such as Databricks, iQuery, Global Search, API, and File Browser.
+• Collaborate with Data Scientists and Data Analysts to understand requirements and design efficient front-end solutions.
+• Develop user-friendly, visually appealing tools and interfaces that enable both technical and non-technical users to interact with data effectively.
+• Ensure the security and integrity of data through the implementation of appropriate access controls and encryption mechanisms.
+• Work closely with stakeholders to gather requirements, provide technical guidance, and deliver high-quality solutions.
+• Maintain documentation for software applications, workflows, and processes.
+
+Requirements
+• Secret clearance (can be sponsored).
+• Minimum of 2 years of experience as a Software Engineer or Full Stack Developer, with demonstrated experience supporting, maintaining, and documenting software functionality.
+• Minimum 1 year of experience with programming data entry and complex display applications using React.
+• Minimum 1 year of experience with programming applications to run in a Web environment comprised of Docker Node containers.
+• Proficient with essential front-end technologies like HTML5, CSS3, TypeScript, and JavaScript.
+• Knowledgeable of third-party libraries like React.js, Node.js, Sequelize, jQuery, Angular, and PyTorch.
+• Experience with Node.JS programming at scale or Cloud and GUI design and development.
+• Strong proficiency in Python and SQL coding. Experience with SQL and writing SQL queries, specifically creating complex data retrieval queries and transactional data updates.
+• Experience with SQL databases like MySQL and PostgreSQL.
+• Experience with CI/CD pipelines, especially GitLab.
+• Experience with APIs, especially REST or RPC architectural styles.
+• Experience with secure coding practices, including Static Code Analysis, Container library analysis, or STIGs.
+• Experience with cloud services, particularly AWS including Amazon S3.
+• Experience with automated testing tools to perform testing and maintenance.
+• Strong problem-solving skills and ability to work in a fast-paced, dynamic environment.
+• Excellent communication and collaboration skills, with the ability to work effectively with cross-functional teams.
+• Detail-oriented mindset with a commitment to delivering high-quality results.
+• Must be in the DC Metro area and available to work onsite (Crystal City, VA and Alexandria, VA) as needed.
+• Bachelor's degree in Computer Science or STEM related field.
+
+Benefits
+• Compensation - We carefully consider a wide range of compensation factors, including but not limited to prior experience, skills, expertise, location, and other considerations permitted by law.
+• Healthcare - We offer Health, Vision, and Dental Plans for our employees and their families.
+• Retirement Plan – We invest in your future with a competitive 401(k) plan, where we match 100% of your contributions up to your first 6% and give you access to Vanguard Admiral funds.
+• Paid Time Off - Based on length of service, we offer a generous amount of paid leave.
+• Bonus System – As you invest in us, we invest in you. We offer bonuses to all employees who meet and exceed goals throughout the year.
+• Professional Development – Support for career growth through training programs and certifications.
+• Company Retreats & Team Events – Sponsored trips, team-building activities, and annual conferences related to your skillset.
+
+Flexible work from home options available.",N/A,N/A,N/A

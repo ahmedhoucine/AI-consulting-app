@@ -1,0 +1,131 @@
+{
+    "job_id": "7l45vms-ux1phojtAAAAAA==",
+    "job_title": "Software Engineer/Developer",
+    "employer_name": "LS Technologies, LLC",
+    "employer_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW8zvihLQoDotGgqmRZpFWpFhsnB2dySdTtuLZ&s=0",
+    "employer_website": null,
+    "job_publisher": "Indeed",
+    "job_employment_type": "Full-time",
+    "job_employment_types": [
+        "FULLTIME"
+    ],
+    "job_apply_link": "https://www.indeed.com/viewjob?jk=cf5a777e04f1098d&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+    "job_apply_is_direct": true,
+    "apply_options": [
+        {
+            "publisher": "Indeed",
+            "apply_link": "https://www.indeed.com/viewjob?jk=cf5a777e04f1098d&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+            "is_direct": true
+        },
+        {
+            "publisher": "Glassdoor",
+            "apply_link": "https://www.glassdoor.com/job-listing/software-engineer-developer-ls-technologies-llc-JV_IC1138213_KO0,27_KE28,47.htm?jl=1009783173960&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+            "is_direct": true
+        },
+        {
+            "publisher": "SimplyHired",
+            "apply_link": "https://www.simplyhired.com/job/OhJKE81L9raU8yA-h13bFwsYukgNZYKlu2kmaaFgibcVHXehnX9RHA?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+            "is_direct": false
+        }
+    ],
+    "job_description": "Job Description:\n\u2022 LST is seeking an experienced mid-level Engineer of Software to support the Federal Aviation Administration (FAA) Air Traffic Management (ATM), SETIS 1 Tasking for the App Store. The ideal candidate will provide support for the Federal Aviation Administration's (FAA).\n\nResponsibilities:\n\u2022 Collaborate with clients, system engineers, and stakeholders to gather and refine project requirements.\n\u2022 Architect, develop, test, and maintain high-quality web applications and services using a variety of programming languages and frameworks.\n\u2022 Support the design and implementation of complex software features and components.\n\u2022 Optimize web applications for maximum speed and scalability.\n\u2022 Troubleshoot and resolve software defects and performance issues.\n\u2022 Provide expert recommendations and solutions for FAA cloud infrastructure and system architectural designs and implementations.\n\u2022 Ability to present to diverse audiences, explaining the technical benefits of a solution in a manner that is easy to understand.\n\nRequired Experience:\n\u2022 Intermediate to advanced programming skills in web application/web service development.\n\u2022 Experience with AWS cloud (EKS, EC2, ECR, CodeCommit, RDS)\n\u2022 Experience or ability to easily pick up develop/deploy to AWS (ex: code, unit test locally, build artifact, build image, deploy image to EKS on AWS, test code on deployed environment)\n\u2022 Experience with Docker and Kubernetes\n\u2022 Experience with git (source code management) (ex: Bitbucket - pull/push code changes)\n\u2022 Experience with Continuous Integration/Continuous Deploy (CI/CD) tools (ex: SonarQube, SonarLint, Junit, Jenkins, Maven, Terraform, Ansible, Artifactory, ArgoCD)\n\u2022 Must have at least 5-10 years of experience.\n\nPreferred Experience:\n\u2022 Experience with configuring, deploying, and using Backstage\n\u2022 Experience with SonarQube or Prisma, having the ability to interpret scans and resolve security vulnerabilities\n\u2022 Experience leveraging Artifactory/JFrog (getting artifacts in/out)\n\u2022 Experience with Jenkins pipelines, ability to create and manage\n\u2022 Experience with ArgoCD, having the ability to understand project creation process, request deployment, and debugging of deployed apps/services)\n\u2022 Experience with infrastructure provisioning and deployment technologies (Terraform, helm, Lens)\n\u2022 Experience with PostgreSQL\n\u2022 Experience supporting the FAA and National Airspace System (NAS)\n\nEducation:\n\nBachelor's Degree (Computer Science, Engineering, Math, or related field).\n\nTravel\n\u2022 0 - 20%\n\nWork Requirements:\n\u2022 Work location: DC Contactor site, Remote work acceptable\n\u2022 Work Hours: Normal working hours\n\u2022 Travel: 0-10%\n\u2022 Physical requirements:\n\u2022 Extended Computer Use: Regular and prolonged periods of working at a computer terminal.\n\u2022 Lifting and Carrying: Occasional lifting of equipment and materials weighing up to 50 pounds may be required during installations or maintenance.\n\u2022 Mobility: Ability to move around the office environment to access computer hardware, networking equipment, and server rooms.\n\u2022 Dexterity: Manual dexterity and visual acuity to operate computer equipment, troubleshoot issues, and perform tasks requiring precision.\n\u2022 Sitting/Standing: Both prolonged sitting and occasional standing may be required for troubleshooting and attending to system issues.\n\u2022 Background check: Must have ability to obtain and maintain a Public Trust.\n\nAbout LS Technologies\n\nAt LS Technologies, a Tetra Tech Company, we're enhancing our nation's critical infrastructure by providing engineering, technical, and professional services to Federal Government agencies. The quality of our work, deep technical expertise, and genuine passion for public service sets us apart. As a growing organization we are expanding our benefits and communication with our employees, offering add-ons that speak to our growing employees' needs. Join us in delivering high-quality solutions and shaping the future of safety and innovation for our government partners.\n\nEEO Commitment\n\nLS Technologies, LLC provides equal employment opportunities to all employees and applicants for employment and prohibits discrimination and harassment of any type without regard to race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. This policy applies to all terms and conditions of employment, including recruiting, hiring, placement, promotion, termination, layoff, recall, transfer, leaves of absence, compensation, and training.\n\nRequesting An Accommodation\n\nLS Technologies is committed to providing equal employment opportunities for persons with disabilities or religious observances, including reasonable accommodation when needed. If you are hired by LS Technologies and require accommodation to perform the essential functions of your role, you will be asked to participate in our reasonable accommodation process. Accommodations made to facilitate the recruiting process are not a guarantee of future or continued accommodations once hired.\n\nIf you would like to be considered for employment opportunities with LS Technologies and have accommodation needs for a disability or religious observance, please send us an email careers@lstechllc.com or speak with your recruiter.\n\nCompensation (Pay Bands)\n\nSalary at LST is determined by a wide array of factors, such as (but not limited to) education, certifications, knowledge, skills, competencies, and experience, location, and clearance level, as well as contract-specific affordability and organizational requirements and applicable employment laws. Please note that the salary information is a general guideline only.\n\nThe projected compensation range for this position is provided within the posting and is based on full-time, 40 hour/week status. Part-time staff receive compensation at an hourly rate. The estimated minimum and maximum displayed represents the broadest range for this position (inclusive of high geographic and high clearance requirements) and is just one component of LSTs total compensation package for employees. ** In compliance with local laws, LS Technologies presents this reasonable compensation range as a guideline for roles in California, Colorado, New York, or Washington D.C.\"\n\nBenefits offered to all employees who work 30+ hours per week: Medical, Dental, Vision, Life Insurance, Short-Term Disability, Long-Term Disability, 401(k) match, Flexible Spending Accounts, EAP, Education Assistance, Parental Leave, Annual Leave, and Holidays.",
+    "job_is_remote": false,
+    "job_posted_at": null,
+    "job_posted_at_timestamp": null,
+    "job_posted_at_datetime_utc": null,
+    "job_location": "Washington, DC",
+    "job_city": "Washington",
+    "job_state": "District of Columbia",
+    "job_country": "US",
+    "job_latitude": 38.9071923,
+    "job_longitude": -77.0368707,
+    "job_benefits": [
+        "dental_coverage",
+        "health_insurance"
+    ],
+    "job_google_link": "https://www.google.com/search?q=jobs&gl=us&hl=en&udm=8#vhid=vt%3D20/docid%3D7l45vms-ux1phojtAAAAAA%3D%3D&vssid=jobs-detail-viewer",
+    "job_min_salary": 120000,
+    "job_max_salary": 150000,
+    "job_salary_period": "YEAR",
+    "job_highlights": {
+        "Qualifications": [
+            "Intermediate to advanced programming skills in web application/web service development",
+            "Experience with AWS cloud (EKS, EC2, ECR, CodeCommit, RDS)",
+            "Experience or ability to easily pick up develop/deploy to AWS (ex: code, unit test locally, build artifact, build image, deploy image to EKS on AWS, test code on deployed environment)",
+            "Experience with Docker and Kubernetes",
+            "Experience with git (source code management) (ex: Bitbucket - pull/push code changes)",
+            "Experience with Continuous Integration/Continuous Deploy (CI/CD) tools (ex: SonarQube, SonarLint, Junit, Jenkins, Maven, Terraform, Ansible, Artifactory, ArgoCD)",
+            "Must have at least 5-10 years of experience",
+            "Bachelor's Degree (Computer Science, Engineering, Math, or related field)",
+            "Extended Computer Use: Regular and prolonged periods of working at a computer terminal",
+            "Lifting and Carrying: Occasional lifting of equipment and materials weighing up to 50 pounds may be required during installations or maintenance",
+            "Mobility: Ability to move around the office environment to access computer hardware, networking equipment, and server rooms",
+            "Dexterity: Manual dexterity and visual acuity to operate computer equipment, troubleshoot issues, and perform tasks requiring precision",
+            "Sitting/Standing: Both prolonged sitting and occasional standing may be required for troubleshooting and attending to system issues",
+            "Background check: Must have ability to obtain and maintain a Public Trust"
+        ],
+        "Benefits": [
+            "Compensation (Pay Bands)",
+            "Salary at LST is determined by a wide array of factors, such as (but not limited to) education, certifications, knowledge, skills, competencies, and experience, location, and clearance level, as well as contract-specific affordability and organizational requirements and applicable employment laws",
+            "The projected compensation range for this position is provided within the posting and is based on full-time, 40 hour/week status",
+            "Part-time staff receive compensation at an hourly rate",
+            "The estimated minimum and maximum displayed represents the broadest range for this position (inclusive of high geographic and high clearance requirements) and is just one component of LSTs total compensation package for employees",
+            "** In compliance with local laws, LS Technologies presents this reasonable compensation range as a guideline for roles in California, Colorado, New York, or Washington D.C.\"",
+            "Benefits offered to all employees who work 30+ hours per week: Medical, Dental, Vision, Life Insurance, Short-Term Disability, Long-Term Disability, 401(k) match, Flexible Spending Accounts, EAP, Education Assistance, Parental Leave, Annual Leave, and Holidays"
+        ],
+        "Responsibilities": [
+            "LST is seeking an experienced mid-level Engineer of Software to support the Federal Aviation Administration (FAA) Air Traffic Management (ATM), SETIS 1 Tasking for the App Store",
+            "Collaborate with clients, system engineers, and stakeholders to gather and refine project requirements",
+            "Architect, develop, test, and maintain high-quality web applications and services using a variety of programming languages and frameworks",
+            "Support the design and implementation of complex software features and components",
+            "Optimize web applications for maximum speed and scalability",
+            "Troubleshoot and resolve software defects and performance issues",
+            "Provide expert recommendations and solutions for FAA cloud infrastructure and system architectural designs and implementations",
+            "Ability to present to diverse audiences, explaining the technical benefits of a solution in a manner that is easy to understand",
+            "Work location: DC Contactor site, Remote work acceptable",
+            "Work Hours: Normal working hours",
+            "Travel: 0-10%"
+        ]
+    },
+    "job_onet_soc": "15113200",
+    "job_onet_job_zone": "4"
+}
+
+
+
+
+
+
+import requests
+import json
+
+url = "https://jsearch.p.rapidapi.com/search"
+
+headers = {
+    "X-RapidAPI-Key": "c19191ee31msh426d59fac6431f9p14bd42jsn8a92014748d6",
+    "X-RapidAPI-Host": "jsearch.p.rapidapi.com"
+}
+
+params = {
+    "query": "Devops Engineer",
+    "page": "1",
+    "num_pages": "1",
+    "location": "London"
+}
+
+response = requests.get(url, headers=headers, params=params)
+
+if response.status_code == 200:
+    data = response.json()
+    jobs = data.get("data", [])
+    if jobs:
+        first_job = jobs[0]
+        print(json.dumps(first_job, indent=4))  # Pretty print the first job JSON
+    else:
+        print("No jobs found in response.")
+else:
+    print(f"Error: {response.status_code} - {response.text}")
+
+
+
+
