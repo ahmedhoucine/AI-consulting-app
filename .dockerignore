@@ -24,3 +24,15 @@ frontend/dist
 
 
 **/__pycache__/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.csv
+*.json
+.venv/
+.env
+.DS_Store
+.idea/
+*.log
+*.db
