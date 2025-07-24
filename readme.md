@@ -1,9 +1,9 @@
-pip install Flask-SQLAlchemy pymysql
 
 
 jenkins setup:
 
 plugins:
+
  Git
 
  Docker Pipeline
