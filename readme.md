@@ -10,13 +10,16 @@ docker run -d --name jenkins \
   ```
 
 Access at: http://localhost:8080
-Initial password:  docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+Initial password:
+```bash 
+ docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+ ```
 
 
 
 
 
-# plugins:
+# 🔧 plugins:
 Git
 
 Docker Pipeline
@@ -29,13 +32,13 @@ SSH Agent
 
 Blue Ocean (optional)
 
-# Credentials
+# 🔐 Credentials
 DockerHub Username & Password
 Manage Jenkins > Credentials > Global > Add Credentials
 
 ID: ahmedhoucine0-dockerhub
 
-# Tools Configuration
+# ⚙️ Tools Configuration
 Go to: Manage Jenkins > Global Tool Configuration
 
 Add NodeJS:
@@ -47,6 +50,7 @@ Version: (Select latest LTS)
 
 
 # backend pipeline:
+```bash 
 
  pipeline {
   agent any
@@ -91,11 +95,11 @@ Version: (Select latest LTS)
     }
   }
 }
-
+```
 
 
 # frontend pipeline:
-
+```bash 
 pipeline {
   agent any
   tools {
@@ -164,3 +168,4 @@ pipeline {
     }
   }
 }
+```
