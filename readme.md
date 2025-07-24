@@ -1,25 +1,52 @@
+# 🚀 AI Consulting App - CI/CD Pipeline with Jenkins
+
+## 🐳 Jenkins Setup
+```bash
+docker run -d --name jenkins \
+  -p 8080:8080 -p 50000:50000 \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v jenkins_home:/var/jenkins_home \
+  jenkins/jenkins:lts
+  ```
+
+Access at: http://localhost:8080
+Initial password:  docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
 
-jenkins setup:
 
-plugins:
 
- Git
 
- Docker Pipeline
+# plugins:
+Git
 
- NodeJS
+Docker Pipeline
 
- Pipeline
+NodeJS
 
- SSH Agent (for server deployment)
+Pipeline
 
- Blue Ocean (optional UI improvement)
+SSH Agent
 
- add nodejs tool
- add dockerhub credantials
+Blue Ocean (optional)
 
- backend pipeline:
+# Credentials
+DockerHub Username & Password
+Manage Jenkins > Credentials > Global > Add Credentials
+
+ID: ahmedhoucine0-dockerhub
+
+# Tools Configuration
+Go to: Manage Jenkins > Global Tool Configuration
+
+Add NodeJS:
+
+Name: nodejs
+
+Version: (Select latest LTS)
+
+
+
+# backend pipeline:
 
  pipeline {
   agent any
@@ -67,7 +94,7 @@ plugins:
 
 
 
-frontend pipeline:
+# frontend pipeline:
 
 pipeline {
   agent any
