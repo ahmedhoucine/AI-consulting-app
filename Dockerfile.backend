@@ -7,7 +7,7 @@ WORKDIR /app
 COPY backend/requirements.txt .
 
 # Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r APP/requirements.txt
 
 # Copy the rest of the backend source code
 COPY backend/ .
@@ -20,4 +20,4 @@ USER appuser
 EXPOSE 8000
 
 # Command to run the backend app
-CMD ["python", "run.py"]
+CMD ["python", "APP/run.py"]
