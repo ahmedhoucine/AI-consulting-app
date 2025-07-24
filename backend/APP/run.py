@@ -43,4 +43,4 @@ if __name__ == '__main__':
             # engine.initialize() 
             #engine.initialize()
 
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
