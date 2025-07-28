@@ -6,8 +6,6 @@ from app.job_clustering.services.cluster_service import ClusterService
 from app.jobs.interfaces.job_routes import job_bp
 from app.shared.db import db
 from app.config import Config
-from app.feat1.interfaces.routes import user_bp
-from app.feat2.interfaces.routes import post_bp
 from app.profile_advices.interfaces.routes import advisor_bp
 from app.feat_recommendations.interfaces.routes import recommend_bp
 from app.job_clustering.interfaces.routes import cluster_bp
@@ -20,10 +18,8 @@ app = Flask(__name__)
 app.config.from_object(Config)
 db.init_app(app)
 CORS(app)
-app.register_blueprint(user_bp)
-app.register_blueprint(post_bp)
-#app.register_blueprint(advisor_bp)
-#app.register_blueprint(recommend_bp)
+app.register_blueprint(advisor_bp)
+app.register_blueprint(recommend_bp)
 app.register_blueprint(cluster_bp)
 app.register_blueprint(consultant_bp, url_prefix='/api')
 app.register_blueprint(job_bp)
@@ -37,10 +33,9 @@ if __name__ == '__main__':
 
     with app.app_context():
         db.create_all()
-        #if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
-            #cluster_service = ClusterService()
-            #cluster_service.run_and_save_clusters()
-            # engine.initialize() 
-            #engine.initialize()
+        if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
+            cluster_service = ClusterService()
+            cluster_service.run_and_save_clusters()
+            engine.initialize() 
 
     app.run(debug=True, host='0.0.0.0', port=5000)
