@@ -1,7 +1,17 @@
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env
+load_dotenv()
 
 class Config:
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:serpent00@host.docker.internal:3306/test'
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    DB_USER = os.getenv("DB_USER")
+    DB_PASSWORD = os.getenv("DB_PASSWORD")
+    DB_HOST = os.getenv("DB_HOST")
+    DB_PORT = os.getenv("DB_PORT", "3306")
+    DB_NAME = os.getenv("DB_NAME")
 
-#'mysql+pymysql://root:serpent00@localhost:3306/test' for running outside the container
+    SQLALCHEMY_DATABASE_URI = (
+        f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+    )
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
