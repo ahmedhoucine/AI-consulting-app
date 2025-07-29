@@ -2,11 +2,8 @@
 
 ## 🐳 Jenkins Setup
 ```bash
-docker run -d --name jenkins \
-  -p 8080:8080 -p 50000:50000 \
-  -v /var/run/docker.sock:/var/run/docker.sock \
-  -v jenkins_home:/var/jenkins_home \
-  jenkins/jenkins:lts
+docker run -d --name jenkins --user root  -p 8080:8080 -p 50000:50000 -v /var/run/docker.sock:/var/run/docker.sock -v jenkins_home:/var/jenkins_home  jenkins/jenkins:lts
+
   ```
 
 Access at: http://localhost:8080
@@ -169,3 +166,6 @@ pipeline {
   }
 }
 ```
+
+
+ docker run --env-file .env -d -p 5000:5000 --name consulting-backend consulting-backend:latest
