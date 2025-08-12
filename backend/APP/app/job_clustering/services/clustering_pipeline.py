@@ -10,10 +10,13 @@ import torch
 import hdbscan
 from sklearn.metrics import silhouette_score
 
+NON_SPECIFIED = "non spécifié"
 
+# ---------- Transformers ----------
 class SemanticEmbedder(BaseEstimator, TransformerMixin):
-    def __init__(self, model_name='all-MiniLM-L6-v2'):
+    def __init__(self, model_name='all-MiniLM-L6-v2', batch_size=32):
         self.model_name = model_name
+        self.batch_size = batch_size
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.model = SentenceTransformer(model_name, device=self.device)
     
@@ -21,7 +24,7 @@ class SemanticEmbedder(BaseEstimator, TransformerMixin):
         return self
     
     def transform(self, X):
-        return self.model.encode(X, convert_to_numpy=True, batch_size=32, show_progress_bar=True)
+        return self.model.encode(X, convert_to_numpy=True, batch_size=self.batch_size, show_progress_bar=True)
 
 class DataFrameSelector(BaseEstimator, TransformerMixin):
     def __init__(self, attribute_names, as_text=False):
@@ -46,14 +49,8 @@ class NumericCleaner(BaseEstimator, TransformerMixin):
             for i in range(X.shape[1])
         ])
 
-def prepare_and_cluster_data(filepath="data.csv"):
-    data = pd.read_csv(filepath)
-    data = data.drop(columns=["ID", "Scrap Date", "scrap_date_parsed", "Duration", "Location"], errors='ignore')
-
-    num_attribs = ['Number of Candidates', 'Number of Employees']
-    cat_attribs = ['Job Title', 'Work Mode', 'Plateforme', 'Company Name', 'Sector', "Salary", 'Contract Type', 'Education']
-    text_attrib = ['Description']
-
+# ---------- Pipeline Builders ----------
+def build_feature_pipeline(num_attribs, cat_attribs, text_attrib):
     num_pipeline = Pipeline([
         ('selector', DataFrameSelector(num_attribs)),
         ('cleaner', NumericCleaner()),
@@ -73,34 +70,48 @@ def prepare_and_cluster_data(filepath="data.csv"):
         ('svd', TruncatedSVD(n_components=50, random_state=42)),
     ])
 
-    full_pipeline = Pipeline([
-        ('features', FeatureUnion([
-            ('num', num_pipeline),
-            ('cat', cat_pipeline),
-            ('text', text_pipeline)
-        ])),
-        ('final_imputer', SimpleImputer(strategy='constant', fill_value=0))
+    return FeatureUnion([
+        ('num', num_pipeline),
+        ('cat', cat_pipeline),
+        ('text', text_pipeline)
     ])
 
-    # Apply transformation
-    X = full_pipeline.fit_transform(data)
+# ---------- Main Logic ----------
+def prepare_and_cluster_data(filepath="data.csv", min_cluster_size=30, n_components=14):
+    """Read data, preprocess, cluster, and return labels + processed DataFrame."""
+    data = load_and_clean_data(filepath)
+    pipeline = build_feature_pipeline(
+        num_attribs=['Number of Candidates', 'Number of Employees'],
+        cat_attribs=['Job Title', 'Work Mode', 'Plateforme', 'Company Name', 'Sector', "Salary", 'Contract Type', 'Education'],
+        text_attrib=['Description']
+    )
 
-    # Dimensionality reduction before clustering
-    svd = TruncatedSVD(n_components=14, random_state=42)
-    reduced = svd.fit_transform(X)
+    X = pipeline.fit_transform(data)
+
+    reduced = TruncatedSVD(n_components=n_components, random_state=42).fit_transform(X)
     scaled = StandardScaler().fit_transform(reduced)
 
-    # HDBSCAN clustering
-    clusterer = hdbscan.HDBSCAN(min_cluster_size=30, metric='euclidean')
-    labels = clusterer.fit_predict(scaled)
-
-    # Number of clusters (excluding noise)
-    n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
-    print(f"✅ Number of clusters found by HDBSCAN: {n_clusters}")
-
-    # Optional silhouette score
-    if n_clusters > 1 and len(set(labels)) < len(scaled):
-        score = silhouette_score(scaled, labels)
-        print(f"📊 Silhouette Score: {score:.4f}")
+    labels = cluster_data(scaled, min_cluster_size)
 
     return labels, data
+
+def load_and_clean_data(filepath):
+    """Load dataset and drop unnecessary columns."""
+    return pd.read_csv(filepath).drop(
+        columns=["ID", "Scrap Date", "scrap_date_parsed", "Duration", "Location"],
+        errors='ignore'
+    )
+
+def cluster_data(X, min_cluster_size):
+    """Run HDBSCAN clustering and optionally print metrics."""
+    clusterer = hdbscan.HDBSCAN(min_cluster_size=min_cluster_size, metric='euclidean')
+    labels = clusterer.fit_predict(X)
+
+    n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
+    print(f"✅ Number of clusters: {n_clusters}")
+
+    if n_clusters > 1:
+        score = silhouette_score(X, labels)
+        print(f"📊 Silhouette Score: {score:.4f}")
+
+    return labels
