@@ -34,17 +34,9 @@ def serialize_job(job):
 
 @job_bp.route('/load-csv', methods=['POST'])
 def load_csv():
-    """Load jobs from a CSV file."""
-    if request.is_json:
-        file_path = request.json.get("file_path", "data.csv")  
-    else:
-        file_path = "data.csv"      
+    job_service.load_csv_from_path()
+    return jsonify({"message": "data scraped and  loaded successfully"}), 200
 
-    try:
-        job_service.load_csv_from_path(file_path)
-        return jsonify({"message": "✅ CSV loaded successfully"}), 200
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
 
 @job_bp.route('/api/jobs/<int:job_id>', methods=['GET'])
 def get_job(job_id: int):
