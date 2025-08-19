@@ -9,7 +9,7 @@ from httpx import ConnectError
 class AdvisorRepository:
     def __init__(self):
         # Configure with environment variable fallback
-        ollama_host = os.getenv("OLLAMA_HOST", "http://host.docker.internal:11434")
+        ollama_host = os.getenv("OLLAMA_API")
         
         # Initialize LangChain Ollama client
         self.llm = OllamaLLM(

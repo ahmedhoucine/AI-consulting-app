@@ -9,18 +9,18 @@ from app.jobs.services.job_service import JobService
 
 
 class RecommendationEngine:
-    def __init__(self, model_name='all-MiniLM-L6-v2', hnsw_m=32, ef_search=64, ef_construction=200):
+    def __init__(self, model_name='all-MiniLM-L6-v2', max_neighbors_per_node=32, search_candidate_pool_size=64, build_candidate_pool_size=200):
         self.model_name = model_name
-        self.hnsw_m = hnsw_m
-        self.ef_search = ef_search
-        self.ef_construction = ef_construction
+        self.max_neighbors_per_node = max_neighbors_per_node
+        self.search_candidate_pool_size = search_candidate_pool_size
+        self.build_candidate_pool_size = build_candidate_pool_size
         
         self.model = None
         self.hnsw_index = None
         self.data = None
         self.initialized = False
 
-    def initialize(self):
+    def initialize_recommendation_model(self):
         """Initialize the recommendation engine: load jobs, encode them, and build the FAISS index."""
         with current_app.app_context():
             jobs_df = self._load_jobs()
@@ -55,9 +55,9 @@ class RecommendationEngine:
     def _build_faiss_index(self, embeddings):
         """Build FAISS HNSW index from embeddings."""
         d = embeddings.shape[1]
-        self.hnsw_index = faiss.IndexHNSWFlat(d, self.hnsw_m)
-        self.hnsw_index.hnsw.efSearch = self.ef_search
-        self.hnsw_index.hnsw.efConstruction = self.ef_construction
+        self.hnsw_index = faiss.IndexHNSWFlat(d, self.max_neighbors_per_node)
+        self.hnsw_index.hnsw.search_candidate_pool_size = self.search_candidate_pool_size
+        self.hnsw_index.hnsw.build_candidate_pool_size = self.build_candidate_pool_size
         self.hnsw_index.add(embeddings)
 
     def get_recommendations(self, query: str, k=10):
