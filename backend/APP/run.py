@@ -18,10 +18,10 @@ app = Flask(__name__)
 app.config.from_object(Config)
 db.init_app(app)
 CORS(app)
-app.register_blueprint(advisor_bp)
+#app.register_blueprint(advisor_bp)
 app.register_blueprint(recommend_bp)
-app.register_blueprint(cluster_bp)
-app.register_blueprint(consultant_bp, url_prefix='/api')
+#app.register_blueprint(cluster_bp)
+#app.register_blueprint(consultant_bp, url_prefix='/api')
 app.register_blueprint(job_bp)
 app.register_blueprint(dashboard_bp)
 
@@ -36,6 +36,6 @@ if __name__ == '__main__':
         if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
             cluster_service = ClusterService()
             cluster_service.run_and_save_clusters()
-            engine.initialize() 
+            engine.initialized 
 
     app.run(debug=True, host='0.0.0.0', port=5000)

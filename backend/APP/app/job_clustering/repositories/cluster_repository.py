@@ -31,8 +31,8 @@ class ClusterRepository:
         return ClusterInfo(
             cluster_id=cluster_id,
             cardinality=len(cluster_data),
-            most_frequent_title=self._get_most_frequent(cluster_data, 'Job Title'),
-            top_sector=self._get_most_frequent(cluster_data, 'Sector'),
+            most_frequent_title=self._get_most_frequent(cluster_data, 'job_title'),
+            top_sector=self._get_most_frequent(cluster_data, 'sector'),
             top_skills=self._get_top_skill(cluster_data)
         )
 
