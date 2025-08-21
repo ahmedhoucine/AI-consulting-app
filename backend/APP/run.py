@@ -26,7 +26,7 @@ CORS(app)
 # app.register_blueprint(advisor_bp)
 app.register_blueprint(recommend_bp)
 app.register_blueprint(cluster_bp)
-# app.register_blueprint(consultant_bp, url_prefix='/api')
+app.register_blueprint(consultant_bp, url_prefix='/api')
 app.register_blueprint(job_bp)
 app.register_blueprint(dashboard_bp)
 
@@ -47,9 +47,9 @@ if __name__ == "__main__":
     with app.app_context():
         if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
             db.create_all()
-            #cluster_service = ClusterService()
-            #cluster_service.run_and_save_clusters()
-            #engine.initialize_recommendation_model()
+            cluster_service = ClusterService()
+            cluster_service.run_and_save_clusters()
+            engine.initialize_recommendation_model()
 
     
         start_scheduler()
