@@ -1,6 +1,7 @@
 from flask import Blueprint, jsonify, request,current_app
 from app.jobs.repositories.job_repository import JobRepository
 from app.jobs.services.job_service import JobService
+from app.dashboard.interfaces.controller import save_snapshot
 
 
 job_bp = Blueprint('jobs', __name__)
@@ -38,6 +39,7 @@ def scraping_and_reinitialization():
     with current_app.app_context():
         job_service.load_data_from_api()
         job_service.reinitialize_cluster_recommendation()
+        save_snapshot()
     return jsonify({
         "message": "Data scraped and clustering/recommendation reinitialized successfully"
     }), 200

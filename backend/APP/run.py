@@ -36,7 +36,7 @@ def start_scheduler():
     scheduler.add_job(func=lambda: cron_job(app),
                       trigger="interval",
                       name="scraping every 2 hours",
-                      minutes=40) 
+                      minutes=15) 
     scheduler.start()
 
     atexit.register(lambda: scheduler.shutdown())
