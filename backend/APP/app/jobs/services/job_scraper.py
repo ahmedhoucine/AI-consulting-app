@@ -13,7 +13,9 @@ APP_KEY = os.getenv("APP_KEY")
 BASE_URL = "https://api.adzuna.com/v1/api/jobs/fr/search/{page}"
 
 TITLES = [ # "data analyst", "data engineer", # "data scientist", "machine learning engineer", "devops engineer", #"devops engineer","AI engineer" #"software engineer", #"cloud engineer", "cybersecurity engineer", "product manager", #"qa engineer", "scrum master", "admin systèmes et réseaux", # "backend developer", "frontend developer", "fullstack developer", # "chef de projet informatique", "analyste cybersécurité", "ingénieur réseau", # "développeur python", "développeur java", "développeur node", "développeur .net" ,
-     "informatique","administratif","Commercial" ]
+     "informatique"
+     #,"administratif","Commercial" 
+     ]
 CITIES = [ "Paris"#,"Lyon", #"Marseille","Toulouse","Nice","Nantes","Strasbourg","Montpellier","Bordeaux",
      #"Lille","Rennes","Reims","Grenoble","Angers","Saint-Étienne","Le Havre","Clermont-Ferrand","Tours","Aix-en-Provence" 
      ]

@@ -5,7 +5,7 @@ from sentence_transformers import SentenceTransformer
 import torch
 from flask import current_app
 
-from app.jobs.services.job_service import JobService
+from app.jobs.repositories.job_repository import JobRepository
 
 
 class RecommendationEngine:
@@ -24,6 +24,7 @@ class RecommendationEngine:
         """Initialize the recommendation engine: load jobs, encode them, and build the FAISS index."""
         with current_app.app_context():
             jobs_df = self._load_jobs()
+            print(jobs_df.count())
             if jobs_df.empty:
                 raise ValueError("No jobs found to build recommendation index.")
 
@@ -32,14 +33,22 @@ class RecommendationEngine:
             self._build_faiss_index(embeddings)
 
             self.initialized = True
+            print(self.initialized)
             print("✅ RecommendationEngine initialized with", len(self.data), "jobs.")
 
     def _load_jobs(self) -> pd.DataFrame:
         """Fetch jobs from JobService and prepare DataFrame."""
-        jobs = JobService.get_all_jobs()
+        from app.jobs.services.job_service import JobService
+
+        job_repository = JobRepository()
+        job_service = JobService(job_repository)   # inject dependency
+        jobs = job_service.get_all_jobs()
+
         df = pd.DataFrame([job.__dict__ for job in jobs])
+
         if 'job_title' not in df or 'description' not in df:
             raise KeyError("Missing required job fields in data.")
+
         df['job_with_description'] = df['job_title'] + '  ' + df['description']
         return df
 

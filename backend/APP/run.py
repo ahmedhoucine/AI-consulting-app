@@ -12,7 +12,7 @@ from app.job_clustering.interfaces.routes import cluster_bp
 from app.consultant.interfaces.routes import consultant_bp
 from app.feat_recommendations.services.recommend_engine_singleton import engine
 from app.dashboard.interfaces.controller import dashboard_bp
-
+from app.feat_recommendations.services.faiss_init import RecommendationEngine
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -20,7 +20,7 @@ db.init_app(app)
 CORS(app)
 #app.register_blueprint(advisor_bp)
 app.register_blueprint(recommend_bp)
-#app.register_blueprint(cluster_bp)
+app.register_blueprint(cluster_bp)
 #app.register_blueprint(consultant_bp, url_prefix='/api')
 app.register_blueprint(job_bp)
 app.register_blueprint(dashboard_bp)
@@ -33,9 +33,10 @@ if __name__ == '__main__':
 
     with app.app_context():
         db.create_all()
-        if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
-            cluster_service = ClusterService()
-            cluster_service.run_and_save_clusters()
-            engine.initialized 
+        #if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
+            #cluster_service = ClusterService()
+            #cluster_service.run_and_save_clusters()
+            #engine.initialize_recommendation_model()
+            
 
     app.run(debug=True, host='0.0.0.0', port=5000)

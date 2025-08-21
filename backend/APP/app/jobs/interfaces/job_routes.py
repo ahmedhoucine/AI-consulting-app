@@ -34,7 +34,8 @@ def serialize_job(job):
 
 @job_bp.route('/load-csv', methods=['POST'])
 def load_csv():
-    job_service.load_csv_from_path()
+    job_service.load_data_from_api()
+    job_service.reinitialize_cluster_recommendation()
     return jsonify({"message": "data scraped and  loaded successfully"}), 200
 
 
