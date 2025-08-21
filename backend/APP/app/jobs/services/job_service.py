@@ -6,8 +6,6 @@ from app.jobs.services.job_scraper import fetch_jobs
 from app.job_clustering.services.cluster_service import ClusterService
 from app.feat_recommendations.services.recommend_engine_singleton import engine
 
-
-
 class JobService:
     def __init__(self, job_repository: JobRepositoryInterface):
         self.job_repository = job_repository
@@ -15,10 +13,12 @@ class JobService:
     def load_data_from_api(self) -> None:
         df = fetch_jobs()
         self.job_repository.save_all(df)
+
     def reinitialize_cluster_recommendation(self):
         cluster_service = ClusterService()
         cluster_service.run_and_save_clusters()
         engine.initialize_recommendation_model()
+
     def get_job_by_id(self, job_id: int) -> Optional[JobRecord]:
         return self.job_repository.get_by_id(job_id)
 
@@ -27,7 +27,6 @@ class JobService:
 
     @staticmethod
     def _map_row_to_job(row) -> JobRecord:
-        """Convert a CSV row into a JobRecord entity."""
         return JobRecord(
             job_title=row['Job Title'],
             publishing_date=row['Publishing Date'],

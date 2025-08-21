@@ -16,7 +16,8 @@ TITLES = [# "data analyst", "data engineer", # "data scientist", "machine learni
      "informatique","administratif","Commercial" 
      ]
 CITIES = [ "Paris",
-          #"Lyon", "Marseille","Toulouse","Nice","Nantes","Strasbourg","Montpellier","Bordeaux",
+          "Lyon", 
+          # "Marseille","Toulouse","Nice","Nantes","Strasbourg","Montpellier","Bordeaux",
      #"Lille","Rennes","Reims","Grenoble","Angers","Saint-Étienne","Le Havre","Clermont-Ferrand","Tours","Aix-en-Provence" 
      ]
 
@@ -109,7 +110,7 @@ def extract_skills(description, skill_list):
     return ", ".join(sorted(found_skills)) if found_skills else "non spécifié"
 
 
-def fetch_jobs(titles=TITLES, cities=CITIES, max_pages=1, results_per_page=50, sleep_time=1):
+def fetch_jobs(titles=TITLES, cities=CITIES, max_pages=8, results_per_page=50, sleep_time=1):
     """
     Fetch jobs from Adzuna API and return them as a DataFrame.
     """
