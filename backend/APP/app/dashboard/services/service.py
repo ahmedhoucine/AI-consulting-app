@@ -1,5 +1,6 @@
 from app.dashboard.repositories import repository
 from app.dashboard.domain.models.dashboard import Dashboard
+from app.dashboard.domain.models.dashboard_snapshot import DashboardSnapshot
 
 def row_to_dict(row):
     return dict(row._mapping)
@@ -26,3 +27,30 @@ def get_dashboard_data(db, start_date=None, end_date=None):
 
 
     return dashboard
+
+
+def save_dashboard_snapshot(db, dashboard):
+    snapshot = DashboardSnapshot(
+        offre_count=dashboard.offre_count,
+        success_rate=dashboard.success_rate,
+        consultant_status=dashboard.consultant_status,
+        top_jobs=dashboard.top_jobs,
+        top_skills=dashboard.top_skills,
+        top_secteurs=dashboard.top_secteurs,
+        top_entreprises=dashboard.top_entreprises,
+        bottom_entreprises=dashboard.bottom_entreprises,
+        offres_par_localisation=dashboard.offres_par_localisation
+    )
+    db.session.add(snapshot)
+    db.session.commit()
+
+from decimal import Decimal
+
+def convert_decimals(obj):
+    if isinstance(obj, list):
+        return [convert_decimals(x) for x in obj]
+    elif isinstance(obj, dict):
+        return {k: convert_decimals(v) for k, v in obj.items()}
+    elif isinstance(obj, Decimal):
+        return float(obj)  # or str(obj) if you prefer
+    return obj

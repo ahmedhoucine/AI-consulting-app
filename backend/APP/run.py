@@ -36,7 +36,7 @@ def start_scheduler():
     scheduler.add_job(func=lambda: cron_job(app),
                       trigger="interval",
                       name="scraping every 2 hours",
-                      minutes=60) 
+                      minutes=40) 
     scheduler.start()
 
     atexit.register(lambda: scheduler.shutdown())
@@ -47,9 +47,9 @@ if __name__ == "__main__":
     with app.app_context():
         if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
             db.create_all()
-            cluster_service = ClusterService()
-            cluster_service.run_and_save_clusters()
-            engine.initialize_recommendation_model()
+            #cluster_service = ClusterService()
+            #cluster_service.run_and_save_clusters()
+            #engine.initialize_recommendation_model()
 
     
         start_scheduler()
