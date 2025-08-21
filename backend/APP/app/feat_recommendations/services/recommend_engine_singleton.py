@@ -1,3 +1,3 @@
-from app.feat_recommendations.services.hnsw_model import RecommendationEngine
+from app.feat_recommendations.services.faiss_init import RecommendationEngine
 
 engine = RecommendationEngine()

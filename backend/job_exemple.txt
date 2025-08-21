@@ -1,131 +1,319 @@
-{
-    "job_id": "7l45vms-ux1phojtAAAAAA==",
-    "job_title": "Software Engineer/Developer",
-    "employer_name": "LS Technologies, LLC",
-    "employer_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW8zvihLQoDotGgqmRZpFWpFhsnB2dySdTtuLZ&s=0",
-    "employer_website": null,
-    "job_publisher": "Indeed",
-    "job_employment_type": "Full-time",
-    "job_employment_types": [
-        "FULLTIME"
-    ],
-    "job_apply_link": "https://www.indeed.com/viewjob?jk=cf5a777e04f1098d&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-    "job_apply_is_direct": true,
-    "apply_options": [
-        {
-            "publisher": "Indeed",
-            "apply_link": "https://www.indeed.com/viewjob?jk=cf5a777e04f1098d&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-            "is_direct": true
-        },
-        {
-            "publisher": "Glassdoor",
-            "apply_link": "https://www.glassdoor.com/job-listing/software-engineer-developer-ls-technologies-llc-JV_IC1138213_KO0,27_KE28,47.htm?jl=1009783173960&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-            "is_direct": true
-        },
-        {
-            "publisher": "SimplyHired",
-            "apply_link": "https://www.simplyhired.com/job/OhJKE81L9raU8yA-h13bFwsYukgNZYKlu2kmaaFgibcVHXehnX9RHA?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-            "is_direct": false
-        }
-    ],
-    "job_description": "Job Description:\n\u2022 LST is seeking an experienced mid-level Engineer of Software to support the Federal Aviation Administration (FAA) Air Traffic Management (ATM), SETIS 1 Tasking for the App Store. The ideal candidate will provide support for the Federal Aviation Administration's (FAA).\n\nResponsibilities:\n\u2022 Collaborate with clients, system engineers, and stakeholders to gather and refine project requirements.\n\u2022 Architect, develop, test, and maintain high-quality web applications and services using a variety of programming languages and frameworks.\n\u2022 Support the design and implementation of complex software features and components.\n\u2022 Optimize web applications for maximum speed and scalability.\n\u2022 Troubleshoot and resolve software defects and performance issues.\n\u2022 Provide expert recommendations and solutions for FAA cloud infrastructure and system architectural designs and implementations.\n\u2022 Ability to present to diverse audiences, explaining the technical benefits of a solution in a manner that is easy to understand.\n\nRequired Experience:\n\u2022 Intermediate to advanced programming skills in web application/web service development.\n\u2022 Experience with AWS cloud (EKS, EC2, ECR, CodeCommit, RDS)\n\u2022 Experience or ability to easily pick up develop/deploy to AWS (ex: code, unit test locally, build artifact, build image, deploy image to EKS on AWS, test code on deployed environment)\n\u2022 Experience with Docker and Kubernetes\n\u2022 Experience with git (source code management) (ex: Bitbucket - pull/push code changes)\n\u2022 Experience with Continuous Integration/Continuous Deploy (CI/CD) tools (ex: SonarQube, SonarLint, Junit, Jenkins, Maven, Terraform, Ansible, Artifactory, ArgoCD)\n\u2022 Must have at least 5-10 years of experience.\n\nPreferred Experience:\n\u2022 Experience with configuring, deploying, and using Backstage\n\u2022 Experience with SonarQube or Prisma, having the ability to interpret scans and resolve security vulnerabilities\n\u2022 Experience leveraging Artifactory/JFrog (getting artifacts in/out)\n\u2022 Experience with Jenkins pipelines, ability to create and manage\n\u2022 Experience with ArgoCD, having the ability to understand project creation process, request deployment, and debugging of deployed apps/services)\n\u2022 Experience with infrastructure provisioning and deployment technologies (Terraform, helm, Lens)\n\u2022 Experience with PostgreSQL\n\u2022 Experience supporting the FAA and National Airspace System (NAS)\n\nEducation:\n\nBachelor's Degree (Computer Science, Engineering, Math, or related field).\n\nTravel\n\u2022 0 - 20%\n\nWork Requirements:\n\u2022 Work location: DC Contactor site, Remote work acceptable\n\u2022 Work Hours: Normal working hours\n\u2022 Travel: 0-10%\n\u2022 Physical requirements:\n\u2022 Extended Computer Use: Regular and prolonged periods of working at a computer terminal.\n\u2022 Lifting and Carrying: Occasional lifting of equipment and materials weighing up to 50 pounds may be required during installations or maintenance.\n\u2022 Mobility: Ability to move around the office environment to access computer hardware, networking equipment, and server rooms.\n\u2022 Dexterity: Manual dexterity and visual acuity to operate computer equipment, troubleshoot issues, and perform tasks requiring precision.\n\u2022 Sitting/Standing: Both prolonged sitting and occasional standing may be required for troubleshooting and attending to system issues.\n\u2022 Background check: Must have ability to obtain and maintain a Public Trust.\n\nAbout LS Technologies\n\nAt LS Technologies, a Tetra Tech Company, we're enhancing our nation's critical infrastructure by providing engineering, technical, and professional services to Federal Government agencies. The quality of our work, deep technical expertise, and genuine passion for public service sets us apart. As a growing organization we are expanding our benefits and communication with our employees, offering add-ons that speak to our growing employees' needs. Join us in delivering high-quality solutions and shaping the future of safety and innovation for our government partners.\n\nEEO Commitment\n\nLS Technologies, LLC provides equal employment opportunities to all employees and applicants for employment and prohibits discrimination and harassment of any type without regard to race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. This policy applies to all terms and conditions of employment, including recruiting, hiring, placement, promotion, termination, layoff, recall, transfer, leaves of absence, compensation, and training.\n\nRequesting An Accommodation\n\nLS Technologies is committed to providing equal employment opportunities for persons with disabilities or religious observances, including reasonable accommodation when needed. If you are hired by LS Technologies and require accommodation to perform the essential functions of your role, you will be asked to participate in our reasonable accommodation process. Accommodations made to facilitate the recruiting process are not a guarantee of future or continued accommodations once hired.\n\nIf you would like to be considered for employment opportunities with LS Technologies and have accommodation needs for a disability or religious observance, please send us an email careers@lstechllc.com or speak with your recruiter.\n\nCompensation (Pay Bands)\n\nSalary at LST is determined by a wide array of factors, such as (but not limited to) education, certifications, knowledge, skills, competencies, and experience, location, and clearance level, as well as contract-specific affordability and organizational requirements and applicable employment laws. Please note that the salary information is a general guideline only.\n\nThe projected compensation range for this position is provided within the posting and is based on full-time, 40 hour/week status. Part-time staff receive compensation at an hourly rate. The estimated minimum and maximum displayed represents the broadest range for this position (inclusive of high geographic and high clearance requirements) and is just one component of LSTs total compensation package for employees. ** In compliance with local laws, LS Technologies presents this reasonable compensation range as a guideline for roles in California, Colorado, New York, or Washington D.C.\"\n\nBenefits offered to all employees who work 30+ hours per week: Medical, Dental, Vision, Life Insurance, Short-Term Disability, Long-Term Disability, 401(k) match, Flexible Spending Accounts, EAP, Education Assistance, Parental Leave, Annual Leave, and Holidays.",
-    "job_is_remote": false,
-    "job_posted_at": null,
-    "job_posted_at_timestamp": null,
-    "job_posted_at_datetime_utc": null,
-    "job_location": "Washington, DC",
-    "job_city": "Washington",
-    "job_state": "District of Columbia",
-    "job_country": "US",
-    "job_latitude": 38.9071923,
-    "job_longitude": -77.0368707,
-    "job_benefits": [
-        "dental_coverage",
-        "health_insurance"
-    ],
-    "job_google_link": "https://www.google.com/search?q=jobs&gl=us&hl=en&udm=8#vhid=vt%3D20/docid%3D7l45vms-ux1phojtAAAAAA%3D%3D&vssid=jobs-detail-viewer",
-    "job_min_salary": 120000,
-    "job_max_salary": 150000,
-    "job_salary_period": "YEAR",
-    "job_highlights": {
-        "Qualifications": [
-            "Intermediate to advanced programming skills in web application/web service development",
-            "Experience with AWS cloud (EKS, EC2, ECR, CodeCommit, RDS)",
-            "Experience or ability to easily pick up develop/deploy to AWS (ex: code, unit test locally, build artifact, build image, deploy image to EKS on AWS, test code on deployed environment)",
-            "Experience with Docker and Kubernetes",
-            "Experience with git (source code management) (ex: Bitbucket - pull/push code changes)",
-            "Experience with Continuous Integration/Continuous Deploy (CI/CD) tools (ex: SonarQube, SonarLint, Junit, Jenkins, Maven, Terraform, Ansible, Artifactory, ArgoCD)",
-            "Must have at least 5-10 years of experience",
-            "Bachelor's Degree (Computer Science, Engineering, Math, or related field)",
-            "Extended Computer Use: Regular and prolonged periods of working at a computer terminal",
-            "Lifting and Carrying: Occasional lifting of equipment and materials weighing up to 50 pounds may be required during installations or maintenance",
-            "Mobility: Ability to move around the office environment to access computer hardware, networking equipment, and server rooms",
-            "Dexterity: Manual dexterity and visual acuity to operate computer equipment, troubleshoot issues, and perform tasks requiring precision",
-            "Sitting/Standing: Both prolonged sitting and occasional standing may be required for troubleshooting and attending to system issues",
-            "Background check: Must have ability to obtain and maintain a Public Trust"
-        ],
-        "Benefits": [
-            "Compensation (Pay Bands)",
-            "Salary at LST is determined by a wide array of factors, such as (but not limited to) education, certifications, knowledge, skills, competencies, and experience, location, and clearance level, as well as contract-specific affordability and organizational requirements and applicable employment laws",
-            "The projected compensation range for this position is provided within the posting and is based on full-time, 40 hour/week status",
-            "Part-time staff receive compensation at an hourly rate",
-            "The estimated minimum and maximum displayed represents the broadest range for this position (inclusive of high geographic and high clearance requirements) and is just one component of LSTs total compensation package for employees",
-            "** In compliance with local laws, LS Technologies presents this reasonable compensation range as a guideline for roles in California, Colorado, New York, or Washington D.C.\"",
-            "Benefits offered to all employees who work 30+ hours per week: Medical, Dental, Vision, Life Insurance, Short-Term Disability, Long-Term Disability, 401(k) match, Flexible Spending Accounts, EAP, Education Assistance, Parental Leave, Annual Leave, and Holidays"
-        ],
-        "Responsibilities": [
-            "LST is seeking an experienced mid-level Engineer of Software to support the Federal Aviation Administration (FAA) Air Traffic Management (ATM), SETIS 1 Tasking for the App Store",
-            "Collaborate with clients, system engineers, and stakeholders to gather and refine project requirements",
-            "Architect, develop, test, and maintain high-quality web applications and services using a variety of programming languages and frameworks",
-            "Support the design and implementation of complex software features and components",
-            "Optimize web applications for maximum speed and scalability",
-            "Troubleshoot and resolve software defects and performance issues",
-            "Provide expert recommendations and solutions for FAA cloud infrastructure and system architectural designs and implementations",
-            "Ability to present to diverse audiences, explaining the technical benefits of a solution in a manner that is easy to understand",
-            "Work location: DC Contactor site, Remote work acceptable",
-            "Work Hours: Normal working hours",
-            "Travel: 0-10%"
-        ]
+[
+  {
+    "location": {
+      "display_name": "Paris, Ile-de-France",
+      "__CLASS__": "Adzuna::API::Response::Location",
+      "area": [
+        "France",
+        "Ile-de-France",
+        "Paris"
+      ]
     },
-    "job_onet_soc": "15113200",
-    "job_onet_job_zone": "4"
-}
-
-
-
-
-
-
-import requests
-import json
-
-url = "https://jsearch.p.rapidapi.com/search"
-
-headers = {
-    "X-RapidAPI-Key": "c19191ee31msh426d59fac6431f9p14bd42jsn8a92014748d6",
-    "X-RapidAPI-Host": "jsearch.p.rapidapi.com"
-}
-
-params = {
-    "query": "Devops Engineer",
-    "page": "1",
-    "num_pages": "1",
-    "location": "London"
-}
-
-response = requests.get(url, headers=headers, params=params)
-
-if response.status_code == 200:
-    data = response.json()
-    jobs = data.get("data", [])
-    if jobs:
-        first_job = jobs[0]
-        print(json.dumps(first_job, indent=4))  # Pretty print the first job JSON
-    else:
-        print("No jobs found in response.")
-else:
-    print(f"Error: {response.status_code} - {response.text}")
-
-
-
-
+    "longitude": 2.344631,
+    "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidG1tTjBOdDg4Qkdvd09SNzFIMXpoUSIsImkiOiI1MzUyMDQxOTUyIn0.fdVXgImkvFk4x03xrMOpo2wZnr-yk-fYB4lQ_MuNg7Y",     
+    "latitude": 48.863839,
+    "description": "HCL Tech is a global technology company, spread across 60 countries, delivering industry-leading capabilities centered around digital, engineering, cloud and AI, powered by a broad portfolio of technology services and products. We work with clients across all major verticals, providing industry solutions for Financial Services, Manufacturing, Life Sciences and Healthcare, Technology and Services, Telecom and Media, Retail and CPG, and Public Services. We are powered by our people a global, dive…",
+    "category": {
+      "__CLASS__": "Adzuna::API::Response::Category",
+      "tag": "unknown",
+      "label": "Unknown"
+    },
+    "title": "DevOps Engineer- AWS",
+    "salary_is_predicted": "0",
+    "id": "5352041952",
+    "company": {
+      "display_name": "HCLTech",
+      "__CLASS__": "Adzuna::API::Response::Company"
+    },
+    "__CLASS__": "Adzuna::API::Response::Job",
+    "created": "2025-08-14T10:16:06Z",
+    "redirect_url": "https://www.adzuna.fr/land/ad/5352041952?se=tmmN0Nt88BGowOR71H1zhQ&utm_medium=api&utm_source=3f027391&v=44F83E3A4DEA0DF819610AA7D308F1C915852F8F"
+  },
+  {
+    "salary_is_predicted": "0",
+    "title": "DevOps Engineer",
+    "id": "5316451022",
+    "company": {
+      "display_name": "Payplug",
+      "__CLASS__": "Adzuna::API::Response::Company"
+    },
+    "__CLASS__": "Adzuna::API::Response::Job",
+    "created": "2025-07-22T15:59:48Z",
+    "redirect_url": "https://www.adzuna.fr/details/5316451022?utm_medium=api&utm_source=3f027391",
+    "location": {
+      "area": [
+        "France",
+        "Ile-de-France",
+        "Paris"
+      ],
+      "__CLASS__": "Adzuna::API::Response::Location",
+      "display_name": "Paris, Ile-de-France"
+    },
+    "longitude": 2.344631,
+    "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTMxNjQ1MTAyMiIsInMiOiJ0bW1OME50ODhCR293T1I3MUgxemhRIn0.fA0-Rv3DPRKo5B5Fl_aPNxPood7ji0jojHRzZIxpg6M",     
+    "latitude": 48.863839,
+    "description": "Payplug est la solution de paiement française pensée pour les commerçants, e-commerçants de toutes tailles et fintechs. Avec notre plateforme technologique de pointe, nos outils dédiés à la conversion et notre maîtrise unique de la chaîne de paiement, nous vous invitons à viser le meilleur, et plus encore. Payplug, c’est une équipe de 300 passionnés dédiés à la réalisation de vos plus grandes ambitions. Nous accompagnons aujourd’hui 17 000 PME telles que Hast et Plantes pour tous, mais aussi de…",
+    "category": {
+      "tag": "other-general-jobs",
+      "__CLASS__": "Adzuna::API::Response::Category",
+      "label": "Emplois Autres/Général"
+    }
+  },
+  {
+    "salary_is_predicted": "0",
+    "__CLASS__": "Adzuna::API::Response::Job",
+    "created": "2025-07-19T12:55:29Z",
+    "salary_min": 45000,
+    "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTMxMjA1OTkxMSIsInMiOiJ0bW1OME50ODhCR293T1I3MUgxemhRIn0.-Bo4Xle9BUPCRop10llu31q0DICqK8Ti90wLfhmWlLk",     
+    "location": {
+      "display_name": "9ème Arrondissement, Paris",
+      "__CLASS__": "Adzuna::API::Response::Location",
+      "area": [
+        "France",
+        "Ile-de-France",
+        "Paris",
+        "9ème Arrondissement"
+      ]
+    },
+    "longitude": 2.34043,
+    "latitude": 48.87284,
+    "salary_max": 65000,
+    "title": "DevOps Engineer",
+    "id": "5312059911",
+    "company": {
+      "display_name": "Vianova",
+      "__CLASS__": "Adzuna::API::Response::Company"
+    },
+    "redirect_url": "https://www.adzuna.fr/details/5312059911?utm_medium=api&utm_source=3f027391",
+    "description": "✍️ The Role We are now looking for an ambitious and hands-on DevOps Engineer to join our team and build with us the Operating Sysstem that will help cities and transportation services thrive in the mobility revolution. As a DevOps Engineer you will be responsible for building and maintaining optimized and highly available data pipelines , that are at the heart of Vianova mobility data platform. Your skills will be precious in shaping the way cities, transportation services, OEMs, infrastructure …",
+    "contract_time": "full_time",
+    "category": {
+      "tag": "unknown",
+      "__CLASS__": "Adzuna::API::Response::Category",
+      "label": "Unknown"
+    }
+  },
+  {
+    "salary_is_predicted": "0",
+    "title": "Devops Engineer",
+    "id": "5352203930",
+    "redirect_url": "https://www.adzuna.fr/details/5352203930?utm_medium=api&utm_source=3f027391",
+    "created": "2025-08-14T13:01:56Z",
+    "__CLASS__": "Adzuna::API::Response::Job",
+    "company": {
+      "display_name": "360Learning",
+      "__CLASS__": "Adzuna::API::Response::Company"
+    },
+    "latitude": 48.86371,
+    "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidG1tTjBOdDg4Qkdvd09SNzFIMXpoUSIsImkiOiI1MzUyMjAzOTMwIn0.ty5g6OI9aeOUhROg0QCLRFp5LGbyzKuH2vU2lJikKoM",     
+    "location": {
+      "area": [
+        "France",
+        "Ile-de-France",
+        "Paris",
+        "3ème Arrondissement"
+      ],
+      "display_name": "3ème Arrondissement, Paris",
+      "__CLASS__": "Adzuna::API::Response::Location"
+    },
+    "longitude": 2.36109,
+    "contract_time": "full_time",
+    "category": {
+      "label": "Unknown",
+      "tag": "unknown",
+      "__CLASS__": "Adzuna::API::Response::Category"
+    },
+    "description": "As a DevOps Engineer, you will be an integral part of an existing team comprising five DevOps professionals. You will play a vital role in designing, implementing, and maintaining our cloud infrastructure, which serves over 2500 client companies, with 2.5 million registered users and 30,000 daily active users. You will collaborate closely with all engineering squads—including Development, Architecture, AI, and Data teams—to ensure the smooth and efficient delivery of our SaaS product. Your expe…"
+  },
+  {
+    "salary_is_predicted": "0",
+    "title": "Devops engineer - h/f",
+    "id": "5197782178",
+    "redirect_url": "https://www.adzuna.fr/details/5197782178?utm_medium=api&utm_source=3f027391",
+    "__CLASS__": "Adzuna::API::Response::Job",
+    "created": "2025-05-14T10:51:57Z",
+    "company": {
+      "display_name": "Capijob",
+      "__CLASS__": "Adzuna::API::Response::Company"
+    },
+    "latitude": 48.863839,
+    "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidG1tTjBOdDg4Qkdvd09SNzFIMXpoUSIsImkiOiI1MTk3NzgyMTc4In0.HycLuvrWuFrd6N2nzQUmfi9UPKzme7ZzB_NKTJxshBo",     
+    "longitude": 2.344631,
+    "location": {
+      "__CLASS__": "Adzuna::API::Response::Location",
+      "display_name": "Paris, Ile-de-France",
+      "area": [
+        "France",
+        "Ile-de-France",
+        "Paris"
+      ]
+    },
+    "category": {
+      "__CLASS__": "Adzuna::API::Response::Category",
+      "tag": "unknown",
+      "label": "Unknown"
+    },
+    "description": "Société : HAYS MEDIASHays plc est l'un des principaux groupes mondiaux de recrutement de professionnels. Hays est l'expert du recrutement de personnes qualifiées, professionnelles et compétentes dans le monde entier. Hays est le leader du marché au Royaume-Uni et en Asie-Pacifique et également l'un des leaders du marché en Europe continentale et en Amérique latine. Hays intervient pour le compte de milliers d’entreprises des secteurs privé et public, sur des postes en CDI, CDD, Travail Temporai…"
+  },
+  {
+    "id": "5328160866",
+    "salary_is_predicted": "0",
+    "title": "DevOps Engineer",
+    "redirect_url": "https://www.adzuna.fr/details/5328160866?utm_medium=api&utm_source=3f027391",
+    "created": "2025-07-30T12:57:05Z",
+    "__CLASS__": "Adzuna::API::Response::Job",
+    "company": {
+      "display_name": "Sonio",
+      "__CLASS__": "Adzuna::API::Response::Company"
+    },
+    "latitude": 48.863839,
+    "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTMyODE2MDg2NiIsInMiOiJ0bW1OME50ODhCR293T1I3MUgxemhRIn0.bPZFDyYZYV-6xzzZ-lvB7ogRflU1rWg5K5BHsJfTRDA",     
+    "location": {
+      "__CLASS__": "Adzuna::API::Response::Location",
+      "display_name": "Paris, Ile-de-France",
+      "area": [
+        "France",
+        "Ile-de-France",
+        "Paris"
+      ]
+    },
+    "longitude": 2.344631,
+    "contract_time": "full_time",
+    "category": {
+      "__CLASS__": "Adzuna::API::Response::Category",
+      "tag": "unknown",
+      "label": "Unknown"
+    },
+    "description": "About Sonio Each year, 140M children are born. Birth defects affect 1 in 33 births in developed countries, and in 50% of cases, they are not detected during prenatal examinations. Prenatal medicine is particularly complex, and the scans impose heavy responsibilities on healthcare professionals. They can also be a source of stress for future parents. Resulting from 5 years of collaboration between world-renowned experts from Necker Hospital and Ecole Polytechnique, Sonio uses artificial intellig…"
+  },
+  {
+    "salary_max": 90000,
+    "latitude": 48.8814,
+    "location": {
+      "__CLASS__": "Adzuna::API::Response::Location",
+      "display_name": "8ème Arrondissement, Paris",
+      "area": [
+        "France",
+        "Ile-de-France",
+        "Paris",
+        "8ème Arrondissement"
+      ]
+    },
+    "longitude": 2.3365,
+    "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidG1tTjBOdDg4Qkdvd09SNzFIMXpoUSIsImkiOiI1MzE5OTY4OTE0In0.KtCZDfuLSpWNxIp5juOelwWZ9p7fQcpKnuh0pXKsYtU",     
+    "contract_type": "permanent",
+    "salary_min": 80000,
+    "created": "2025-07-24T18:27:32Z",
+    "__CLASS__": "Adzuna::API::Response::Job",
+    "salary_is_predicted": "0",
+    "contract_time": "full_time",
+    "category": {
+      "label": "Unknown",
+      "tag": "unknown",
+      "__CLASS__": "Adzuna::API::Response::Category"
+    },
+    "description": "Description du poste Client Final / Tech – Hospitality Entreprise SaaS / Data / Cloud CDI – Paris Centre Kaino, cabinet de recrutement spécialisé, recrute un(e) Lead DevOps Engineer pour en CDI pour un acteur international du secteur Tech / Hospitality, en pleine transformation. MISSIONS : En tant que Lead DevOps Engineer vous prenez un rôle central dans la modernisation, la stabilité et la performance des plateformes Cloud & On-premise. À ce titre vos principales responsabilités sont: En tant …",
+    "redirect_url": "https://www.adzuna.fr/details/5319968914?utm_medium=api&utm_source=3f027391",
+    "company": {
+      "display_name": "Kaino",
+      "__CLASS__": "Adzuna::API::Response::Company"
+    },
+    "title": "Lead DevOps Engineer",
+    "id": "5319968914"
+  },
+  {
+    "longitude": 2.344631,
+    "location": {
+      "display_name": "Paris, Ile-de-France",
+      "__CLASS__": "Adzuna::API::Response::Location",
+      "area": [
+        "France",
+        "Ile-de-France",
+        "Paris"
+      ]
+    },
+    "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTM0OTI2ODMzMCIsInMiOiJ0bW1OME50ODhCR293T1I3MUgxemhRIn0.4_lp1BWMimQcG_btIC4Xt_Kppru8KNDT71q30YxzBDY",     
+    "salary_max": 700,
+    "latitude": 48.863839,
+    "salary_is_predicted": "0",
+    "salary_min": 600,
+    "__CLASS__": "Adzuna::API::Response::Job",
+    "created": "2025-08-12T21:15:36Z",
+    "contract_type": "contract",
+    "description": "In this mission of Senior Cloud Data Platform Engineer, you will have the following tasks: Segregation of production and development environment (right management, enhance tests), Capacity management for our servers (including monitoring and alerts), Industrialisation of Data Quality testing, Improvement of release management (including testing, versioning, Set up Disaster recovery plan and chaos engineering, Maintenance of several existing servers and assets (including CI/CD tools and pipeline…",
+    "contract_time": "full_time",
+    "category": {
+      "label": "Emplois Comptabilité et Finance",
+      "__CLASS__": "Adzuna::API::Response::Category",
+      "tag": "accounting-finance-jobs"
+    },
+    "title": "Senior DevOps Engineer",
+    "id": "5349268330",
+    "company": {
+      "__CLASS__": "Adzuna::API::Response::Company",
+      "display_name": "gloccomslondon"
+    },
+    "redirect_url": "https://www.adzuna.fr/details/5349268330?utm_medium=api&utm_source=3f027391"
+  },
+  {
+    "redirect_url": "https://www.adzuna.fr/details/4819318040?utm_medium=api&utm_source=3f027391",
+    "created": "2024-08-09T23:44:24Z",
+    "__CLASS__": "Adzuna::API::Response::Job",
+    "company": {
+      "display_name": "Entrust France S.",
+      "__CLASS__": "Adzuna::API::Response::Company"
+    },
+    "salary_is_predicted": "0",
+    "title": "DevOps Engineer I",
+    "id": "4819318040",
+    "contract_time": "full_time",
+    "category": {
+      "label": "Unknown",
+      "__CLASS__": "Adzuna::API::Response::Category",
+      "tag": "unknown"
+    },
+    "description": "Career Growth, Flexibility and Collaboration! Entrust is an innovative leader in identity-centric security solutions, providing an integrated platform of scalable, AI-enabled security offerings. Headquartered in Minnesota, we offer our colleagues the ability to work globally, in a flexible and collaborative environment. Our team makes an impact The Company: Entrust relies on curious, dedicated and innovative individuals whom anticipate the future and provide solutions for a more connected, mobi…",
+    "latitude": 48.863839,
+    "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNDgxOTMxODA0MCIsInMiOiJ0bW1OME50ODhCR293T1I3MUgxemhRIn0.H7OCGaTmSPhd5OzrYFVsubqx-U9xiinCwMC1S-3cRX8",     
+    "location": {
+      "area": [
+        "France",
+        "Ile-de-France",
+        "Paris"
+      ],
+      "__CLASS__": "Adzuna::API::Response::Location",
+      "display_name": "Paris, Ile-de-France"
+    },
+    "longitude": 2.344631
+  },
+  {
+    "redirect_url": "https://www.adzuna.fr/details/4803163435?utm_medium=api&utm_source=3f027391",
+    "company": {
+      "display_name": "Entrust",
+      "__CLASS__": "Adzuna::API::Response::Company"
+    },
+    "__CLASS__": "Adzuna::API::Response::Job",
+    "created": "2024-07-31T23:23:53Z",
+    "salary_is_predicted": "0",
+    "id": "4803163435",
+    "title": "DevOps Engineer I",
+    "category": {
+      "label": "Unknown",
+      "__CLASS__": "Adzuna::API::Response::Category",
+      "tag": "unknown"
+    },
+    "description": "Career Growth, Flexibility and Collaboration Entrust is an innovative leader in identity-centric security solutions, providing an integrated platform of scalable, AI-enabled security offerings. Headquartered in Minnesota, we offer our colleagues the ability to work globally, in a flexible and collaborative environment. Our team makes an impact The Company: Entrust relies on curious, dedicated and innovative individuals whom anticipate the future and provide solutions for a more connected, mobil…",
+    "latitude": 48.863839,
+    "longitude": 2.344631,
+    "location": {
+      "display_name": "Paris, Ile-de-France",
+      "__CLASS__": "Adzuna::API::Response::Location",
+      "area": [
+        "France",
+        "Ile-de-France",
+        "Paris"
+      ]
+    },
+    "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNDgwMzE2MzQzNSIsInMiOiJ0bW1OME50ODhCR293T1I3MUgxemhRIn0.hQkWNodjHFabovYK5OW-WBCRUXg7BY_k4aYYjCe8xhY"      
+  }
+]

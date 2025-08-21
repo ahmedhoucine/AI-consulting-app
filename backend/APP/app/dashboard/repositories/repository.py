@@ -3,6 +3,8 @@ from datetime import datetime, timedelta
 from sqlalchemy import text
 from collections import Counter
 
+from app.dashboard.domain.models.dashboard_snapshot import DashboardSnapshot
+
 def get_offre_count(db):
     return db.session.execute(text("""
         SELECT COUNT(*) FROM job_records
@@ -125,4 +127,5 @@ def get_offres_par_localisation(db):
     )
 
     return sorted_locations[:20]
+
 

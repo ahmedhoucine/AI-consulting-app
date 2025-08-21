@@ -1,6 +1,7 @@
-from flask import Blueprint, jsonify, request
+from flask import Blueprint, jsonify, request,current_app
 from app.jobs.repositories.job_repository import JobRepository
 from app.jobs.services.job_service import JobService
+
 
 job_bp = Blueprint('jobs', __name__)
 job_service = JobService(JobRepository())
@@ -32,19 +33,14 @@ def serialize_job(job):
         "estm_publishdate": job.estm_publishdate,
     }
 
-@job_bp.route('/load-csv', methods=['POST'])
-def load_csv():
-    """Load jobs from a CSV file."""
-    if request.is_json:
-        file_path = request.json.get("file_path", "data.csv")  
-    else:
-        file_path = "data.csv"      
-
-    try:
-        job_service.load_csv_from_path(file_path)
-        return jsonify({"message": "✅ CSV loaded successfully"}), 200
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+@job_bp.route('/scraping', methods=['POST'])
+def scraping_and_reinitialization():
+    with current_app.app_context():
+        job_service.load_data_from_api()
+        job_service.reinitialize_cluster_recommendation()
+    return jsonify({
+        "message": "Data scraped and clustering/recommendation reinitialized successfully"
+    }), 200
 
 @job_bp.route('/api/jobs/<int:job_id>', methods=['GET'])
 def get_job(job_id: int):

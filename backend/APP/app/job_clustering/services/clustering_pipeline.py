@@ -9,8 +9,14 @@ import numpy as np
 import torch
 import hdbscan
 from sklearn.metrics import silhouette_score
+from sqlalchemy import create_engine
+
+from app.config import Config
 
 NON_SPECIFIED = "non spécifié"
+
+engine = create_engine(Config.SQLALCHEMY_DATABASE_URI)
+
 
 # ---------- Transformers ----------
 class SemanticEmbedder(BaseEstimator, TransformerMixin):
@@ -50,13 +56,8 @@ class NumericCleaner(BaseEstimator, TransformerMixin):
         ])
 
 # ---------- Pipeline Builders ----------
-def build_feature_pipeline(num_attribs, cat_attribs, text_attrib):
-    num_pipeline = Pipeline([
-        ('selector', DataFrameSelector(num_attribs)),
-        ('cleaner', NumericCleaner()),
-        ('imputer', SimpleImputer(strategy="median")),
-        ('scaler', StandardScaler()),
-    ])
+def build_feature_pipeline( cat_attribs, text_attrib):
+   
 
     cat_pipeline = Pipeline([
         ('selector', DataFrameSelector(cat_attribs)),
@@ -70,20 +71,27 @@ def build_feature_pipeline(num_attribs, cat_attribs, text_attrib):
         ('svd', TruncatedSVD(n_components=50, random_state=42)),
     ])
 
+    """ num_pipeline = Pipeline([
+        ('selector', DataFrameSelector(num_attribs)),
+        ('cleaner', NumericCleaner()),
+        ('imputer', SimpleImputer(strategy="median")),
+        ('scaler', StandardScaler()),
+    ])"""
+
     return FeatureUnion([
-        ('num', num_pipeline),
+       # ('num', num_pipeline),
         ('cat', cat_pipeline),
         ('text', text_pipeline)
     ])
 
 # ---------- Main Logic ----------
-def prepare_and_cluster_data(filepath="data.csv", min_cluster_size=30, n_components=14):
-    """Read data, preprocess, cluster, and return labels + processed DataFrame."""
-    data = load_and_clean_data(filepath)
+def prepare_and_cluster_data(min_cluster_size=30, n_components=14):
+    """Read data from DB, preprocess, cluster, and return labels + processed DataFrame."""
+    data = load_and_clean_data(engine)
     pipeline = build_feature_pipeline(
-        num_attribs=['Number of Candidates', 'Number of Employees'],
-        cat_attribs=['Job Title', 'Work Mode', 'Plateforme', 'Company Name', 'Sector', "Salary", 'Contract Type', 'Education'],
-        text_attrib=['Description']
+        #num_attribs=['number_of_candidates', 'number_of_employees'],
+        cat_attribs=['job_title', 'work_mode', 'plateforme', 'company_name', 'sector', "salary", 'contract_type', 'education'],
+        text_attrib=['description']
     )
 
     X = pipeline.fit_transform(data)
@@ -95,9 +103,12 @@ def prepare_and_cluster_data(filepath="data.csv", min_cluster_size=30, n_compone
 
     return labels, data
 
-def load_and_clean_data(filepath):
-    """Load dataset and drop unnecessary columns."""
-    return pd.read_csv(filepath).drop(
+
+def load_and_clean_data(engine):
+    """Load dataset from job_records table and drop unnecessary columns."""
+    query = "SELECT * FROM job_records"
+    df = pd.read_sql(query, engine)
+    return df.drop(
         columns=["ID", "Scrap Date", "scrap_date_parsed", "Duration", "Location"],
         errors='ignore'
     )

@@ -8,7 +8,7 @@ class ClusterService:
     def run_and_save_clusters(self):
         
         labels, data = prepare_and_cluster_data()
-        self.repo.save_clusters(labels, data[["Job Title", "Sector", "Skills"]])
+        self.repo.save_clusters(labels, data[["job_title", "sector", "skills"]])
 
     def get_clusters(self):
         return self.repo.get_all_clusters()

@@ -2,27 +2,33 @@ import requests
 import pandas as pd
 from datetime import datetime
 import time
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
-APP_ID = "3f027391"
-APP_KEY = "2c2ef7f54d3aaf845b4ef8eff14c6771	"
+APP_ID = os.getenv("APP_ID")
+APP_KEY = os.getenv("APP_KEY")
+
 
 TITLES = [
-     "data analyst", "data engineer",
-    "data scientist", "machine learning engineer", "devops engineer", 
-    "software engineer",
-    "cloud engineer", "cybersecurity engineer",  "product manager",
-    "qa engineer", "scrum master", "admin systèmes et réseaux",
-     "backend developer", "frontend developer", "fullstack developer",
-     "chef de projet informatique", "analyste cybersécurité", "ingénieur réseau",
-         "développeur python", "développeur java", "développeur node", "développeur .net"
+    # "data analyst", "data engineer",
+   # "data scientist", "machine learning engineer", "devops engineer", 
+   #"devops engineer","AI engineer"
+    #"software engineer",
+    #"cloud engineer", "cybersecurity engineer",  "product manager",
+    #"qa engineer", "scrum master", "admin systèmes et réseaux",
+    # "backend developer", "frontend developer", "fullstack developer",
+    # "chef de projet informatique", "analyste cybersécurité", "ingénieur réseau",
+     #    "développeur python", "développeur java", "développeur node", "développeur .net" ,
+     "informatique","administratif","Commercial"
 
 ]
 CITIES = [
-    "Paris", "Lyon", "Marseille", "Toulouse", "Nice", "Nantes", "Strasbourg",
-    "Montpellier", "Bordeaux", "Lille", "Rennes", "Reims", "Grenoble",
-    "Angers", "Saint-Étienne", "Le Havre", "Clermont-Ferrand", "Tours", "Aix-en-Provence"
-
+    "Paris","Lyon",
+    #"Marseille","Toulouse","Nice","Nantes","Strasbourg","Montpellier","Bordeaux",
+    #"Lille","Rennes","Reims","Grenoble","Angers","Saint-Étienne","Le Havre","Clermont-Ferrand","Tours","Aix-en-Provence"
 ]
+
 
 BASE_URL = "https://api.adzuna.com/v1/api/jobs/fr/search/{page}"
 
@@ -46,7 +52,7 @@ def fetch_with_retry(url, params, retries=3, delay=3):
     return None
 SKILL_KEYWORDS = [
     # Programming Languages
-    "python", "java", "javascript", "typescript", "c", "c++", "c#", "go", "rust", "php", "ruby", "kotlin",
+    "python", "java", "javascript", "typescript", "c++", "c#", "go", "rust", "php", "ruby", "kotlin",
     "swift", "scala", "perl", "matlab", "shell", "bash", "objective-c", "lua", "haskell", "dart",
 
     # Frontend Frameworks & Technologies
@@ -168,7 +174,9 @@ for title in TITLES:
                     "Description E": "non spécifié",
                     "Experience": "non spécifié",
                     "Contract Type": job.get("contract_type") or "non spécifié",
-                    "Education": "non spécifié"
+                    "Education": "non spécifié",
+                    "estm_publishdate":"non spécifié",
+                    "scrap_date_parsed":"non spécifié"
                 })
 
             time.sleep(1)  # avoid hitting rate limits
@@ -178,7 +186,7 @@ for title in TITLES:
 import os
 
 df = pd.DataFrame(formatted_jobs)
-file_path = "adzuna_jobs.csv"
+file_path = "scraped_jobs.csv"
 
 if os.path.exists(file_path):
     # Append without headers
