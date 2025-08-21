@@ -129,19 +129,3 @@ def get_offres_par_localisation(db):
     return sorted_locations[:20]
 
 
-def save_dashboard_snapshot(db, dashboard_data):
-    snapshot = DashboardSnapshot(
-        title=dashboard_data["title"],
-        offre_count=dashboard_data["offre_count"],
-        success_rate=dashboard_data["success_rate"],
-        consultant_status=dashboard_data["consultant_status"],
-        top_jobs=dashboard_data["top_jobs"],
-        top_skills=dashboard_data["top_skills"],
-        top_secteurs=dashboard_data["top_secteurs"],
-        top_entreprises=dashboard_data["top_entreprises"],
-        bottom_entreprises=dashboard_data["bottom_entreprises"],
-        offres_par_localisation=dashboard_data["offres_par_localisation"]
-    )
-    db.session.add(snapshot)
-    db.session.commit()
-    return snapshot

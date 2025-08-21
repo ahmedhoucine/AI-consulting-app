@@ -29,11 +29,8 @@ def save_snapshot():
         start_date = start_date.strip()
     if end_date:
         end_date = end_date.strip()
-
-    # Get raw dict
+        
     dashboard_data = get_dashboard_data(db, start_date, end_date).to_dict()
-
-    # 🔥 Convert Decimals to floats before inserting
     dashboard_data = convert_decimals(dashboard_data)
 
     snapshot = DashboardSnapshot(
