@@ -32,12 +32,11 @@ def serialize_job(job):
         "estm_publishdate": job.estm_publishdate,
     }
 
-@job_bp.route('/load-csv', methods=['POST'])
-def load_csv():
-    job_service.load_data_from_api()
-    job_service.reinitialize_cluster_recommendation()
-    return jsonify({"message": "data scraped and  loaded successfully"}), 200
-
+@job_bp.route('/scraping', methods=['POST'])
+def load_csv(app):
+    with app.app_context():
+        job_service.load_data_from_api()
+        job_service.reinitialize_cluster_recommendation()
 
 @job_bp.route('/api/jobs/<int:job_id>', methods=['GET'])
 def get_job(job_id: int):

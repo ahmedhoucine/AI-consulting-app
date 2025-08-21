@@ -1,9 +1,8 @@
-import os
 from flask import Flask
 import torch
 from flask_cors import CORS
 from app.job_clustering.services.cluster_service import ClusterService
-from app.jobs.interfaces.job_routes import job_bp
+from app.jobs.interfaces.job_routes import job_bp, load_csv
 from app.shared.db import db
 from app.config import Config
 from app.profile_advices.interfaces.routes import advisor_bp
@@ -13,6 +12,7 @@ from app.consultant.interfaces.routes import consultant_bp
 from app.feat_recommendations.services.recommend_engine_singleton import engine
 from app.dashboard.interfaces.controller import dashboard_bp
 from app.feat_recommendations.services.faiss_init import RecommendationEngine
+from apscheduler.schedulers.background import BackgroundScheduler
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -25,6 +25,14 @@ app.register_blueprint(cluster_bp)
 app.register_blueprint(job_bp)
 app.register_blueprint(dashboard_bp)
 
+
+scheduler = BackgroundScheduler()
+scheduler.add_job(func=lambda: load_csv(app), trigger="interval", name="scraping every 2 hours", hours=2)
+scheduler.start()
+
+# Shut down the scheduler when exiting the app
+import atexit
+atexit.register(lambda: scheduler.shutdown())
 
 
 

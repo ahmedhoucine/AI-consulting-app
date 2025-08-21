@@ -12,48 +12,77 @@ APP_KEY = os.getenv("APP_KEY")
 
 BASE_URL = "https://api.adzuna.com/v1/api/jobs/fr/search/{page}"
 
-TITLES = [ # "data analyst", "data engineer", # "data scientist", "machine learning engineer", "devops engineer", #"devops engineer","AI engineer" #"software engineer", #"cloud engineer", "cybersecurity engineer", "product manager", #"qa engineer", "scrum master", "admin systèmes et réseaux", # "backend developer", "frontend developer", "fullstack developer", # "chef de projet informatique", "analyste cybersécurité", "ingénieur réseau", # "développeur python", "développeur java", "développeur node", "développeur .net" ,
-     "informatique"
-     #,"administratif","Commercial" 
+TITLES = [# "data analyst", "data engineer", # "data scientist", "machine learning engineer", "devops engineer", #"devops engineer","AI engineer" #"software engineer", #"cloud engineer", "cybersecurity engineer", "product manager", #"qa engineer", "scrum master", "admin systèmes et réseaux", # "backend developer", "frontend developer", "fullstack developer", # "chef de projet informatique", "analyste cybersécurité", "ingénieur réseau", # "développeur python", "développeur java", "développeur node", "développeur .net" ,
+     "informatique","administratif","Commercial" 
      ]
-CITIES = [ "Paris"#,"Lyon", #"Marseille","Toulouse","Nice","Nantes","Strasbourg","Montpellier","Bordeaux",
+CITIES = [ "Paris",
+          #"Lyon", "Marseille","Toulouse","Nice","Nantes","Strasbourg","Montpellier","Bordeaux",
      #"Lille","Rennes","Reims","Grenoble","Angers","Saint-Étienne","Le Havre","Clermont-Ferrand","Tours","Aix-en-Provence" 
      ]
 
-SKILL_KEYWORDS = [ # Programming Languages 
-    "python", "java", "javascript", "typescript", "c++", "c#", "go", "rust", "php", "ruby", "kotlin", "swift", "scala", "perl", "matlab", "shell", "bash", "objective-c", "lua", "haskell", "dart", 
-    # Frontend Frameworks & Technologies 
-    "react", "angular", "vue", "next.js", "nuxt.js", "svelte", "jquery", "html", "css", "sass", "less", "tailwind", "bootstrap", "material-ui", "chakra-ui", "webpack", "vite", "redux", "ajax", 
-    # Backend Frameworks & Technologies 
-    "node.js", "express", "spring", "spring boot", "django", "flask", "laravel", "symfony", "asp.net", "dotnet", "fastapi", "gin", "rails", "nestjs", "strapi", "adonisjs",
-      # Mobile Development "flutter", 
-      "react native", "swift", "objective-c", "android", "kotlin", "xamarin", "ionic", "cordova",
-        # Databases
-         "mysql", "postgresql", "mongodb", "sqlite", "oracle", "mariadb", "cassandra", "couchdb", "dynamodb", "redis", "neo4j", "elasticsearch", "firebase", "clickhouse", "snowflake", "bigquery", "hive", "influxdb", 
-         # Cloud Providers & Services 
-         "aws", "azure", "gcp", "google cloud", "lambda", "ec2", "s3", "cloudformation", "cloud run", "cloudflare", "digitalocean", "heroku", "netlify", "vercel",
-           # DevOps & Infrastructure 
-         "docker", "kubernetes", "jenkins", "ansible", "terraform", "vagrant", "helm", "prometheus", "grafana", "circleci", "travisci", "github actions", "puppet", "gitlab ci", "logstash", "fluentd", "elastic stack",
-           # Version Control 
-         "git", "github", "gitlab", "bitbucket", "svn",
-           # APIs & Integration 
-         "rest", "graphql", "grpc", "soap", "openapi", "swagger", "postman", 
-         # Testing & Quality Assurance "tdd", 
-         "bdd", "jest", "mocha", "chai", "junit", "pytest", "selenium", "cypress", "playwright", "testing library", "postman", "karma",
-           # Data Science & ML 
-         "pandas", "numpy", "scikit-learn", "tensorflow", "keras", "pytorch", "opencv", "matplotlib", "seaborn", "xgboost", "lightgbm", "spacy", "nltk", "statsmodels", "mlflow", "airflow", "dvc",
-           # Data Engineering 
-         "spark", "hadoop", "kafka", "hive", "beam", "luigi", "dbt", "etl", "elt",
-           # Monitoring & Logging 
-         "prometheus", "grafana", "datadog", "new relic", "splunk", "sentry", "elastic", "logstash", "fluentd", "jaeger", "opentelemetry", 
-         # Security 
-         "oauth", "jwt", "https", "ssl", "tls", "sso", "sast", "dast", "owasp", "iam", "burp suite", "zap",
-           # Project & Workflow
-           "jira", "trello", "asana", "notion", "slack", "monday.com", "confluence",
-             # Soft Skills & Methodologies 
-           "agile", "scrum", "kanban", "devops", "ci/cd", "design thinking", "pair programming", "code review", "clean code",
-             # Other Tools & Tech 
-           "linux", "unix", "windows server", "macos", "visual studio code", "intellij", "eclipse", "android studio", "xcode", "figma", "photoshop", "illustrator", "blender", "unity", "unreal engine" ]
+SKILL_KEYWORDS = [
+    # Programming Languages
+    "python", "java", "c#", "c++", "javascript", "typescript", "php", "ruby",
+    
+    # Web Development
+    "html", "css", "react", "angular", "vue.js", "node.js", "next.js", "react native", "flutter", "swift", "kotlin",
+    
+    # Databases
+    "sql", "mysql", "postgresql", "mongodb", "oracle", "redis",
+    
+    # Cloud Platforms
+    "aws", "azure", "google cloud", "heroku",
+    
+    # DevOps / CI/CD
+    "docker", "kubernetes", "jenkins", "gitlab ci", "terraform", "ansible",
+    
+    # Operating Systems
+    "linux", "windows server", "macos",
+    
+    # Networking
+    "tcp/ip", "vpn", "dns", "firewall", "routing", "switching",
+    
+    # Cybersecurity
+    "ethical hacking", "penetration testing", "siem", "owasp",
+    
+    # AI / Machine Learning
+    "tensorflow", "pytorch", "scikit-learn", "nlp", "computer vision",
+    
+    # Big Data
+    "hadoop", "spark", "kafka",
+    
+    # Version Control
+    "git", "github", "gitlab", "bitbucket",
+    
+    # Testing
+    "unit testing", "integration testing", "selenium", "junit", "cypress",
+    
+    # APIs
+    "restful api", "graphql", "soap",
+    
+    # Soft Skills - IT
+    "problem-solving", "analytical thinking", "attention to detail", "teamwork", "project management", "scrum", "kanban",
+    
+    # Administrative / Office
+    "microsoft word", "microsoft excel", "microsoft powerpoint", "microsoft outlook",
+    "google docs", "google sheets", "google slides", "gmail", "calendar",
+    "data entry", "database management", "filing", "document organization",
+    "scheduling", "calendar management", "bookkeeping", "quickbooks", "sage",
+    "office equipment", "crm", "report writing", "email management", "hr administration", "payroll", "onboarding",
+    
+    # Soft Skills - Administrative
+    "organization", "time management", "communication", "multitasking", "team coordination",
+    
+    # Commercial / Sales
+    "b2b sales", "b2c sales", "inside sales", "outside sales",
+    "lead generation", "prospecting", "salesforce", "hubspot", "zoho crm",
+    "market research", "negotiation", "closing deals", "product presentation",
+    "account management", "e-commerce", "shopify", "woocommerce", "magento",
+    "seo", "sem", "social media marketing", "kpi tracking", "customer support",
+    
+    # Soft Skills - Commercial
+    "persuasion", "networking", "relationship management", "adaptability", "resilience", "goal orientation", "result-driven", "team collaboration"
+]
 
 def get_value_or_default(d, *keys, default="non spécifié"):
     for key in keys:
@@ -80,7 +109,7 @@ def extract_skills(description, skill_list):
     return ", ".join(sorted(found_skills)) if found_skills else "non spécifié"
 
 
-def fetch_jobs(titles=TITLES, cities=CITIES, max_pages=20, results_per_page=50, sleep_time=1):
+def fetch_jobs(titles=TITLES, cities=CITIES, max_pages=1, results_per_page=50, sleep_time=1):
     """
     Fetch jobs from Adzuna API and return them as a DataFrame.
     """
