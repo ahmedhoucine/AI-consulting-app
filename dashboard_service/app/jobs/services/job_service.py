@@ -1,23 +1,40 @@
 import pandas as pd
 from typing import Optional
+from dotenv import load_dotenv
+import os
+import requests
 from app.jobs.domain.job_entity import JobRecord
 from app.jobs.repositories.job_repository import JobRepositoryInterface
 from app.jobs.services.job_scraper import fetch_jobs
 from app.job_clustering.services.cluster_service import ClusterService
-from app.feat_recommendations.services.recommend_engine_singleton import engine
 
 class JobService:
     def __init__(self, job_repository: JobRepositoryInterface):
         self.job_repository = job_repository
+    
+    def reinitialize_recommendation(self):
+        try:
+            host = os.getenv("DB_HOST", "localhost")
+            url = f"http://{host}:5002/reinitialize_recommendation"
+
+            response = requests.post(url)
+            if response.status_code == 200:
+                print("✅ Cluster recommendation reinitialized successfully:")
+            else:
+                print(f"⚠️ Failed to reinitialize (status {response.status_code}):", response.text)
+        
+        except requests.exceptions.RequestException as e:
+            print("❌ Error while calling API:", e)
 
     def load_data_from_api(self) -> None:
         df = fetch_jobs()
         self.job_repository.save_all(df)
+        self.reinitialize_cluster_recommendation()
 
     def reinitialize_cluster_recommendation(self):
         cluster_service = ClusterService()
         cluster_service.run_and_save_clusters()
-        engine.initialize_recommendation_model()
+        self.reinitialize_recommendation()
 
     def get_job_by_id(self, job_id: int) -> Optional[JobRecord]:
         return self.job_repository.get_by_id(job_id)
