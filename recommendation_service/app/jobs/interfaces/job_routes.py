@@ -33,13 +33,12 @@ def serialize_job(job):
         "estm_publishdate": job.estm_publishdate,
     }
 
-@job_bp.route('/scraping', methods=['POST'])
-def scraping_and_reinitialization():
+@job_bp.route('/reinitialize_recommendation', methods=['POST'])
+def reinitialization_recommendation_engine():
     with current_app.app_context():
-        job_service.load_data_from_api()
-        job_service.reinitialize_cluster_recommendation()
+        job_service.reinitialize_recommendation()
     return jsonify({
-        "message": "Data scraped and clustering/recommendation reinitialized successfully"
+        "message": "recommendation reinitialized successfully"
     }), 200
 
 @job_bp.route('/api/jobs/<int:job_id>', methods=['GET'])
