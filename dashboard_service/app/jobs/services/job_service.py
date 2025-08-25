@@ -15,7 +15,7 @@ class JobService:
     def reinitialize_recommendation(self):
         try:
             host = os.getenv("DB_HOST", "localhost")
-            url = f"http://{host}:5002/reinitialize_recommendation"
+            url = f"http://{host}:5000/api/recommendation/reinitialize_recommendation"
 
             response = requests.post(url)
             if response.status_code == 200:

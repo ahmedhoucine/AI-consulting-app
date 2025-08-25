@@ -19,3 +19,4 @@ pymysql
 cryptography>=41.0.0
 python-dotenv
 apscheduler
+python-consul
