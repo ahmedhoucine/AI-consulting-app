@@ -29,7 +29,7 @@ export class MatchingComponent implements OnInit {
 
    async ngOnInit(): Promise<void> {
   try {
-    const data = await firstValueFrom(this.http.get<any[]>('http://localhost:5000/api/consultants'));
+    const data = await firstValueFrom(this.http.get<any[]>('http://localhost:5001/api/consultants'));
     this.consultants = data;     
     console.log(this.consultants)          
   } catch (error) {
@@ -48,7 +48,7 @@ export class MatchingComponent implements OnInit {
   this.loading = true;
   this.error = '';
 
-  fetch('http://localhost:5000/advisor/stream', {
+  fetch('http://localhost:5001/advisor/stream', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
