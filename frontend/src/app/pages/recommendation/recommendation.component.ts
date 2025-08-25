@@ -34,7 +34,7 @@ export class RecommendationComponent implements OnInit {
       console.error('Failed to fetch recommendations', error);
     } finally {
       this.loading = false;
-      console.log("from finally", this.recommendations);
+      
     }
   }
 }
