@@ -1,7 +1,6 @@
 from flask import Flask
 import torch
 from flask_cors import CORS
-from apscheduler.schedulers.background import BackgroundScheduler
 import os
 from app.shared.db import db
 from app.config import Config
