@@ -6,20 +6,6 @@ from flask import Response
 advisor_bp = Blueprint('advisor', __name__)
 service = AdvisorService()
 
-@advisor_bp.route('/streaming', methods=['POST'])
-def advisor():
-    data = request.get_json()
-    profile_description = data.get('profile_description')
-    target_job_title = data.get('target_job_title')
-
-    if not profile_description or not target_job_title:
-        return jsonify({"error": "Missing required fields"}), 400
-
-    try:
-        advice = service.generate_advice(profile_description, target_job_title)
-        return jsonify({"advice": advice})
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
 @advisor_bp.route('/history', methods=['GET'])
 def advisor_history():
     try:
