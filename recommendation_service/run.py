@@ -10,8 +10,10 @@ from app.feat_recommendations.interfaces.routes import recommend_bp
 from app.consultant.interfaces.routes import consultant_bp
 from app.jobs.interfaces.job_routes import job_bp
 from app.feat_recommendations.services.recommend_engine_singleton import engine
-from app.feat_recommendations.services.faiss_init import RecommendationEngine
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -36,7 +38,7 @@ if __name__ == "__main__":
             db.create_all()
             engine.initialize_recommendation_model()
     # Register this service in Consul
-    host = "127.0.0.1"
+    host = os.getenv("DB_HOST")
     port = 5002
     service_name = "recommendation-service"
 

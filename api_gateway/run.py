@@ -1,9 +1,12 @@
 from flask import Flask, request, jsonify
 import requests
 import consul
+from flask_cors import CORS
 
 app = Flask(__name__)
 c = consul.Consul()
+CORS(app, resources={r"/*": {"origins": "http://localhost:4200"}})
+
 
 def get_service_url(service_name):
     services = c.catalog.service(service_name)[1]

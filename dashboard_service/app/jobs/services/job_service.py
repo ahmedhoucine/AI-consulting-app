@@ -1,6 +1,4 @@
-import pandas as pd
 from typing import Optional
-from dotenv import load_dotenv
 import os
 import requests
 from app.jobs.domain.job_entity import JobRecord

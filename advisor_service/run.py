@@ -9,7 +9,10 @@ from app.shared.db import db
 from app.config import Config
 from app.profile_advices.interfaces.routes import advisor_bp
 from app.consultant.interfaces.routes import consultant_bp
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -31,9 +34,9 @@ if __name__ == "__main__":
 
     with app.app_context():
         db.create_all()
-
+    
     # Register this service in Consul
-    host = "127.0.0.1"
+    host = os.getenv("DB_HOST")
     port = 5001
     service_name = "advisor-service"
 

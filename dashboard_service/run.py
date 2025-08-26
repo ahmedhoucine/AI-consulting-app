@@ -15,7 +15,10 @@ from app.config import Config
 from app.job_clustering.interfaces.routes import cluster_bp
 from app.consultant.interfaces.routes import consultant_bp
 from app.dashboard.interfaces.controller import dashboard_bp
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -39,8 +42,8 @@ def start_scheduler():
     scheduler.add_job(
         func=lambda: cron_job(app),
         trigger="interval",
-        name="scraping every 15 minutes",
-        minutes=15
+        name="scraping every 2 hours",
+        hours=2
     )
     scheduler.start()
     atexit.register(lambda: scheduler.shutdown())
@@ -58,7 +61,8 @@ if __name__ == "__main__":
         start_scheduler()
 
     # Register service in Consul
-    host = "127.0.0.1"
+    host = os.getenv("DB_HOST")
+
     port = 5003
     service_name = "dashboard-service"
 
