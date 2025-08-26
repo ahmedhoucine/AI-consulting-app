@@ -1,6 +1,6 @@
 from typing import Optional
-import os
 import requests
+import consul
 from app.jobs.domain.job_entity import JobRecord
 from app.jobs.repositories.job_repository import JobRepositoryInterface
 from app.jobs.services.job_scraper import fetch_jobs
@@ -9,15 +9,26 @@ from app.job_clustering.services.cluster_service import ClusterService
 class JobService:
     def __init__(self, job_repository: JobRepositoryInterface):
         self.job_repository = job_repository
+        self.consul_client = consul.Consul(host="localhost", port=8500)  # port on which your agent is running
     
+    def _get_recommendation_service_url(self) -> str:
+        """Get recommendation service URL dynamically from Consul."""
+        service_name = "recommendation-service"
+        services = self.consul_client.catalog.service(service_name)[1]
+
+        if not services:
+            raise Exception(f"{service_name} not found in Consul")
+
+        svc = services[0]  # pick the first instance
+        return f"http://{svc['ServiceAddress']}:{svc['ServicePort']}/reinitialize_recommendation"
+
     def reinitialize_recommendation(self):
         try:
-            host = os.getenv("DB_HOST", "localhost")
-            url = f"http://{host}:5000/api/recommendation/reinitialize_recommendation"
-
+            url = self._get_recommendation_service_url()
             response = requests.post(url)
+            
             if response.status_code == 200:
-                print("✅ Cluster recommendation reinitialized successfully:")
+                print("✅ Cluster recommendation reinitialized successfully")
             else:
                 print(f"⚠️ Failed to reinitialize (status {response.status_code}):", response.text)
         

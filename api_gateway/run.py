@@ -3,7 +3,6 @@ import requests
 import consul
 from flask_cors import CORS
 
-# Constants
 ALLOWED_ORIGIN = "http://localhost:4200"
 
 app = Flask(__name__)
