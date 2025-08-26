@@ -79,4 +79,4 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"⚠️ Failed to register {service_name} in Consul: {e}")
 
-    app.run(debug=True, host="0.0.0.0", port=port)
+    app.run(debug=True, host="0.0.0.0", port=port, use_reloader=False)

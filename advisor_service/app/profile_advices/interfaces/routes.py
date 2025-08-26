@@ -6,7 +6,7 @@ from flask import Response
 advisor_bp = Blueprint('advisor', __name__)
 service = AdvisorService()
 
-@advisor_bp.route('/', methods=['POST'])
+@advisor_bp.route('/streaming', methods=['POST'])
 def advisor():
     data = request.get_json()
     profile_description = data.get('profile_description')
@@ -37,7 +37,6 @@ def advisor_history():
         return jsonify(result)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-from flask import current_app
 
 @advisor_bp.route('/stream', methods=['POST'])
 def advisor_stream():
