@@ -7,11 +7,11 @@ export class RecommendationService {
   constructor(private http: HttpClient) {}
 
   getRecommendations(consultantId: number): Observable<any[]> {
-    return this.http.get<any>(`http://localhost:5000/api/recommendation/consultants/${consultantId}`).pipe(
+    return this.http.get<any>(`http://localhost:5000/api/consultants/${consultantId}`).pipe(
       switchMap((consultant) => {
         const cv = consultant.cv;
         const payload = { query: cv };
-        return this.http.post<any>('http://localhost:5000/api/recommendation/recommend', payload);
+        return this.http.post<any>('http://localhost:5000/recommend', payload);
       }),
       switchMap((response: any) => {
         console.log('Response from /recommend:', response);
@@ -23,7 +23,7 @@ export class RecommendationService {
         }
 
         const jobRequests = jobIds.map((id: number) =>
-          this.http.get<any>(`http://localhost:5000/api/recommendation/api/jobs/${id}`)
+          this.http.get<any>(`http://localhost:5000/api/jobs/${id}`)
         );
 
         return forkJoin(jobRequests);
@@ -32,6 +32,6 @@ export class RecommendationService {
   }
 
   getConsultants(): Observable<any[]> {
-    return this.http.get<any[]>(`http://localhost:5000/api/recommendation/consultants`);
+    return this.http.get<any[]>(`http://localhost:5000/api/consultants`);
   }
 }

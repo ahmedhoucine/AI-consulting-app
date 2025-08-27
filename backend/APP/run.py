@@ -23,12 +23,12 @@ app.config.from_object(Config)
 db.init_app(app)
 CORS(app)
 
-## app.register_blueprint(advisor_bp)
-#app.register_blueprint(recommend_bp)
-#app.register_blueprint(cluster_bp)
+app.register_blueprint(advisor_bp)
+app.register_blueprint(recommend_bp)
+app.register_blueprint(cluster_bp)
 app.register_blueprint(consultant_bp, url_prefix='/api')
-#app.register_blueprint(job_bp)
-#app.register_blueprint(dashboard_bp)
+app.register_blueprint(job_bp)
+app.register_blueprint(dashboard_bp)
 
 
 def start_scheduler():
@@ -36,7 +36,7 @@ def start_scheduler():
     scheduler.add_job(func=lambda: cron_job(app),
                       trigger="interval",
                       name="scraping every 2 hours",
-                      minutes=15) 
+                      hours=2) 
     scheduler.start()
 
     atexit.register(lambda: scheduler.shutdown())
