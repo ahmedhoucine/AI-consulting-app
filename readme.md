@@ -1,5 +1,11 @@
 # 🚀 AI Consulting App - CI/CD Pipeline with Jenkins
 
+##  to run the application in microservice mode 
+1- run Consul in docker container using port 8500
+2- run each microservice 
+3- run api gateway
+4- run the front application 
+
 ## 🐳 Jenkins Setup
 ```bash
 docker run -d --name jenkins --user root  -p 8080:8080 -p 50000:50000 -v /var/run/docker.sock:/var/run/docker.sock -v jenkins_home:/var/jenkins_home  jenkins/jenkins:lts
