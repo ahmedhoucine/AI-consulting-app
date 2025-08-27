@@ -2,8 +2,11 @@
 
 ##  to run the application in microservice mode 
 1- run Consul in docker container using port 8500
+
 2- run each microservice 
+
 3- run api gateway
+
 4- run the front application 
 
 ## 🐳 Jenkins Setup
