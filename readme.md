@@ -63,7 +63,7 @@ pipeline {
   environment {
     DOCKER_REGISTRY = 'ahmedhoucine0'
     IMAGE_TAG = "${BUILD_NUMBER}"
-    SERVICES = "recommendation_service advisor_service dashboard_service api_gateway"   
+    SERVICE = "" #change service name for each microservice pipeline
   }
 
   stages {
@@ -79,87 +79,36 @@ pipeline {
       }
     }
 
-    stage('Detect Changed Services') {
+    stage('Build Docker Image') {
       steps {
-        script {
-          // Compare with previous commit to detect changes
-          CHANGED_SERVICES = sh(
-            script: """
-              git fetch --all
-              git diff --name-only HEAD~1 HEAD | cut -d/ -f1 | sort -u
-            """,
-            returnStdout: true
-          ).trim()
-
-          echo "📂 Changed folders: ${CHANGED_SERVICES}"
-
-          // Intersect with SERVICES list
-          BUILD_SERVICES = []
-          for (s in SERVICES.split(" ")) {
-            if (CHANGED_SERVICES.contains(s)) {
-              BUILD_SERVICES << s
-            }
-          }
-
-          if (BUILD_SERVICES.size() == 0) {
-            echo "✅ No microservice changes detected. Skipping build."
-            currentBuild.result = 'SUCCESS'
-            skipBuild = true
-          } else {
-            echo "🚀 Services to build: ${BUILD_SERVICES.join(', ')}"
-            skipBuild = false
-          }
-        }
+        echo "🚀 Building Docker image for ${SERVICE}"
+        sh "docker build -t $DOCKER_REGISTRY/${SERVICE}:${IMAGE_TAG} -f ${SERVICE}/Dockerfile ./${SERVICE}"
       }
     }
 
-    stage('Build Docker Images') {
-      when {
-        expression { return !skipBuild }
-      }
-      steps {
-        script {
-          for (s in SERVICES.split(" ")) {
-                echo "🚀 Building image for ${s}"
-                sh "docker build -t $DOCKER_REGISTRY/${s}:${IMAGE_TAG} -f ${s}/Dockerfile ./${s}"
-            }
-        }
-      }
-    }
-
-    stage('Push Docker Images') {
-      when {
-        expression { return !skipBuild }
-      }
+    stage('Push Docker Image') {
       steps {
         withCredentials([usernamePassword(credentialsId: 'ahmedhoucine0-dockerhub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
           sh 'echo $PASSWORD | docker login -u $USERNAME --password-stdin'
-          script {
-            for (s in BUILD_SERVICES) {
-              echo "📤 Pushing image for ${s}"
-              sh "docker push $DOCKER_REGISTRY/${s}:${IMAGE_TAG}"
-              sh "docker tag $DOCKER_REGISTRY/${s}:${IMAGE_TAG} $DOCKER_REGISTRY/${s}:latest"
-              sh "docker push $DOCKER_REGISTRY/${s}:latest"
-            }
-          }
+          echo "📤 Pushing Docker image for ${SERVICE}"
+          sh "docker push $DOCKER_REGISTRY/${SERVICE}:${IMAGE_TAG}"
+          sh "docker tag $DOCKER_REGISTRY/${SERVICE}:${IMAGE_TAG} $DOCKER_REGISTRY/${SERVICE}:latest"
+          sh "docker push $DOCKER_REGISTRY/${SERVICE}:latest"
         }
       }
     }
   }
 
   post {
-    failure {
-      mail to: 'ahcine00@gmail.com',
-           subject: "❌ Build Failed #${BUILD_NUMBER}",
-           body: "Check Jenkins for more info."
-    }
     success {
-      mail to: 'ahcine00@gmail.com',
-           subject: "✅ Build Success #${BUILD_NUMBER}",
-           body: "Successfully built & pushed: ${BUILD_SERVICES}"
+      echo "✅ ${SERVICE} built & pushed successfully!"
+    }
+    failure {
+      echo "❌ ${SERVICE} build or push failed!"
     }
   }
 }
+
 
 
 ```
