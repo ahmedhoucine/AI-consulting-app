@@ -27,7 +27,7 @@ WORKDIR /app
 COPY --from=builder /usr/local /usr/local
 
 # Copy application code
-COPY dashboard_service /
+COPY . /
 
 # Environment variables
 ENV PYTHONUNBUFFERED=1 \
