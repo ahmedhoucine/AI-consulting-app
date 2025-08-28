@@ -27,7 +27,7 @@ WORKDIR /app
 COPY --from=builder /usr/local /usr/local
 
 # Copy application code
-COPY backend /app
+COPY recommendation_service /
 
 # Environment variables
 ENV PYTHONUNBUFFERED=1 \
@@ -35,4 +35,4 @@ ENV PYTHONUNBUFFERED=1 \
 
 EXPOSE 5000
 
-CMD ["python", "APP/run.py"]
+CMD ["python", "run.py"]
