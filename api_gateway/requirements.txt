@@ -1,0 +1,5 @@
+Flask==2.3.2
+requests==2.*
+python-consul
+flask-cors==4.0.0
+gunicorn==22.*
